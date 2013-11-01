@@ -1,0 +1,17 @@
+Insert:
+INSERT INTO tablename (col1, col2) VALUES('data1', 'data2' );
+
+Retrieve:
+select * from info;
+
+Modify table to add an auto increment column
+ALTER TABLE info MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+
+DELETE FROM table_name WHERE some_column = '';
+
+----------------------------------------------
+Mongodb
+
+Check status and logs
+browser => http://localhost:28017/
+
