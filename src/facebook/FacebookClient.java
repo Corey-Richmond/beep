@@ -43,6 +43,11 @@ public class FacebookClient {
 				// Create a graph request
 				facebookPage = facebookPage.replaceAll("www", "graph");
 
+				if (facebookPage.contains("pages/"))
+					facebookPage = facebookPage.replaceAll("pages/", "");
+				
+				System.out.println(facebookPage);
+				
 				HttpGet get = new HttpGet(facebookPage);
 
 				HttpResponse response = client.execute(get);
@@ -55,7 +60,7 @@ public class FacebookClient {
 				for (String line = null; (line = reader.readLine()) != null; ) 
 					builder.append(line).append("\n");
 
-				//System.out.println(builder.toString());
+				System.out.println(builder.toString());
 
 				JSONTokener tokener = new JSONTokener(builder.toString());
 				JSONObject info = new JSONObject(tokener);
@@ -69,7 +74,5 @@ public class FacebookClient {
 		catch (Exception e){
 			e.printStackTrace();
 		}
-		
-
 	}
 }
