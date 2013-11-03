@@ -42,11 +42,13 @@ public class FacebookClient {
 				
 				// Create a graph request
 				facebookPage = facebookPage.replaceAll("www", "graph");
-
-				if (facebookPage.contains("pages/"))
-					facebookPage = facebookPage.replaceAll("pages/", "");
 				
-				System.out.println(facebookPage);
+				// Changes https://graph.facebook.com/pages/Armageddon/9283931?ref=br_rs 
+				// to https://graph.facebook.com/9283931?ref=br_rs
+				if (facebookPage.matches("https://graph.facebook.com/.*/.*/[0-9]+\\?ref=br_rs$"))
+					facebookPage = facebookPage.replaceAll("pages/.*/", "");
+
+				//System.out.println(facebookPage);
 				
 				HttpGet get = new HttpGet(facebookPage);
 
@@ -60,14 +62,17 @@ public class FacebookClient {
 				for (String line = null; (line = reader.readLine()) != null; ) 
 					builder.append(line).append("\n");
 
-				System.out.println(builder.toString());
+				if (!builder.toString().contains("\"error\"")) {
+				
+					System.out.println(builder.toString());
 
-				JSONTokener tokener = new JSONTokener(builder.toString());
-				JSONObject info = new JSONObject(tokener);
+					JSONTokener tokener = new JSONTokener(builder.toString());
+					JSONObject info = new JSONObject(tokener);
 
-				try {
-					writer.println(info.toString(2));
-				}catch (JSONException e){}
+					try {
+						writer.println(info.toString(2));
+					} catch (JSONException e) {}
+				}
 			}
 			writer.close();
 		}

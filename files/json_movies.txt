@@ -16,7 +16,7 @@
   "username": "ScottPilgrim",
   "category": "Movie",
   "directed_by": "Edgar Wright",
-  "likes": 3159446,
+  "likes": 3159523,
   "name": "Scott Pilgrim vs. the World",
   "produced_by": "Marc Platt, Eric Gitter, Edgar Wright, Nira Park",
   "release_date": "August 13, 2010",
@@ -45,7 +45,7 @@
   "directed_by": "Peter Jackson",
   "awards": "The Lord of the Rings: Fellowship of the Ring\n4 Oscars\nBest Cinematography\nBest Effects (Visual Effects)\nBest Makeup\nBest Music (Original Score)\n\nThe Lord of the Rings: The Two Towers\n2 Oscars\nBest Visual Effects \nBest Sound Editing\n\nThe Lord of the Rings: The Return of the King\n11 Oscars\nBest Picture\nBest Director\nBest Writing, Adapted Screenplay\nBest Editing\nBest Visual Effects\nBest Music, Original Score\nBest Music, Original Song\nBest Costume Design\nBest Makeup\nBest Art Direction-Set Decoration\nBest Sound Mixing\n",
   "description": "Visit the official The Lord of the Rings Store: http://bit.ly/LOTRstore",
-  "likes": 12709331,
+  "likes": 12709780,
   "name": "The Lord of the Rings Trilogy",
   "written_by": "J.R.R. Tolkien",
   "produced_by": "Peter Jackson, Barrie M. Osborne, Fran Walsh, Mark Ordesky,Tim Sanders (1st Film)",
@@ -73,7 +73,7 @@
   "category": "Movie",
   "directed_by": "Robert Zemeckis",
   "awards": "Oscar-Best Effects, Sound Effects Editing\n",
-  "likes": 1871460,
+  "likes": 1871734,
   "name": "Back To the Future",
   "written_by": "Robert Zemeckis, Bob Gale ",
   "produced_by": "Steven Spielberg",
@@ -101,7 +101,7 @@
   "category": "Movie",
   "directed_by": "Baz Luhrmann",
   "description": "http://twitter.com/gatsbymovie\nhttp://pinterest.com/gatsbymovie\nhttp://instagram.com/gatsbymovie\nhttp://gatsbymovie.tumblr.com",
-  "likes": 1187674,
+  "likes": 1187823,
   "name": "The Great Gatsby",
   "written_by": "Baz Luhrmann & Craig Pearce; Based on the book by F. Scott Fitzgerald",
   "produced_by": "Baz Luhrmann, Catherine Martin, Douglas Wick, Lucy Fisher, Catherine Knapman",
@@ -130,7 +130,7 @@
   "directed_by": "Robert Mulligan ",
   "awards": "Oscars for:\nBest Actor in a Leading Role - Gregory Peck \nBest Art Direction-Set Decoration, Black-and-White - Alexander Golitzen, Henry Bumstead & Oliver Emert \nBest Writing, Screenplay Based on Material from Another Medium - Horton Foote ",
   "description": "Gregory Peck won an Oscar for his brilliant performance as the Southern lawyer who defends a black man accused of rape in this film version of the Pulitzer Prize-winning novel. The way in which it captures a time, a place, and above all, a mood, makes this film a masterpiece. The setting is a dusty Southern town during the Depression. A white woman accuses a black man of rape. Though he is obviously innocent, the outcome of his trial is such a foregone conclusion that no lawyer will step forward to defend him - except Peck, the town's most distinguished citizen. His compassionate defense costs him many friendships but earns him the respect and admiration of his two motherless children.",
-  "likes": 1367365,
+  "likes": 1367381,
   "name": "To Kill a Mockingbird",
   "written_by": "Harper Lee ",
   "produced_by": "Alan J. Pakula",
@@ -157,7 +157,7 @@
   "username": "airplanemovie",
   "directed_by": "Jim Abrahams, David Zucker, Jerry Zucker",
   "description": "The persons and events in this film are fictitious - fortunately! A masterpiece of off-the-wall comedy, Airplane! features Robert Hays as an ex-fighter pilot forced to take over the controls of an airliner when the flight crew succumbs to food poisoning; Julie Hagerty as his girlfriend/stewardess/co-pilot; and a cast of all-stars including Robert Stack, Lloyd Bridges, Peter Graves, Leslie Nielsen, Kareem Abdul-Jabbar... and more. Their hilarious high jinks spoof airplane disaster flicks, religious zealots, television commercials, romantic love... the list whirls by in rapid succession. And the story races from one moment of zany fun to the next. ",
-  "likes": 396883,
+  "likes": 396904,
   "name": "Airplane",
   "release_date": "July 2, 1980",
   "were_here_count": 0,
@@ -184,7 +184,7 @@
   "category": "Movie",
   "directed_by": "Rob Marshall (Chicago, Memoirs of a Geisha, Nine)",
   "description": "Starring: Johnny Depp, Penélope Cruz, Ian McShane, Kevin R. McNally,  Astrid Bergès-Frisbey, Sam Claflin and Geoffrey Rush  - Directed By: Rob Marshall (Chicago, Memoirs of a Geisha, Nine) \n___________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 22405662,
+  "likes": 22406110,
   "name": "Pirates of the Caribbean",
   "produced_by": "Jerry Bruckheimer",
   "release_date": "October 18, 2011",
@@ -211,7 +211,7 @@
   "username": "OfficeSpaceMovie",
   "category": "Movie",
   "directed_by": "Mike Judge",
-  "likes": 892945,
+  "likes": 892958,
   "name": "Office Space",
   "written_by": "Mike Judge",
   "produced_by": "Daniel Rappaport, ",
@@ -266,7 +266,7 @@
   "category": "Movie",
   "directed_by": "Tim Burton",
   "awards": "THROW A SWEENEY PARTY WITH THIS APP AND WIN THE SPECIAL EDITION DVD!\nhttp://apps.facebook.com/partyon/CreateParty.aspx?themeId=43&mode=2",
-  "likes": 2242110,
+  "likes": 2242332,
   "name": "SWEENEY TODD",
   "produced_by": "Patrick McCormick",
   "release_date": "12/21/07",
@@ -293,7 +293,7 @@
   "username": "RobinHoodMovie",
   "category": "Movie",
   "directed_by": "Ridley Scott",
-  "likes": 1579405,
+  "likes": 1579672,
   "name": "Robin Hood",
   "produced_by": "Brian Grazer, Ridley Scott, Russell Crowe",
   "release_date": "9/21 on Blu-ray, DVD & Digital Download",
@@ -321,7 +321,7 @@
   "directed_by": "Eric Bress, J. Mackye Gruber",
   "awards": "(2004) Brussels International Festival of Fantasy Film, Pegasus Audience Award, Eric Bress, J. Mackye Gruber",
   "description": "Get The Butterfly Effect at the WB shop - http://bit.ly/butterflyEFCT",
-  "likes": 1686115,
+  "likes": 1686215,
   "name": "The Butterfly Effect",
   "written_by": "J. Mackye Gruber & Eric Bress",
   "produced_by": "Full producer credits on IMDB: http://www.imdb.com/title/tt0289879/fullcredits",
@@ -347,7 +347,7 @@
   "username": "OfficialNapoleonDynamite",
   "directed_by": "Jared Hess",
   "description": "Napoleon Dynamite is a new kind of hero, complete with a tight red 'fro, sweet moon boots, and skills that can't be topped. Napoleon spends his days drawing mythical beasts, duking it out with his brother, Kip, and avoiding his scheming Uncle Rico. When two new friends enter Napoleon's life - shy Deb and mustachioed Pedro - the trio launches a campaign to elect Pedro for class president and make the student body's wildest dreams come true. But if Pedro is to beat stuck-up Summer, Napoleon will have to unleash his secret weapon... ",
-  "likes": 3290930,
+  "likes": 3291014,
   "name": "Napoleon Dynamite",
   "written_by": "Jared Hess & Jerusha Hess",
   "release_date": "August 27th, 2004",
@@ -356,11 +356,29 @@
   "talking_about_count": 12837,
   "starring": "Jon Heder, Efren Ramirez and Jon Gries"
 }
-{"error": {
-  "message": "Unknown path components: /181221288646788",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "screenplay_by": "James Cameron, Gale Anne Hurd",
+  "website": "http://www.mgm.com/#/our-titles/1970/The-Terminator",
+  "link": "http://www.facebook.com/pages/The-Terminator/181221288646788",
+  "about": "James Cameron's classic sci-fi thriller, The Terminator (Remastered) is now available on Blu-ray (US)! Own it today: http://bit.ly/Own_The-Terminator\n",
+  "id": "181221288646788",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-prn1/s720x720/48165_337100346392214_790324448_n.jpg",
+    "cover_id": 337100346392214,
+    "offset_y": 100,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "directed_by": "James Cameron",
+  "description": "In the year 2029, the ruling super-computer, Skynet, sends an indestructible cyborg (Arnold Schwarzenegger) back in time to 1984 to kill Sarah Connor (Linda Hamilton) before she can fulfill her destiny and save mankind.",
+  "likes": 3389996,
+  "name": "The Terminator",
+  "release_date": "October 26, 1984",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 13130,
+  "starring": "Arnold Schwarzenegger, Linda Hamilton, Michael Biehn, Paul Winfield, Lance Henriksen, Earl Boen"
+}
 {
   "genre": "Comedy, Teen, Drama",
   "plot_outline": "Five high school students, all different stereotypes, meet in detention, where they pour their hearts out to each other, and discover how they have a lot more in common than they thought. ",
@@ -380,7 +398,7 @@
   "category": "Movie",
   "directed_by": "John Hughes",
   "description": "They were five students with nothing in common,\nfaced with spending a Saturday detention together\nin their high school library.\n\nAt 7 am, they had nothing to say but by 4 pm,\nthey had bared their souls to each other and become good friends.\n\nTo the outside world, they were simply\nthe Jock, the Brain, the Criminal, the Princess and the Kook.\nBut to each other, they would always be The Breakfast Club.",
-  "likes": 2000467,
+  "likes": 2000568,
   "name": "The Breakfast Club",
   "produced_by": "Ned Tanen & John Hughes",
   "release_date": "2/15/1985",
@@ -389,16 +407,18 @@
   "is_published": true,
   "starring": "Molly Ringwald, Emilio Estevez, Anthony Michael Hall, Judd Nelson, Ally Sheedy, John Kapelos, Paul Gleason "
 }
-{"error": {
-  "message": "Unknown path components: /103782849660211",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
+{
+  "id": "103782849660211",
+  "category": "Movie",
+  "description": "Thirteen is a 2003 American drama film directed by Catherine Hardwicke, and written by Hardwicke and Nikki Reed, the film's co-star. The film also stars Holly Hunter and Evan Rachel Wood. It is a semi-autobiographical film inspired by Reed's life at age 12 and 13 with Wood's character \"Tracy\" being loosely based upon Reed. The script was written in six days. The film caused controversy upon its release, because it dealt with topics such as drug and alcohol abuse, underage sexual behavior and self-harm.PlotThirteen-year-old Tracy Freeland writes poetry and is an honor student at Portola Middle School in Los Angeles. Her divorced mother Melanie is a recovering alcoholic and high school dropout, who struggles as a hairdresser to support Tracy and her older brother Mason . At school Tracy is teased by some girls about her \"cabbage patch\" clothes. Tracy tries to shed her 'little girl' image and pleads with her mother to purchase a trendier style of clothing. Melanie buys Tracy new clothes from a discount vendor in a parked van. Tracy is invited by Evie Zamora , one of the most popular girls at school, to go shopping on Melrose Avenue in Hollywood. Although Evie gives her a disconnected telephone number as a joke, Tracy takes a city bus to Melrose Avenue anyway, where she finds Evie and a friend at an edgy thrift shop. At the store, Tracy sees Evie and her friend shoplifting. Tracy begins to feel uncomfortable, and walks alone out of the store to sit on a bench outside.",
+  "likes": 515245,
+  "link": "http://www.facebook.com/pages/Thirteen/103782849660211",
+  "name": "Thirteen",
+  "were_here_count": 0,
+  "talking_about_count": 156,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "studio": "Rogue/Relativity/Universal ",
   "genre": "Documentary",
@@ -419,7 +439,7 @@
   "directed_by": "Ariel Schulman & Henry Joost ",
   "awards": "Official Selection: Sundance Film Festival 2010, London Inernational Film Festival 2010, Melbourne International Film Festival 2010, Zurich International Film Festival 2010, Sitges Film Festival 2010, Lower East Side Film Festival 2011....",
   "description": "For all International inquires please contact:\nSierra / Affinity\nPhone: +1-310-777-4550\nEmail: info@sierra-affinity.com",
-  "likes": 125828,
+  "likes": 125837,
   "name": "CATFISH movie",
   "produced_by": "Andrew Jarecki, Marc Smerling, Henry Joost, Ariel Schulman",
   "release_date": "9/17/2010",
@@ -428,11 +448,18 @@
   "is_published": true,
   "starring": "Nev Schulman, Ariel Schulman, Henry Joost"
 }
-{"error": {
-  "message": "Unknown path components: /109469405746262",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "109469405746262",
+  "category": "Movie",
+  "description": "Comedy, in the contemporary meaning of the term, is any discourse or work generally intended to be humorous or to amuse by inducing laughter, especially in theatre, television, film and stand-up comedy. This sense of the term must be carefully distinguished from its academic one, namely the comic theatre, whose Western origins are found in Ancient Greece. In the Athenian democracy, the public opinion of voters was influenced by the political satire performed by the comic poets at the theaters. The theatrical genre can be simply described as a dramatic performance which pits two societies against each other in an amusing agon or conflict. Northrop Frye famously depicted these two opposing sides as a \"Society of Youth\" and a \"Society of the Old\", but this dichotomy is seldom described as an entirely satisfactory explanation. A later view characterizes the essential agon of comedy as a struggle between a relatively powerless youth and the societal conventions that pose obstacles to his hopes. In this struggle, the youth is understood to be constrained by his lack of social authority, and is left with little choice but to take recourse in ruses which engender very dramatic irony which provokes laughter.",
+  "likes": 15936166,
+  "link": "http://www.facebook.com/pages/Comedy/109469405746262",
+  "name": "Comedy",
+  "were_here_count": 0,
+  "talking_about_count": 4329,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Action, Horror",
   "studio": "Mexican Standoff",
@@ -452,7 +479,7 @@
   "directed_by": "Daniele Bellucci, (Marco Tudini 2009 - 2011)",
   "awards": "YOUTUBE AWARDS 2009/2010\n\n#25 - Most Viewed - Global\n#11 - Most Viewed - Director - Global\n#4 - Most Viewed - Director - Italy\n#1 - Most Viewed - Film & Animation - France\n#3 - Most Viewed - Film & Animation - Global\n#5 - Most Rated - Film & Animation ",
   "description": "CAST (in alphabetical order):\n\nAlpha Ariesmaximus as Louis\n\nMarco Rea as Francis\n\nSilvia Quondamstefano as Zoey\n\nRoberto Verrocchi as Bill\n\n\nCREDITS (in alphabetical order):\n\nDirected by Daniele Bellucci \n\nOriginal Screenplay - Bryan Schulz\n\nOriginal Music -  Vincenzo Delli Carri\n\nMusic Supervision - Jonh M. Miller(2009-2011) Vincenzo Delli Carri\n\nSound Design - Hotelsinus Sound Design\n\nSound Effects Supervisor - Zizics Fanta Làszlò\n\nArt Director - Marco Tudini (2009-2011)\n\nEditing - Daniele Bellucci\n\nDirector of Photography -  Stefano Massa\n\nCamera Operator  - Armando Brecciaroli\n\nProduction Designer - Stefania Fiorese\n\nVisual Effects Supervisor - Marco Tudini (2009-2011)\n\n3D CGI Supervisor - Ivan De Gregori(2009-2011)\n\nSpecial Make-Up Effects - Francesco Fabiani(2009-2011)\n\nStoryboarding - Marco Tudini (2009-2011) Raffaele Aversa\n\nExecutive Producers - Daniele Bellucci and Marco Tudini (2009-2011)\n\n\nOriginal Story by Delilah Kofler and Keven Brennen",
-  "likes": 308397,
+  "likes": 308409,
   "name": "LEFT 4 DEAD - THE MOVIE",
   "written_by": "Delilah Kofler and Keven Brennen",
   "produced_by": "Daniele Bellucci, (Marco Tudini 2009 - 2011)",
@@ -479,7 +506,7 @@
   "category": "Movie",
   "username": "OurIdiotBrother",
   "directed_by": "Jesse Peretz",
-  "likes": 107937,
+  "likes": 107938,
   "name": "Our Idiot Brother",
   "produced_by": "Anthony Bregman of Likely Story; Peter Saraf & Marc Turtletaub of Big Beach; Executive Producers: Stefanie Azpiazu, Caroline Jaczko, John Hodges &  Aleen Keshishian",
   "release_date": "August 26th, 2011",
@@ -488,21 +515,30 @@
   "talking_about_count": 148,
   "starring": "Paul Rudd, Elizabeth Banks, Zooey Deschanel, Emily Mortimer, Rashida Jones, Steve Coogan, Hugh Dancy, Kathryn Hahn, Shirley Knight, Janet Montgomery, Adam Scott"
 }
-{"error": {
-  "message": "Unknown path components: /115058325176059",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /114854991860034",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
+{
+  "id": "115058325176059",
+  "category": "Movie",
+  "description": "Spider-Man is a 2002 American superhero film directed by Sam Raimi. Based on the Marvel Comics character of the same name, the film stars Tobey Maguire as Peter Parker, a high-school student who turns to crimefighting after developing spider-like powers. Spider-Man also stars Willem Dafoe as Norman Osborn (a.k.a. the Green Goblin), Kirsten Dunst as Peter's love interest Mary Jane Watson, and James Franco as his best friend Harry Osborn.After being stuck in development hell for nearly 25 years, the film was licensed for a worldwide release by Sony Pictures Entertainment in 1999 after it acquired options from MGM on all previous scripts developed by Cannon Films, Carolco and New Cannon. Exercising its option on just two elements from this multi-script acquisition (a screenplay credited to James Cameron, Ted Newsom, John Brancato, Barney Cohen and \"Joseph Goldman\" (the pen name of Menahem Golan) and a later treatment credited solely to Cameron), Sony hired David Koepp to create a working screenplay from this \"Cameron material\". Directors Roland Emmerich, Tim Burton, Chris Columbus, and David Fincher were considered to direct the project before Raimi was hired as director in 2000. The Koepp script was rewritten by Scott Rosenberg during preproduction and received a dialogue polish from Alvin Sargent during production.",
+  "likes": 1125453,
+  "link": "http://www.facebook.com/pages/Spiderman/115058325176059",
+  "name": "Spiderman",
+  "were_here_count": 0,
+  "talking_about_count": 192,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "114854991860034",
+  "category": "Movie",
+  "description": "A Nightmare on Elm Street is a 1984 American horror slasher film written and directed by Wes Craven, and the first film of the Nightmare on Elm Street franchise. The film stars Heather Langenkamp, John Saxon, Ronee Blakley, Amanda Wyss, Jsu Garcia, Robert Englund, and Johnny Depp in his feature film debut. Set in the fictional Midwestern town of Springwood, Ohio, the plot revolves around several teenagers who are stalked and killed in their dreams by Freddy Krueger. The teenagers are unaware of the cause of this strange phenomenon, but their parents hold a dark secret from long ago.Craven produced A Nightmare on Elm Street on an estimated budget of just $1.8 million, a sum the film earned back during its first week. An instant commercial success, the film's total United States box office gross is $25.5 million. A Nightmare on Elm Street was met with rave critical reviews and went on to make a very significant impact on the horror genre, spawning a franchise consisting of a line of sequels, a television series, a crossover with Friday the 13th, beyond various other works of imitation; a remake of the same name was released in 2010.",
+  "likes": 427390,
+  "link": "http://www.facebook.com/pages/Nightmare-On-Elm-Street/114854991860034",
+  "name": "Nightmare On Elm Street",
+  "were_here_count": 0,
+  "talking_about_count": 1146,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Adventure, Drama, Western ",
   "plot_outline": " ",
@@ -529,16 +565,30 @@
   "talking_about_count": 80,
   "starring": "Jeff Bridges, Josh Brolin, Matt Damon, Hailee Steinfeld "
 }
-{"error": {
-  "message": "Unknown path components: /108317822521584",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /109481069078483",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "108317822521584",
+  "category": "Movie",
+  "description": "Rent is a 2005 American musical drama film directed by Chris Columbus. It is an adaptation of the Broadway musical of the same name, in turn based on Giacomo Puccini's opera La bohème. The film depicts the lives of several Bohemians and their struggles with sexuality, cross-dressing, drugs, paying their rent, and life under the shadow of AIDS. It takes place in the East Village of New York City from 1989 to 1990. The film features six of the original Broadway cast members reprising their roles.PlotOn Christmas Eve, 1989, aspiring filmmaker Mark Cohen, and his roommate, Roger Davis, learn that the rent previously waived by their former friend and landlord, Benjamin \u201cBenny\u201d Coffin III, is due. At the same time, their former roommate Tom Collins shows up and gets mugged in an alleyway. Meanwhile, Mark and Roger meet with Benny, who tells them he plans to evict the homeless from the nearby lot and build a cyber studio in its place. He offers them free rent if they can get Maureen, Mark's ex-girlfriend, to cancel her protest against his plans, but they refuse.",
+  "likes": 403835,
+  "link": "http://www.facebook.com/pages/Rent/108317822521584",
+  "name": "Rent",
+  "were_here_count": 0,
+  "talking_about_count": 296,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "109481069078483",
+  "category": "Movie",
+  "description": "Armageddon is a 1998 American science fiction disaster drama film, directed by Michael Bay, produced by Jerry Bruckheimer, and released by Touchstone Pictures. The film follows a group of blue-collar deep-core drillers sent by NASA to stop a gigantic asteroid on a collision course with Earth. It features an ensemble cast including Bruce Willis, Ben Affleck, Billy Bob Thornton, Liv Tyler, Owen Wilson, Will Patton, Peter Stormare, William Fichtner, Michael Clarke Duncan, Keith David and Steve Buscemi.Armageddon opened in theaters only two-and-a-half months after a similar impact-based movie, Deep Impact, which starred Robert Duvall and Morgan Freeman. Armageddon fared better at the box office, while astronomers described Deep Impact as being more scientifically accurate. Both films were equally received by film critics. Armageddon was an international box-office success, despite generally negative reviews from critics. It became the highest-grossing film of 1998 worldwide surpassing the Steven Spielberg war epic, Saving Private Ryan.",
+  "likes": 1502355,
+  "link": "http://www.facebook.com/pages/Armageddon/109481069078483",
+  "name": "Armageddon",
+  "were_here_count": 0,
+  "talking_about_count": 2681,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "plot_outline": "From Ricky Gervais, the award-winning creator and star of the original BBC series \u201cThe Office\u201d and HBO\u2019s \u201cExtras,\u201d comes the new romantic comedy \u201cThe Invention Of Lying,\u201d which takes place in an alternate reality in which lying\u2014even the concept of a lie\u2014does not even exist.  Everyone\u2014from politicians to advertisers to the man and woman on the street\u2014speaks the truth and nothing but the truth with no thought of the consequences.  But when a down-on-his-luck loser named Mark suddenly develops the ability to lie, he finds that dishonesty has its rewards.  In a world where every word is assumed to be the absolute truth, Mark easily lies his way to fame and fortune.  But lies have a way of spreading, and Mark begins to realize that things are getting a little out of control when some of his tallest tales are being taken as, well, gospel.  With the entire world now hanging on his every word, there is only one thing Mark has not been able to lie his way into: the heart of the woman he loves.",
   "studio": "Warner Bros.",
@@ -550,7 +600,7 @@
   "category": "Movie",
   "username": "theinventionoflying",
   "directed_by": "Ricky Gervais, Matthew Robinson",
-  "likes": 114789,
+  "likes": 114791,
   "name": "The Invention of Lying",
   "produced_by": "Lynda Obst, Oly Obst",
   "release_date": "January 19, 2009",
@@ -559,16 +609,30 @@
   "talking_about_count": 113,
   "starring": "Ricky Gervais, Jennifer Garner, Rob Lowe, Louis C.K., Tina Fey, Jonah Hill, Christopher Guest, Jeffrey Tambor, John Hodgman, Nate Corddry"
 }
-{"error": {
-  "message": "Unknown path components: /109395905753243",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /111994392146832",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "109395905753243",
+  "category": "Book",
+  "description": "The Boy in the Striped Pyjamas is a 2006 novel from the point of view of a young boy, written by Irish novelist John Boyne. Unlike the months of planning Boyne devoted to his other books, he said that he wrote the entire first draft of  The Boy in the Striped Pyjamas in two and a half days, barely sleeping until he got to the end. As of March 2010, the novel had sold more than five million copies around the world. It was published as The Boy in the Striped Pajamas in the United States to go along with the traditional American spelling of the word. In both 2007 and 2008, it was the best selling book of the year in Spain. It has also reached number two on the New York Times bestseller list, as well as in the UK, Ireland, and Australia.PlotBruno is a 9-year-old boy growing up during World War II in Berlin. He lives in a huge house with his loving parents, his twelve-year-old sister Gretel (whom he refers to as a Hopeless Case), and maidservants. His father is a high-ranking SS officer who, after a visit from Adolf Hitler and Eva Braun, is promoted to Commandant, and to Bruno's dismay, the family has to move away to a place called \"Out-With\" (which turns out to be Auschwitz Concentration Camp)Bruno finds out he is not allowed to explore the back of the banana house or its surroundings. From curiosity and boredom, he decides to explore anyway. He spots a boy on the other side of the fence. Excited that there might be a boy his age, Bruno introduces himself and finds out the Jewish boy's name is Shmuel. Shmuel and his family were brought here, broken apart from each other and forced to work in Auschwitz. Almost every day, the two boys meet at the same spot. Soon, they become best friends, so similar, they are basically the same person in different circumstances, one a Polish Jew, the other a German. Over the course of the book, Bruno shows a great deal of naïvety whilst Shmuel seems to have more knowledge, as he has felt the suffering first-hand.",
+  "likes": 206201,
+  "link": "http://www.facebook.com/pages/The-Boy-in-the-Striped-Pyjamas/109395905753243",
+  "name": "The Boy in the Striped Pyjamas",
+  "were_here_count": 0,
+  "talking_about_count": 319,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "111994392146832",
+  "category": "Movie",
+  "description": "O Brother, Where Art Thou? is a 2000 comedy film written, produced, edited and directed by Joel and Ethan Coen, and starring George Clooney, John Turturro, Tim Blake Nelson, with John Goodman, Holly Hunter and Charles Durning in supporting roles. Set in 1937 rural Mississippi during the Great Depression, the film's story is a modern satire loosely based on Homer\u2019s Odyssey. The title of the film is a reference to the 1941 film Sullivan's Travels, in which the protagonist (a director) wants to film a fictional book about the Great Depression called O Brother, Where Art Thou?.Much of the music used in the film is period folk music, including that of Virginia bluegrass singer Ralph Stanley. The movie was one of the first to extensively use digital color correction, to give the film a sepia-tinted look. The film received positive reviews and the American folk music soundtrack won a Grammy for Album of the Year in 2001. The original band soon became popular after the film release and the country and folk musicians who were dubbed into the film, such as John Hartford, Alison Krauss, Emmylou Harris, Gillian Welch, Chris Sharp and others, joined together to perform the music from the film in a Down from the Mountain concert tour which was filmed for TV and DVD.",
+  "likes": 381471,
+  "link": "http://www.facebook.com/pages/O-Brother-Where-Art-Thou/111994392146832",
+  "name": "O Brother, Where Art Thou?",
+  "were_here_count": 0,
+  "talking_about_count": 969,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Science Fantasy, Action-Comedy, Techno Thriller",
   "plot_outline": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr Zorg at bay.",
@@ -587,7 +651,7 @@
   "username": "TheZF1",
   "category": "Movie",
   "directed_by": "Luc Besson",
-  "likes": 130156,
+  "likes": 130155,
   "name": "The Fifth Element",
   "produced_by": "Patrice Ledoux",
   "release_date": "9 May 1997",
@@ -604,7 +668,7 @@
   "id": "144225625365",
   "category": "Movie",
   "username": "ItMightGetLoud",
-  "likes": 96107,
+  "likes": 96109,
   "name": "It Might Get Loud",
   "release_date": "Now Available On Blu-ray & DVD! ",
   "were_here_count": 0,
@@ -612,11 +676,18 @@
   "talking_about_count": 113,
   "starring": "The Edge, Jimmy Page and Jack White"
 }
-{"error": {
-  "message": "Unknown path components: /108456119178987",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "108456119178987",
+  "category": "Movie",
+  "description": "Memoirs of a Geisha is a 2005 film adaptation of the novel of the same name, produced by Steven Spielberg's Amblin Entertainment and Spyglass Entertainment and by Douglas Wick's Red Wagon Productions. The picture was directed by Rob Marshall and was released in the United States on December 9, 2005 by Columbia Pictures and DreamWorks Pictures. It stars Zhang Ziyi, Ken Watanabe, Gong Li, Michelle Yeoh, Youki Kudoh, and Suzuka Ohgo. Ohgo plays the younger Sayuri in the movie, which was filmed in southern and northern California and in several locations in Kyoto, including the Kiyomizu temple and the Fushimi Inari shrine, the last film by Spyglass Entertainment teamed up with Buena Vista International for the Worldwide, before StudioCanal UK took over.",
+  "likes": 700387,
+  "link": "http://www.facebook.com/pages/Memoirs-of-a-Geisha/108456119178987",
+  "name": "Memoirs of a Geisha",
+  "were_here_count": 0,
+  "talking_about_count": 1124,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "website": "http://www.divx.com",
   "link": "http://www.facebook.com/DivXLLC",
@@ -639,11 +710,18 @@
   "is_published": true,
   "talking_about_count": 180
 }
-{"error": {
-  "message": "Unknown path components: /109709792388073",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "109709792388073",
+  "category": "Movie",
+  "description": "The Wizard of Oz is a 1939 American musical fantasy adventure film produced by Metro-Goldwyn-Mayer, and the most well-known and commercial adaptation based on the 1900 novel The Wonderful Wizard of Oz by L. Frank Baum, the film stars Judy Garland; Terry the dog, billed as Toto; Ray Bolger, Jack Haley, Bert Lahr, and Frank Morgan, with Billie Burke, Margaret Hamilton, Charley Grapewin, Clara Blandick, and the Singer Midgets as the Munchkins, with Pat Walshe as leader of the flying monkeys. Notable for its use of Technicolor, fantasy storytelling, musical score, and unusual characters, over the years it has become one of the best known of all films and part of American popular culture. It also featured what may be the most elaborate use of character makeups and special effects in a film up to that time.Although the film received largely positive reviews, it was not a box office success on its initial release, earning only $3,017,000 on a $2,000,000 budget. The film was MGM's most expensive production up to that time, but its initial release failed to recoup the studio's investment. Subsequent re-releases made up for that, however. It was nominated for six Academy Awards, including Best Picture. It lost that award to Gone with the Wind, but won two others, including Best Original Song for \"Over the Rainbow\". The song was ranked first in the AFI's 100 Years...100 Songs list.",
+  "likes": 537769,
+  "link": "http://www.facebook.com/pages/The-Wizard-of-Oz/109709792388073",
+  "name": "The Wizard of Oz",
+  "were_here_count": 0,
+  "talking_about_count": 487,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Comedy",
   "plot_outline": "Pirate Radio is the high-spirited story of how 8 DJs love affair with Rock n Roll changed the world forever. In the 1960s this group of rogue DJs, on a boat in the middle of the Northern Atlantic, played rock records and broke the law all for the love of music. The songs they played united and defined an entire generation and drove the British government crazy. By playing Rock n Roll they were standing up against the British government who did everything in their power to shut them down. The band of rebels is lead by The Count, played by the Academy Award Winning Philip Seymour Hoffman, Quentin the boss of Radio Rock, Gavin the greatest DJ in Britian, Midnight Mark, Doctor Dave and Young Carl who comes of age amidst the chaos of sex, drugs and rock n roll. The film features an unbelievable selection of music including The Rolling Stones, Beach Boys, Dusty Springfield, The Who, Jimi Hendrix, Smokey Robinson, David Bowie, Otis Redding, Cat Stevens just to name a few. The film is laugh out loud funny and speaks to the rock n roll rebel in all of us. ",
@@ -661,7 +739,7 @@
   "category": "Movie",
   "username": "PirateRadioMovie",
   "directed_by": "Richard Curtis ",
-  "likes": 78747,
+  "likes": 78748,
   "name": "Pirate Radio",
   "release_date": "November 13, 2009",
   "were_here_count": 0,
@@ -685,7 +763,7 @@
   "username": "soundcitymovie",
   "directed_by": "Dave Grohl ",
   "description": "(May 1, 2012, Los Angeles, CA) \u2013 Confirming widely circulated rumors, Dave Grohl of Foo Fighters and Nirvana announced today that he will direct and produce a feature Documentary film, SOUND CITY about the infamous recording studio in Van Nuys, California. The film was conceived by Grohl after purchasing the legendary Neve 8028 recording console from Sound City Studios last year. The console, built in 1972, is considered by many to be the crown jewel of analog recording equipment, having recorded such artists as Neil Young, Fleetwood Mac, Tom Petty, Cheap Trick, Guns and Roses, Fear, Nirvana, Rage Against the Machine, Slipknot, Nine Inch Nails, Metallica, and countless other musical legends over the past 40 years.  \n\nThrough interviews with the artists and producers that created decades of musical history at Sound City, the film will showcase the amazing history of the studio, focus on the albums recorded there that went on to change the world, discuss the human element of music in an age of technology, and feature performances from many of the artists that called it \"home\".\n\nGrohl's personal connection to Sound City began with the 1991 recording of Nirvana's breakthrough album, \"Nevermind\". Selling over 30 million copies worldwide, \u201cNevermind\u201d changed the entire musical landscape and forever altered the course of Dave Grohl's life.\n\nRoswell Films, a division of the Roswell Records label that releases Foo Fighters music, will distribute the film. Key personnel involved with the film include Producer/Director Dave Grohl; Editor Paul Crowder (Dogtown & Z Boys, Once In a Lifetime, Riding Giants); and Writer Mark Monroe (The Cove, Once In a Lifetime, The Tillman Story). The film is also being produced in conjunction with Jim Rota, John Ramsay, and Therapy studios.\n\nTHE VIEWS OR OPINIONS EXPRESSED IN THIS DOCUMENTARY AND THE CONTEXT IN WHICH FILM FOOTAGE AND IMAGES ARE USED, DO NOT REFLECT THE VIEWS OR POLICY OF, NOR IMPLY APPROVAL, ENDORSEMENT OR ANY AFFILIATION WITH SOUND CITY,  INC. OR SOUND CITY STUDIOS.\n ",
-  "likes": 149205,
+  "likes": 149208,
   "name": "Sound City Movie",
   "written_by": " Mark Monroe",
   "produced_by": "Roswell Films ",
@@ -726,7 +804,7 @@
   "directed_by": "Nirvan Mullick",
   "awards": "Dan Eldon Creative Activist Award\nBig Ideas Fest Social Innovation in Action Award\nMy Hero Film Fest Award Winner",
   "description": "Caine Monroy, a 9-year-old boy in East LA, spent his summer building an elaborate cardboard arcade in his dad's auto parts store.  All summer went by, and he never had a customer, until the last day of summer when a filmmaker named Nirvan stopped in to buy a door handle for his car. Caine invited Nirvan to play his arcade, and Nirvan bought a $2 \"FunPass\" to get 500 turns, and became Caine's first customer. Nirvan was so inspired by Caine's creativity, that he decided to make a film about Caine's Arcade. When he learned from Caine's dad that he was Caine's first and only customer, Nirvan organized a surprise flashmob of customers to make Caine's day.  Watch \"Caine's Arcade\" and \"Caine's Arcade 2\" to see what happened next: www.CainesArcade.com \n\nCaine's Arcade has been viewed over 8 million times, raised over $235,000 for a Scholarship Fund for Caine, launched the non-profit Imagination Foundation, and an annual Global Cardboard Challenge.\n\nJoin a global movement to foster creative play and entrepreneurship in kids like Caine everywhere. Take our Global Cardboard Challenge and share/support the Imagination Foundation:\nwww.CardboardChallenge.com \nwww.imagination.is\n\nA film by Nirvan Mullick: \nhttp://www.twitter.com/nirvan\nhttp://facebook.com/nirvan.mullick\n\nProduced by Interconnected: www.facebook.com/interconnected.is",
-  "likes": 137113,
+  "likes": 137114,
   "name": "Caine's Arcade",
   "release_date": "April 9, 2012",
   "produced_by": "www.facebook.com/interconnected.is",
@@ -753,7 +831,7 @@
   "username": "thehobbitmovies",
   "category": "Movie",
   "directed_by": "Peter Jackson",
-  "likes": 185266,
+  "likes": 185265,
   "name": "The Hobbit",
   "produced_by": "Warner Bros, MGM,  New Line Cinema, Wingnut Films",
   "release_date": "The Hobbit \"An Unexpected Journey\"- 2012 & The Hobbit \"There and Back Again\" - 2013",
@@ -762,11 +840,18 @@
   "talking_about_count": 670,
   "starring": "Ian Mckellen, Martin Freeman, Richard Armitage,  Andy Serkis, Stephen Hunter, Cate Blanchett, James Nesbitt"
 }
-{"error": {
-  "message": "Unknown path components: /104047109632525",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "104047109632525",
+  "category": "Tv show",
+  "description": "Merlin is a television miniseries which originally aired in 1998 that retells the legend of King Arthur from the perspective of the wizard Merlin. Sam Neill stars in the title role in a story that covers not only the rise and fall of Camelot but also the phase in the legendary history of Britain that precedes it.The film deviates from more traditional versions of the legend, notably by including new characters such as Queen Mab and by keeping Merlin through the whole reign of King Arthur over Britain (whereas in older versions Merlin left earlier on in the king's reign). The film was followed by a sequel in 2006, Merlin's Apprentice, which was more loosely connected with traditional Arthurian legend.PlotThe film opens with an aged Merlin narrating his story. Britain faces civil war and the Saxon invasion. Meanwhile, the spread of Christianity has weakened the power of the fey goddess Queen Mab (Miranda Richardson). Coupled with the destruction of both Christian and pagan holy sites due to the turmoil, Mab's world of magic faces imminent extinction. While her sister, the Lady of the Lake (Richardson in a dual role) accepts the inevitable, Mab vows to resist.",
+  "likes": 988019,
+  "link": "http://www.facebook.com/pages/Merlin/104047109632525",
+  "name": "Merlin",
+  "were_here_count": 0,
+  "talking_about_count": 1402,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "plot_outline": "Bound by Honor\n\nA gangland feature set in the Chicano culture of East Los Angeles, which traces the lives of three cousins who were raised as brothers and the separate paths they are forced to follow. One searches for the truth in law, one expresses his passion through art, and one finds power in prison. Through it all, family and honour keep their lives intertwined as each strives to find his own personal truth.\n\nBased on the true life experiences of poet Jimmy Santiago Baca, the film focuses on half-brothers Paco and Cruz, and their bi-racial cousin Miklo. It opens in 1972, as the three are members of an East L.A. gang known as the \"Vatos Locos\", and the story focuses on how a violent crime and the influence of narcotics alter their lives. Miklo is incarcerated and sent to San Quentin, where he makes a \"home\" for himself. Cruz becomes an exceptional artist, but a heroin addiction overcomes him with tragic results. Paco becomes a cop and an enemy to his \"carnal\", Miklo.\n\nQuotes:\nCruz: For 10 years, I've been star-trekking through the Twilight Zone.\n\n--------------------------------------------------------------------------------\nCruz: You think you used your brotherhood up like a shot of tequila?\n\n--------------------------------------------------------------------------------\nMiklo : When you expect nothing and get everything, that's destiny.\n\n--------------------------------------------------------------------------------\nPrison Librarian: Cocaine is America's cup of coffee.\n\n--------------------------------------------------------------------------------\nMontana: You speak Spanish, so do parrots.\n\n--------------------------------------------------------------------------------\nPopeye: Hey, Cinderella, go find yourself a fella, you're on the clock bitch and midnight is coming, you got the wrong man.\n\n--------------------------------------------------------------------------------\nMiklo: I may be white from the outside, but I'm brown on the inside, TO THE BONE.\n\n--------------------------------------------------------------------------------\nMontana: What do you want?\nMiklo: I thought you wanted it.\nMontana: What?\nMiklo: My chop.\nMontana: I don't want his pork chop.\n[grabs apple from Milko's tray]\nMontana: I want his life.\n\n--------------------------------------------------------------------------------\nPaco: You wanna dance? I know a tune, it's called stick and cut.\n[slashes spider across cheek]\n\n--------------------------------------------------------------------------------\nCruz: [taking a shot] Take away the pain...\n\n--------------------------------------------------------------------------------\nPaco: What a dick\nRollie McCann: Dick and Asshole that's all you ever call me. What is my name Dick Asshole? ",
   "screenplay_by": "Ross Thomas (story) ; Jimmy Santiago Baca (screenplay) ",
@@ -784,7 +869,7 @@
   "username": "NoTortillas",
   "directed_by": "Taylor Hackford ",
   "awards": "Tokyo International Film Festival\n1993 Best Director Award\nTaylor Hackford ",
-  "likes": 263001,
+  "likes": 263046,
   "name": "Blood In Blood Out Movie",
   "produced_by": "Hollywood Pictures",
   "were_here_count": 0,
@@ -808,28 +893,68 @@
   "category": "Movie",
   "username": "vetealavershoficial",
   "directed_by": "Roberto \"Darkar\" Alatriz",
-  "likes": 6719164,
+  "likes": 6719301,
   "name": "Vete A La Versh",
   "release_date": "9 de Febrero 2009",
   "were_here_count": 0,
   "is_published": true,
   "talking_about_count": 46159
 }
-{"error": {
-  "message": "Unknown path components: /225988080854118",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /109723955712710",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /333964890415",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "genre": "Action, Adventure, Fantasy",
+  "plot_outline": "The storyline alternates between present day, in which the X-Men fight Mystique\u2019s Brotherhood of Evil Mutants, and a future timeline caused by the X-Men\u2019s failure to prevent the Brotherhood from assassinating Senator Robert Kelly. In this future universe, Sentinels rule the United States, and mutants live in internment camps. The present-day X-Men are forewarned of the possible future by a future version of their teammate Kitty Pryde, whose mind traveled back in time and possessed her younger self to warn the X-Men.",
+  "studio": "20th Century Fox",
+  "screenplay_by": "Simon Kinberg ",
+  "link": "http://www.facebook.com/pages/X-Men-Days-of-Future-Past-2014/225988080854118",
+  "about": "The X-Men must travel in time to change a major historical event that could globally impact on man and mutant kind.",
+  "id": "225988080854118",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-prn1/s720x720/29011_353242348128690_933500536_n.jpg",
+    "cover_id": 353242348128690,
+    "offset_y": 73,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "directed_by": "Bryan Singer",
+  "description": "Upcoming sequel to X-Men: First Class (2011)",
+  "likes": 25156,
+  "name": "X-Men: Days of Future Past (2014)",
+  "written_by": "Matthew Vaughn",
+  "produced_by": "Richard Donner, Simon Kinberg, Lauren Shuler Donner, Bryan Singer, Matthew Vaughn",
+  "release_date": "July 18th, 2014",
+  "were_here_count": 0,
+  "talking_about_count": 10769,
+  "is_published": true,
+  "starring": "Peter Dinklage, James McAvoy, Michael Fassbender, Jennifer Lawrence, Hugh Jackman, Patrick Stewart, Ian McKellan"
+}
+{
+  "id": "109723955712710",
+  "category": "Tv show",
+  "description": "Tin Man is a 2007 four and a half hour miniseries co-produced by RHI Entertainment and Sci Fi Channel original pictures that was broadcast in the United States on the Sci Fi Channel in three parts. The first part aired on December 2, and the remaining two parts airing on the following nights. It was released to DVD on March 11, 2008; the same year it was rebroadcast in the United Kingdom, Australia, and New Zealand. Starring Zooey Deschanel, Neal McDonough, Alan Cumming, Raoul Trujillo, Kathleen Robertson, and Richard Dreyfuss, the miniseries is a continuation of the classic story The Wonderful Wizard of Oz, with science fiction and additional fantasy elements added. It focuses on the adventures of a small-town waitress named DG who is pulled into a magical realm called the O.Z., ruled by the tyrannical sorceress Azkadellia. Together with her companions Glitch, Raw, and Cain, DG journeys to uncover her lost memories, find her true parents, and foil Azkadellia's plot to trap the O.Z. in eternal darkness.Costing $20 million to produce, the first part of miniseries was the highest-rated program in its timeslot, with 6.4 million viewers; the miniseries itself would be the highest-rated miniseries of 2007. It was nominated for nine Emmy awards, winning one, and was also nominated for a Critics' Choice Award. Critics gave it mixed reviews, with some praising the acting, soundtrack, and visual effects, while others found it overly grim and bleak.",
+  "likes": 25617,
+  "link": "http://www.facebook.com/pages/Tin-Man/109723955712710",
+  "name": "Tin Man",
+  "were_here_count": 0,
+  "talking_about_count": 17,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "333964890415",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/380732_10151456627440416_1562450773_n.jpg",
+    "cover_id": "10151456627440416",
+    "offset_y": 36,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "likes": 14740,
+  "link": "http://www.facebook.com/pages/Kung-Pow/333964890415",
+  "name": "Kung Pow",
+  "were_here_count": 0,
+  "talking_about_count": 20,
+  "is_published": true
+}
 {
   "studio": "Disney\u2022Pixar",
   "genre": "Animation",
@@ -850,7 +975,7 @@
   "directed_by": "Lee Unkrich",
   "awards": "Winner of 2 Academy Awards®\n- Best Animated Feature (Lee Unkrich)\n- Best Original Song - \u201cWe Belong Together\" by Randy Newman",
   "description": "Welcome to the official Disney page for Pixar's Toy Story.  Become a fan and check back often for images, quotes, and other updates from Buzz, Woody, Mr. Potato Head and the rest of the Toy Story 3 gang.\n_______________________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.\n",
-  "likes": 32630917,
+  "likes": 32631408,
   "name": "Toy Story",
   "produced_by": "Darla K. Anderson and John Lasseter",
   "release_date": "18 June, 2010",
@@ -879,7 +1004,7 @@
   "directed_by": "Christopher Nolan",
   "awards": "(2009) Oscar -  Best Performance by an Actor in a Supporting Role\n(2009) Saturn Award - Best Action/Adventure/Thriller Film\n(2009) Saturn Award - Best Supporting Actor\n(2009) Saturn Award - Best Writing\n(2009) Saturn Award - Best Music\n(2009) Saturn Award - Best Special Effects",
   "description": "Get \"The Dark Knight\" at WB Shop: http://bit.ly/TDKOfficial",
-  "likes": 16338707,
+  "likes": 16339065,
   "name": "Batman: The Dark Knight",
   "written_by": "Bob Kane",
   "produced_by": "Emma Thomas, Charles Roven",
@@ -888,11 +1013,19 @@
   "is_published": true,
   "starring": "Christian Bale, Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, Morgan Freeman "
 }
-{"error": {
-  "message": "Unknown path components: /114702191876250",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "114702191876250",
+  "category": "Movie",
+  "description": "The Saga of Darren Shan is a young adult 12 part book series written by Darren Shan about the struggle of a boy who has become involved in the world of vampires. As of October 2008, the book is published in 33 countries around the world, in 30 different languages. A movie based on the first three books in the series was released in theaters October 23, 2009. Harper Collins Audio have also released CD recordings of the first three books, read by Rupert Degas.BackgroundDarren Shan, whose real name is Darren O'Shaughnessy, wrote and published the first book of the series, Cirque du Freak, as a side project between two adult books. Cirque du Freak received good reviews and Warner Bros. bought the movie rights in a seven figure deal prior to publication, though the film was never made and the film rights returned to Shan after three years. Now, Universal Pictures own the movie rights and a feature film was released in theaters October 23, 2009.",
+  "likes": 23462,
+  "link": "http://www.facebook.com/pages/Saga-of-Darren-Shan/114702191876250",
+  "name": "Saga of Darren Shan",
+  "written_by": "Darren Shan",
+  "were_here_count": 0,
+  "talking_about_count": 1,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "studio": "Warner Broas. & Legendary Pictures",
   "genre": "Sci-Fi, Action",
@@ -913,7 +1046,7 @@
   "directed_by": "Guillermo del Toro",
   "awards": "TBA",
   "description": "From acclaimed filmmaker Guillermo del Toro comes \u201cWarner Bros. Pictures and Legendary Pictures Pacific Rim.\u201d \nWhen legions of monstrous creatures, known as Kaiju, started rising from the sea, a war began that would take millions of lives and consume humanity\u2019s resources for years on end. To combat the giant Kaiju, a special type of weapon was devised: massive robots, called Jaegers, which are controlled simultaneously by two pilots whose minds are locked in a neural bridge. But even the Jaegers are proving nearly defenseless in the face of the relentless Kaiju. On the verge of defeat, the forces defending mankind have no choice but to turn to two unlikely heroes\u2014a washed up former pilot (Charlie Hunnam) and an untested trainee (Rinko Kikuchi)\u2014who are teamed to drive a legendary but seemingly obsolete Jaeger from the past. Together, they stand as mankind\u2019s last hope against the mounting apocalypse.",
-  "likes": 76094,
+  "likes": 76131,
   "name": "Pacific Rim",
   "produced_by": "Thomas Tull, Jon Jashni and Mary Parent",
   "release_date": "July 12th, 2013",
@@ -922,11 +1055,6 @@
   "is_published": true,
   "starring": "Charlie Hunnam (TV\u2019s \u2018Sons of Anarchy\u2019), Idris Elba (\u2018Thor\u2019), Rinko Kikuchi (\u2018The Brothers Bloom\u2019), Charlie Day (\u2018Horrible Bosses\u2019), and Ron Perlman (the \u2018Hellboy\u2019 films)."
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
 {
   "plot_outline": "Directed by Oscar® Nominee David Fincher, this \u201cdarkest of dark satires\u201d  (Newsweek) is \u201can uncompromising American classic\u201d (Rolling Stone) starring Brad Pitt and Edward Norton. Norton gives a riveting performance\nas a label-obsessed insomniac on the verge of going postal. Befriending a scummy soap salesman (Pitt), he embarks on an existential crusade that takes them both to the brutal, raw heights of their manhood. \n\nAlso starring Helena Bonham Carter as the sexy psycho who comes between them, Fight Club is a \u201cbold, inventive, sustained adrenaline rush of a movie\u201d (Variety)\nthat may leave you feeling bruised and bloodied\u2026but also\ninvigorated and alive.",
   "studio": "20th Century Fox",
@@ -944,7 +1072,7 @@
   "category": "Movie",
   "username": "FightClub",
   "directed_by": "David Fincher",
-  "likes": 10142636,
+  "likes": 10142860,
   "name": "Fight Club",
   "release_date": "November 17, 2009 on Blu-Ray",
   "were_here_count": 0,
@@ -967,7 +1095,7 @@
   "category": "Product/service",
   "username": "Marvel",
   "description": "This Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 5653483,
+  "likes": 5653677,
   "name": "Marvel",
   "were_here_count": 0,
   "company_overview": "With a library of over 8,000 characters, Marvel Entertainment, LLC is one of the world's most prominent character-based entertainment companies. Rooted in the creative success of over 70 years of comic book publishing, Marvel's characters have seen success in a wide variety of other mediums, including movies, television and video games.",
@@ -975,11 +1103,26 @@
   "products": "Digital Comics: http://www.marvel.com/digital_comics/\nCustomer Service: http://marvel.com/help\nMarvel Kids: http://www.marvelkids.com\nComics: http://www.marvel.com/comics/\nPrint Subscriptions:  http://subscriptions.marvel.com\nMovies: http://www.marvel.com/movies\nGames: http://marvel.com/news/games\nToys: http://marvel.com/news/toys\nYouTube: http://www.youtube.com/marvel\nTwitter: http://twitter.com/Marvel\nMySpace: http://www.myspace.com/marvelentertainment",
   "talking_about_count": 91624
 }
-{"error": {
-  "message": "Unknown path components: /117215521672319",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "genre": "Comic Book Movie",
+  "studio": "DC Comics Entertainment & Marvel Studio",
+  "link": "http://www.facebook.com/pages/DC-Comics-Marvel-Comic-Book-Movies/117215521672319",
+  "about": "Welcome on DC Comics & Marvel Comic Book Movies. News on Batman, X-Men, Fantastic Four, Captain America, Green Arrow, Thor, Watchmen, Ironman, The Avengers, Wolverine, Ghost Rider, The Flash, Spiderman, Green Lantern, Superman, Hulk, Daredevil, Deadpool..",
+  "id": "117215521672319",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash4/s720x720/3330_427798637280671_1946975213_n.jpg",
+    "cover_id": 427798637280671,
+    "offset_y": 30,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "name": "DC Comics &  Marvel Comic Book Movies",
+  "likes": 5591,
+  "release_date": "The Avengers May 2012, The Amazing Spiderman July 2012, Batman: The Dark Knight Rises July 2012, Ironman III May 2013, Superman: Man Of Steel June 2013, Thor II May 2014, Green Lantern II June 2014, Captain America II June 2014, X Men II July 2014.",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 41
+}
 {
   "genre": "Action, Science Fiction ",
   "plot_outline": "Acclaimed filmmaker Christopher Nolan directs an international cast in \u201cInception,\u201d an original sci-fi actioner that travels around the globe and into the intimate and infinite world of dreams.\n\nDom Cobb (Leonardo DiCaprio) is a skilled thief, the best in the dangerous art of extraction: stealing valuable secrets from deep within the subconscious during the dream state when the mind is at its most vulnerable.  Cobb\u2019s rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved.  Now Cobb is being offered a chance at redemption.  One last job could give him his life back but only if he can accomplish the impossible\u2014inception.  Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse; their task is not to steal an idea but to plant one.  If they succeed, it could be the perfect crime.\n\nBut no amount of careful planning or expertise can prepare the team for the dangerous enemy that seems to predict their every move.  An enemy that only Cobb could have seen coming.  \n\nThis summer, your mind is the scene of the crime.\n\nWarner Bros. Pictures presents, in association with Legendary Pictures, a Syncopy Production, a film by Christopher Nolan, \u201cInception.\u201d\n\nThe film stars three-time Academy Award® nominee Leonardo DiCaprio (\u201cBlood Diamond,\u201d \u201cThe Aviator\u201d), Academy Award® nominee Ken Watanabe (\u201cThe Last Samurai\u201d), Joseph Gordon-Levitt (\u201c500 Days of Summer\u201d), Oscar® winner Marion Cotillard (\u201cLa Vie en Rose\u201d), Academy Award® nominee Ellen Page (\u201cJuno\u201d), Tom Hardy (\u201cRocknRolla,\u201d \u201cBronson\u201d), Cillian Murphy (\u201cBatman Begins\u201d), Tom Berenger (\u201cTraining Day\u201d), Dileep Rao (\u201cAvatar\u201d), and two-time Oscar® winner Michael Caine (\u201cHannah and Her Sisters,\u201d \u201cThe Cider House Rules\u201d).\n\n\u201cInception\u201d was written and directed by Oscar® nominee Christopher Nolan (\u201cMemento,\u201d \u201cThe Dark Knight\u201d), who also produced the film with Emma Thomas.  Chris Brigham and Thomas Tull served as executive producers, with Jordan Goldberg co-producing.\n\nNolan\u2019s behind-the-scenes collaborators included three-time Oscar®-nominated director of photography Wally Pfister (\u201cThe Dark Knight,\u201d \u201cThe Prestige,\u201d \u201cBatman Begins\u201d), production designer Guy Hendrix Dyas (\u201cIndiana Jones and the Kingdom of the Crystal Skull,\u201d \u201cElizabeth: The Golden Age\u201d), two-time Oscar®-nominated editor Lee Smith (\u201cThe Dark Knight,\u201d \u201cMaster and Commander: The Far Side of the World\u201d), Oscar®-nominated costume designer Jeffrey Kurland (\u201cBullets Over Broadway,\u201d \u201cCollateral\u201d), and Oscar®-nominated special effects supervisor Chris Corbould (\u201cThe Dark Knight\u201d).  The music is by Academy Award®-winning composer Hans Zimmer (\u201cThe Dark Knight,\u201d \u201cThe Lion King\u201d).\n\nConcurrently with the film\u2019s nationwide theatrical release, \u201cInception: The IMAX Experience\u201d will be released in select IMAX® theatres.  \u201cInception\u201d will be digitally re-mastered into the unparalleled image and sound quality of The IMAX Experience® through proprietary IMAX DMR® technology.  With crystal clear images, laser-aligned digital sound and maximized field of view, IMAX provides the world\u2019s most immersive movie experience. \n\nOpening nationwide on July 16, 2010, \u201cInception\u201d has been rated PG-13 by the MPAA for sequences of violence and action throughout.\n\n",
@@ -1000,7 +1143,7 @@
   "directed_by": "Christopher Nolan",
   "awards": "2010 - AFI Film Award: AFI Movie of the Year\n2011 - Oscar: Best Achievement in Cinematography, Best Achievement in Sound Editing, Best Achievement in Sound Mixing, Best Achievement in Visual Effects\n2011\t - Saturn Award: Best Director, Best Music, Best Science Fiction Film, Best Special Effects, Best Writing\n2011\t - BAFTA Film Award\t: Best Production Design, Best Sound, Best Special Visual Effects\n2011\t - Critics Choice Award: Best Action Movie, Best Art Direction, \nBest Cinematography, Best Editing, Best Sound, Best Visual Effects",
   "description": "Get\"Inception\" at WBShop.com - http://bit.ly/inc3pt10n\n\nhttp://mind-crime.com",
-  "likes": 11583990,
+  "likes": 11584157,
   "name": "Inception",
   "written_by": "Christopher Nolan",
   "produced_by": "Christopher Nolan, Emma Thomas",
@@ -1009,21 +1152,42 @@
   "is_published": true,
   "starring": "Leonardo DiCaprio, Cillian Murphy, Ellen Page, Marion Cotillard, Joseph Gordon-Levitt"
 }
-{"error": {
-  "message": "Unknown path components: /108443769186095",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /114647015219021",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /107622452593541",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "108443769186095",
+  "category": "Movie",
+  "description": "Pirates of the Caribbean: The Curse of the Black Pearl is a 2003 American fantasy adventure film based on the Pirates of the Caribbean ride at Disney theme parks. It was directed by Gore Verbinski and produced by Jerry Bruckheimer. The story follows blacksmith Will Turner.Jay Wolpert developed a script based on the theme park ride in 2001, and Stuart Beattie rewrote it in early 2002. Around that time, producer Jerry Bruckheimer became involved in the project; he had Ted Elliott and Terry Rossio work on the script, adding the supernatural curse to the storyline. Filming took place from October 2002 to March 2003 in Saint Vincent and the Grenadines and on sets constructed around Los Angeles, California.",
+  "likes": 13391,
+  "link": "http://www.facebook.com/pages/Pirates-of-the-Caribbean-Curse-of-the-Black-Pearl/108443769186095",
+  "name": "Pirates of the Caribbean: Curse of the Black Pearl",
+  "were_here_count": 0,
+  "talking_about_count": 43,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "114647015219021",
+  "category": "Movie",
+  "description": "Kung Pow! Enter the Fist is a 2002 American comedy film that parodies Hong Kong action cinema. Starring Steve Oedekerk, it uses footage from the 1976 Hong Kong martial arts movie Tiger and Crane Fist (a.k.a. Savage Killers), along with new footage shot by Oedekerk, to create an original, unrelated plot.PlotThe movie focuses on a character simply named The Chosen One, who is wandering from town to town searching for the man who killed his family on the night he was born, under orders from the mysterious Evil Council. His talents for the martial arts were already honed at his infancy, and only vastly improved over time, giving him capability for legendary fighting abilities. He soon drifts into another town, and consults Master Tang, a very ill and slightly deranged sifu, for further training. The master is skeptical at first, but when The Chosen One shows him his identifying mark (his tongue has a living face on it named Tonguey), Master Tang agrees to allow him to train at his dojo. He also introduces him to his two students: Wimp Lo, a young man who was trained wrong as a joke, and Ling, who Master Tang bluntly states will have feelings towards The Chosen One.The Chosen One begins training showing cartoon-like feats of strength, while Wimp Lo deems him an enemy out of jealousy. Soon The Chosen One learns that Master Pain, the man who tried to kill him as a newborn, has just arrived in town, so The Chosen One goes to find him. Master Pain draws a crowd and demonstrates his powerful skill: undergoing a rigorous beating by his henchmen without flinching in the slightest, then throwing the henchman to the ground in one move. Having won the support of the town's mayor, Master Pain randomly changes his name to Betty. Soon after, The Chosen One hires people to beat him so he can gain power to best Betty, but this backfires and he is immediately knocked unconscious. When he wakes up, a mysterious woman with a single large breast flies down next to him and introduces herself as Whoa. Whoa warns him it is not his time to fight Betty, then after briefly performing martial arts playfully with The Chosen One, flies back off into the night sky.",
+  "likes": 4899,
+  "link": "http://www.facebook.com/pages/Kung-Pow/114647015219021",
+  "name": "Kung-Pow",
+  "were_here_count": 0,
+  "talking_about_count": 0,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "107622452593541",
+  "category": "Movie",
+  "description": "Transformers is a series of American science fiction action films directed by Michael Bay, and based on the toys created by Hasbro and Tomy. The first film, Transformers, was released in 2007, the second, Transformers: Revenge of the Fallen, in 2009, and the third, Transformers: Dark of the Moon in 2011. Despite Bay's original confirmation on Dark of the Moon being his final installment in the franchise, Hasbro's CEO Brian Goldner expressed his hopes for further films to be made with or without Bay; a fourth film has thus been confirmed, with Bay returning to direct, aiming for a 2014 release. To date, the series has been distributed by Paramount Pictures, DreamWorks, and United International Pictures. The series has received mixed critical reception, with criticism focusing on the thin plots, undeveloped characters, crude humor and the lengths of the films. However, many critics praised the visuals and action sequences, and it is currently the 12th highest-grossing film series and the 4th highest-grossing when averaged to gross per film, behind the The Lord of the Rings, Harry Potter, and Pirates of the Caribbean film series.",
+  "likes": 1602,
+  "link": "http://www.facebook.com/pages/Transformers-film-series/107622452593541",
+  "name": "Transformers (film series)",
+  "were_here_count": 0,
+  "talking_about_count": 33,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "link": "http://www.facebook.com/Area407",
   "about": "WATCH IT ON DEMAND + DIGITAL April 27th from IFC Midnight!    ",
@@ -1038,7 +1202,7 @@
   "username": "Area407",
   "directed_by": "DALE FABRIGAR and EVERETTE WALLIN",
   "description": "AREA 407 features footage captured by two passengers on a flight on New Years Eve, two teenage sisters filming themselves and their fellow travelers. When the plane experiences severe turbulence panic and terror ensues until the plane ultimately crashes in a remote government-testing reserve. The survivors, bloody and disoriented, are then insistently pursued in the darkness by unknown predators that, unbeknownst to them, are part of the government's top-secret Mesa Experiment. The group of individuals that are among them are diverse and struggle with a common plan to move forward with and stay alive. \n",
-  "likes": 1105,
+  "likes": 1106,
   "name": "Area 407",
   "written_by": "ROBERT SHEPYER  ",
   "were_here_count": 0,
@@ -1062,7 +1226,7 @@
   "category": "Movie",
   "username": "Tron",
   "description": "There is a war raging on the Grid. Join the uprising. \n\n\n_________________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 5898162,
+  "likes": 5898298,
   "name": "Tron",
   "release_date": "TRON: Uprising premieres this June on Disney XD",
   "were_here_count": 0,
@@ -1088,7 +1252,7 @@
   "username": "superbad.film",
   "category": "Movie",
   "directed_by": "GREG MOTTOLA",
-  "likes": 6632731,
+  "likes": 6632778,
   "name": "Superbad",
   "produced_by": "JUDD APATOW",
   "release_date": "21st January 2008",
@@ -1110,11 +1274,6 @@
   "talking_about_count": 0,
   "is_published": true
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
 {
   "genre": "Horror",
   "studio": "Lionsgate",
@@ -1133,7 +1292,7 @@
   "username": "Saw",
   "directed_by": "Kevin Greutert",
   "description": "GoWatchIt: Buy, Rent, Stream YOUR MOVIE - http://bit.ly/1e6wWj3",
-  "likes": 16998090,
+  "likes": 16998256,
   "name": "Saw",
   "produced_by": "Mark Burg, Oren Koules, Gregg Hoffman",
   "were_here_count": 0,
@@ -1144,7 +1303,7 @@
   "id": "124615917702808",
   "username": "thisistheendmovie",
   "category": "Movie",
-  "likes": 7459,
+  "likes": 7460,
   "link": "http://www.facebook.com/thisistheendmovie",
   "name": "This Is The End",
   "were_here_count": 0,
@@ -1167,7 +1326,7 @@
   "category": "Movie",
   "username": "jackass",
   "directed_by": "Jeff Tremaine",
-  "likes": 28811794,
+  "likes": 28812265,
   "name": "Jackass",
   "were_here_count": 0,
   "is_published": true,
@@ -1191,7 +1350,7 @@
   "username": "xmenmovies",
   "directed_by": "Bryan Singer",
   "description": "The ultimate X-Men ensemble fights a war for the survival of the species across two time periods in X-MEN: DAYS OF FUTURE PAST. The beloved characters from the original \u201cX-Men\u201d film trilogy join forces with their younger selves from \u201cX-Men: First Class,\u201d in an epic battle that must change the past \u2013 to save our future.",
-  "likes": 9299000,
+  "likes": 9299283,
   "name": "X-Men Movies",
   "produced_by": "Todd Hallowell, Simon Kinberg, Stan Lee",
   "release_date": "May 23, 2014",
@@ -1214,7 +1373,7 @@
   "category": "Company",
   "username": "netflix",
   "name": "Netflix",
-  "likes": 4569830,
+  "likes": 4571014,
   "were_here_count": 0,
   "company_overview": "With more than 27 million streaming members in the United States, Canada, Latin America, the United Kingdom and Ireland, Netflix is the world's leading internet subscription service for enjoying movies and TV programs. Instantly watch as many TV episodes & movies as you want, for only $7.99 a month, on more than 800 different devices. For additional information, visit www.netflix.com.\n\nFor customer service, please visit our website: www.netflix.com/ContactUs\n\nFor the latest news in each territory:\nhttp://www.facebook.com/NetflixLatino\nhttp://www.facebook.com/netflixbrasil\nhttp://www.facebook.com/NetflixUK\nhttp://www.facebook.com/netflixcanada\n",
   "is_published": true,
@@ -1235,7 +1394,7 @@
   },
   "category": "Movie",
   "username": "paranormalactivity",
-  "likes": 19771351,
+  "likes": 19771737,
   "name": "Paranormal Activity",
   "release_date": "January 2014",
   "written_by": "Christopher B. Landon",
@@ -1262,7 +1421,7 @@
   "directed_by": "Tim Burton",
   "awards": "Winner of 2 Academy Awards®\n- Best Achievement in Art Direction (Robert Stromberg, Karen O'Hara)\n- Best Achievement in Costume Design (Colleen Atwood)",
   "description": "Welcome to the official Disney page for Walt Disney Pictures' Alice in Wonderland.  Become a fan and check back often for images, quotes, and more updates from Alice, the Mad Hatter, the Red Queen and the Rest of the Wonderland world.  \n_______________________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 15431696,
+  "likes": 15432057,
   "name": "Alice in Wonderland",
   "release_date": "On Blu-ray Combo Pack, DVD and Movie Download June 1st! UNITED STATES only",
   "were_here_count": 0,
@@ -1270,16 +1429,18 @@
   "talking_about_count": 38571,
   "starring": "Johnny Depp, Anne Hathaway, Helena Bonham Carter, Crispin Glover, Matt Lucas, Marton Csokas, Tim Pigott-Smith, Lindsay Duncan, Geraldine James, Leo Bill, Jemma Powell, Mairi Ella Challen and Mia Wasikowska as Alice"
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
-{"error": {
-  "message": "Unknown path components: /106273909411067",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "106273909411067",
+  "category": "Interest",
+  "description": "Transformers: Revenge of the Fallen is a 2009 American science fiction action film directed by Michael Bay and executive produced by Steven Spielberg. It is a sequel to 2007's Transformers and the second installment in the live-action Transformers series. The plot revolves around Sam Witwicky (Shia LaBeouf), who is caught in the war between two factions of alien robots, the Autobots and the Decepticons. Sam is having hallucinatory episodes of Cybertronian symbols, and is being hunted by the Decepticons under the orders of an ancient Decepticon named The Fallen, who seeks to get revenge on Earth by finding and activating a machine that would provide the Decepticons with an energon source, destroying the Sun and all life on Earth in the process.With deadlines jeopardized by possible strikes by the Directors Guild of America and the Screen Actors Guild, Bay managed to finish the production on time with the help of previsualization and a scriptment by his writers Roberto Orci, Alex Kurtzman, and series newcomer Ehren Kruger. Shooting took place from May to November 2008, with locations in Egypt, Jordan, Pennsylvania, New Jersey, and California, as well as air bases in New Mexico and Arizona.",
+  "likes": 3183,
+  "link": "http://www.facebook.com/pages/Revenge-of-the-Fallen/106273909411067",
+  "name": "Revenge of the Fallen",
+  "were_here_count": 0,
+  "talking_about_count": 1,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Action-adventure",
   "plot_outline": "Marvel's Iron Man 3 in theaters May 3, 2013.",
@@ -1297,7 +1458,7 @@
   "category": "Movie",
   "username": "ironman",
   "directed_by": "Shane Black",
-  "likes": 16648928,
+  "likes": 16649463,
   "name": "Iron Man",
   "release_date": "May 3, 2013",
   "were_here_count": 0,
@@ -1319,7 +1480,7 @@
   },
   "category": "Movie",
   "username": "2012Movie",
-  "likes": 17879151,
+  "likes": 17879484,
   "name": "2012",
   "release_date": "March 2, 2010",
   "were_here_count": 0,
@@ -1344,7 +1505,7 @@
   "username": "Avatar",
   "category": "Movie",
   "directed_by": "James Cameron",
-  "likes": 48357412,
+  "likes": 48358326,
   "name": "Avatar",
   "produced_by": "James Cameron, Jon Landau, Colin Wilson",
   "release_date": "On Blu-ray/DVD now ",
@@ -1372,7 +1533,7 @@
   "directed_by": "Robert Zemeckis",
   "awards": "Best Picture, Best Actor in a Leading Role (Tom Hanks), Best Director (Robert Zemeckis), Best Visual Effects, Best Film Editing, Best Writing",
   "description": "Stupid is as stupid does, says Forrest Gump (played by Tom Hanks in an Oscar-winning performance) as he discusses his relative level of intelligence with a stranger while waiting for a bus. Despite his sub-normal IQ, Gump leads a truly charmed life, with a ringside seat for many of the most memorable events of the second half of the 20th century. Entirely without trying, Forrest teaches Elvis Presley to dance, becomes a football star, meets John F. Kennedy, serves with honor in Vietnam, meets Lyndon Johnson, speaks at an anti-war rally at the Washington Monument, hangs out with the Yippies, defeats the Chinese national team in table tennis, meets Richard Nixon, discovers the break-in at the Watergate, opens a profitable shrimping business, becomes an original investor in Apple Computers, and decides to run back and forth across the country for several years. Meanwhile, as the remarkable parade of his life goes by, Forrest never forgets Jenny (Robin Wright Penn), the girl he loved as a boy, who makes her own journey through the turbulence of the 1960s and 1970s that is far more troubled than the path Forrest happens upon. Featured alongside Tom Hanks are Sally Field as Forrest's mother; Gary Sinise as his commanding officer in Vietnam; Mykelti Williamson as his ill-fated Army buddy who is familiar with every recipe that involves shrimp; and the special effects artists whose digital magic place Forrest amidst a remarkable array of historical events and people. \n",
-  "likes": 8244795,
+  "likes": 8245137,
   "name": "Forrest Gump",
   "release_date": "July 6, 1994",
   "were_here_count": 0,
@@ -1397,7 +1558,7 @@
   "category": "Movie",
   "username": "StepBrothers",
   "directed_by": "Adam McKay",
-  "likes": 10198425,
+  "likes": 10198595,
   "name": "Step Brothers",
   "release_date": "On Unrated Blu-ray & DVD Now!",
   "were_here_count": 0,
@@ -1423,7 +1584,7 @@
   "username": "PineappleExpress",
   "category": "Movie",
   "directed_by": "David Gordon Green",
-  "likes": 4951483,
+  "likes": 4951572,
   "name": "Pineapple Express",
   "produced_by": "Judd Apatow and Shauna Robertson",
   "release_date": "On Unrated Blu-ray & DVD Now!",
@@ -1432,11 +1593,18 @@
   "talking_about_count": 7186,
   "starring": "Seth Rogen and James Franco"
 }
-{"error": {
-  "message": "Unknown path components: /151583604882602",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "151583604882602",
+  "category": "Movie",
+  "description": "Dylan Dog: Dead of Night is a 2011 American comedy horror film based on Tiziano Sclavi's Italian comic book Dylan Dog, starring Brandon Routh as the eponymous and self-aware detective. The film was released in Italy on March 16, 2011, and in the United States on April 29, 2011.PlotIn New Orleans, Dylan Dog, an ace detective whose specialty is paranormal cases, narrates how he helped people with their cases until his wife, Cassandra, was killed by vampires. Since then he has been doing regular cases with his \"partner\", Marcus Deckler.One night, when teenager Elizabeth Ryan calls her father, without getting an answer, she goes to her father's room and finds him dead on the floor. She is then surprised, and almost attacked, by a strange, hairy, creature. The next day, Dylan is informed, by Marcus, that Elizabeth asked for (and later hires) him. When Dylan interrogates her, she explains that he is the only one that can help her and shows to him a card (that is his old detective card) that says \"No pulse?, No problem\". Dylan sees it, stands up and goes out, stating that he doesn't \"do that\" any more, followed by Marcus.That night Marcus is attacked and killed by an unknown creature (who Dylan thinks is the same creature that killed Elizabeth's father). Dylan decides to officially help Elizabeth with her case. He takes his old, but helpful, case and rides to Elizabeth's house. After taking and analyzing a hair sample, he tells Elizabeth that the creature that killed her father is a female, eighteen- to nineteen-year-old werewolf, who is a member of the Cysnos werewolf family. Dylan visits the Cysnos family leader, Gabriel, who has a past related to Dylan's activities, and realizes that Gabriel's 19-year-old daughter Mara might be his main suspect, an idea that Gabriel hates. After he is told off by Gabriel, Dylan is attacked by Gabriel's older son Wolfgang who is then knocked unconscious by Dylan (who was using a silver gauntlet).",
+  "likes": 1443,
+  "link": "http://www.facebook.com/pages/Dylan-Dog-Dead-of-Night/151583604882602",
+  "name": "Dylan Dog: Dead of Night",
+  "were_here_count": 0,
+  "talking_about_count": 0,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "studio": "Disney\u2022Pixar ",
   "genre": "Animation",
@@ -1457,7 +1625,7 @@
   "directed_by": "Andrew Stanton and Lee Unkrich",
   "awards": "Oscar for Best Animated Feature",
   "description": "Welcome to the official Disney\u2022Pixar page for Pixar's Finding Nemo.  Become a fan and check back often for images, quotes, and more updates from Nemo, Marlin, Dory and the rest of the Finding Nemo cast.  \n____________________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 19060709,
+  "likes": 19061177,
   "name": "Finding Nemo",
   "produced_by": "John Lasseter and Graham Walters",
   "release_date": "Now available for the first time on Blu-ray!",
@@ -1466,11 +1634,6 @@
   "is_published": true,
   "starring": "Albert Brooks (Marlin), Ellen DeGeneres (Dory), Alexander Gould (Nemo),   Willem Dafoe\t(Gill), Brad Garrett (Bloat), Allison Janney (Peach) "
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
 {
   "genre": "Comedy",
   "plot_outline": "After a little white lie about losing her virginity gets out, a clean cut high school girl (Emma Stone) sees her life paralleling Hester Prynne's in \"The Scarlet Letter,\" which she is currently studying in school \u2013 until she decides to use the rumor mill to advance her social and financial standing",
@@ -1488,7 +1651,7 @@
   "category": "Movie",
   "username": "EasyAMovie",
   "directed_by": "Will Gluck",
-  "likes": 6391480,
+  "likes": 6391535,
   "name": "Easy A",
   "produced_by": "Zanne Devine and Will Gluck",
   "release_date": "Now on Blu-ray & DVD!",
@@ -1516,7 +1679,7 @@
   "directed_by": "Steven Spielberg ",
   "awards": "Best Effects, Sound Effects Editing - Oscar\nBest Effects, Visual Effects - Oscar\nBest Sound - Oscar",
   "description": "Universal Pictures will release Steven Spielberg\u2019s groundbreaking classic Jurassic Park in 3D on April 5, 2013.  With his remastering of the epic into a state-of-the-art 3D format, Spielberg introduces the three-time Academy Award®-winning blockbuster to a new generation of moviegoers and allows longtime fans to experience the world he envisioned in a way that was unimaginable during the film\u2019s original release.  \n\nStarring Sam Neill, Laura Dern, Jeff Goldblum, Samuel L. Jackson and Richard Attenborough, the film based on the novel by Michael Crichton is produced by Kathleen Kennedy and Gerald R. Molen.  ",
-  "likes": 4097184,
+  "likes": 4097322,
   "name": "Jurassic Park",
   "written_by": "Michael Crichton",
   "produced_by": " Kathleen Kennedy & Gerald R. Molen",
@@ -1545,7 +1708,7 @@
   "directed_by": "Guy Ritchie",
   "awards": "(2010) Art Directors Guild, Excellence in Production Design Award, Period Film\n(2010) Empire Award, Best Thriller\n(2010) Golden Globe, Best Performance by an Actor in a Motion Picture - Comedy or Musical\n(2010) IFTA Award, Best International Actor, Robert Downey Jr.\n(2010) Teen Choice Award, Choice Movie Actress, Action Adventure, Rachel McAdams\n(2010) Teen Choice Award, Choice Movie: Action Adventure\n(2010) VES Award, Outstanding Supporting Visual Effects in a Feature Motion Picture.     ",
   "description": "Get Sherlock Holmes at the WB Shop: http://bit.ly/sherlockwb",
-  "likes": 7461315,
+  "likes": 7461909,
   "name": "Sherlock Holmes",
   "written_by": "Michele Mulroney & Kieren Mulroney ",
   "produced_by": "Joel Silver, Lionel Wigram, Susan Downey, Dan Lin ",
@@ -1574,7 +1737,7 @@
   "directed_by": "Samuel Bayer",
   "awards": "(2011) People\u2019s Choice Award, Favorite Horror Movie",
   "description": "Get A Nightmare on Elm Street at the WB Shop http://bit.ly/nightmarewb",
-  "likes": 2964240,
+  "likes": 2964439,
   "name": "A Nightmare on Elm Street",
   "written_by": "Wesley Strick, Wes Craven",
   "produced_by": "Michael Bay, Andrew Form, Brad Fuller",
@@ -1603,7 +1766,7 @@
   "category": "Movie",
   "directed_by": "Pete Docter and Bob Peterson (co-director)",
   "description": "Welcome to the official Disney\u2022Pixar page for Pixar's Up.  Become a fan and check back often for images, quotes, and more updates from Carl, Russell, Dug, and the rest of the Up gang.  \n___________________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.\n",
-  "likes": 12236798,
+  "likes": 12237228,
   "name": "Up",
   "produced_by": "Jonas Rivera",
   "release_date": "May 29, 2009 (North America)                                      ",
@@ -1630,7 +1793,7 @@
   "username": "DespicableMe",
   "category": "Movie",
   "directed_by": "Chris Renaud & Pierre Coffin",
-  "likes": 12299573,
+  "likes": 12300501,
   "name": "Despicable Me",
   "produced_by": "Chris Meledandri, Janet Healy",
   "release_date": "July 3, 2013",
@@ -1655,7 +1818,7 @@
   "category": "Movie",
   "username": "Thor",
   "directed_by": "Kenneth Branagh",
-  "likes": 8199948,
+  "likes": 8201594,
   "name": "Thor",
   "release_date": "November 8, 2013",
   "were_here_count": 0,
@@ -1663,11 +1826,30 @@
   "talking_about_count": 404036,
   "starring": "Chris Hemsworth, Natalie Portman, Tom Hiddleston, Anthony Hopkins, Rene Russo, Stellan Skarsgard, Jaimie Alexander, Kat Dennings, Ray Stevenson, Josh Dallas, Tadanobu Asano, Idris Elba, Clark Gregg, Colm Feore"
 }
-{"error": {
-  "message": "Unknown path components: /286674854696712",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "genre": "Action, Adventure, Thriller",
+  "website": "http://www.skyfall-movie.com/site/",
+  "link": "http://www.facebook.com/pages/James-Bond-23-Skyfall-Official-2012/286674854696712",
+  "about": "EON PRODUCTIONS, METRO GOLDWYN-MAYER STUDIOS AND SONY PICTURES ENTERTAINMENT ANNOUNCE 7th NOVEMBERIS START OF PRODUCTIONFOR 23rd JAMES BOND FILM\u201cSKYFALL\u201d",
+  "id": "286674854696712",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/530813_485525834811612_1882442228_n.jpg",
+    "cover_id": 485525834811612,
+    "offset_y": 29,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "directed_by": "Sam Mendes",
+  "description": "LONDON, UK, November 3rd, 2011 \u2013 Producers Michael G. Wilson and Barbara Broccoli today presented the cast of the 23rd James Bond adventure, entitled SKYFALL.  The film, from Albert R. Broccoli\u2019s Eon Productions, Metro-Goldwyn-Mayer Studios, and Sony Pictures Entertainment, is directed by Academy Award® winner Sam Mendes and stars Daniel Craig, who returns for his third film as James Bond 007.  The screenplay is written by Neal Purvis & Robert Wade and John Logan.  SKYFALL, which goes into production on Monday, November 7th, will begin its worldwide roll-out in the UK and Ireland on October 26th 2012 and in North America on November 9th 2012.\n\nJoining Michael G. Wilson, Barbara Broccoli and Director Sam Mendes were members of the cast of SKYFALL, including: Daniel Craig, Javier Bardem, Dame Judi Dench, Naomie Harris and Bérénice Marlohe. The filmmakers also announced Ralph Fiennes, Albert Finney and Ben Whishaw.\n\nIn SKYFALL, Bond\u2019s loyalty to M is tested as her past comes back to haunt her.  As MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.\n\n\u201cWe\u2019re so delighted to have Sam Mendes direct SKYFALL and be working once again with Daniel Craig.   We\u2019ve a great script, an extraordinary cast and an incredibly talented creative team for this latest James Bond adventure,\u201d said Wilson and Broccoli.\n\nThe Director of Photography is Roger Deakins, a nine-time Oscar® nominee who previously shot the films Jarhead and Revolutionary Road for Mendes.  The Production Designer is Oscar® winner Dennis Gassner, who previously designed Quantum of Solace and collaborated with Mendes on the films Road to Perdition and Jarhead.  The Editor is Stuart Baird, A.C.E., whose many credits include Casino Royale.  Jany Temime, whose many credits include the Harry Potter series, In Bruges, and Children of Men, is the Costume Designer. Action specialist Alexander Witt is the 2nd Unit Director.   Gary Powell is Stunt Co-ordinator, Chris Corbould is SFX Supervisor and Steve Begg is Visual Effects Supervisor, all of whom have worked on previous Bond films.",
+  "likes": 1991,
+  "name": "James Bond 23 : Skyfall (Official 2012)",
+  "produced_by": "Barbara Broccoli ",
+  "release_date": "November 9th 2012",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 7,
+  "starring": "Daniel Craig, Javier Bardem, Judi Dench, Bérénice Marlohe, Naomie Harris, Ralph Fiennes, Albert Finney, and Ben Whishaw."
+}
 {
   "studio": "Warner Bros. Pictures",
   "link": "http://www.facebook.com/MadMax4FuryRoadFilm",
@@ -1710,7 +1892,7 @@
   "directed_by": "Andrew Stanton",
   "awards": "Won the Oscar for Best Animated Feature Film of the Year",
   "description": "Welcome to the official Disney\u2022Pixar page for Pixar's WALL\u2022E. Become a fan to learn more about Eve and WALL\u2022E and to see exclusive art and images from the film!\n___________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.\n",
-  "likes": 8454104,
+  "likes": 8454415,
   "name": "WALL\u2022E",
   "produced_by": "John Lasseter and Thomas Porter",
   "release_date": "June 27, 2008",
@@ -1738,7 +1920,7 @@
   "category": "Movie",
   "directed_by": "Nick Cassavetes",
   "description": "Get \"The Notebook\" at the WB Shop: http://bit.ly/TheNotebookUCE",
-  "likes": 15843647,
+  "likes": 15843808,
   "name": "The Notebook",
   "written_by": "Nicholas Sparks\t",
   "produced_by": "Toby Emmerich (Executive Producer), Avram 'Butch' Kaplan (Executive Producer), Lynn Harris (Producer), Mark Johnson (Producer)",
@@ -1768,7 +1950,7 @@
   "directed_by": "Peter Docter, Lee Unkrich, and David Silverman",
   "awards": "Academy Award® for Best Song, Nominated for Best Animated Feature, Best Effects, Sound Effects Editing and Best Music, Original Score.",
   "description": "Welcome to the official Disney\u2022Pixar page for Pixar's Monsters, Inc.   Become a fan and check back often for images, quotes, and more updates from Sulley, Wazaowski, Boo and the rest of the Monsters, Inc. crew.\n____________________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 13529015,
+  "likes": 13529520,
   "name": "Monsters, Inc.",
   "produced_by": "Darla Anderson, John Lasseter, Kori Rae, and Andrew Stanton",
   "release_date": "November 2, 2001",
@@ -1788,7 +1970,7 @@
   "username": "TeamTwilight",
   "category": "Movie",
   "directed_by": "Bill Condon",
-  "likes": 14776508,
+  "likes": 14776799,
   "name": "Team Twilight",
   "produced_by": "Summit Entertainment ",
   "release_date": "November 18, 2011",
@@ -1797,16 +1979,18 @@
   "talking_about_count": 27648,
   "starring": "Robert Pattinson, Kristen Stewart"
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
-{"error": {
-  "message": "Unknown path components: /116689115008370",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "116689115008370",
+  "category": "Movie",
+  "description": "Supervolcano is a science docufiction disaster television film that originally aired on 13 March 2005 on BBC One, and released by the BBC on 10 April 2005 on the Discovery Channel. It is centered on the speculated and potential eruption of the volcanic caldera of Yellowstone National Park. Its tagline is \"Scientists know it as the deadliest volcano on Earth. You know it...as Yellowstone.\"PlotThe film begins with a group of hooded people in caribou parkas riding through snow on snowmobiles. Arriving at a nearly buried building, inside they find a video recorded journal of a man who appears to be dying. The man in the video reports that the Yellowstone Caldera eruption has affected nearly everything in the United States, burying much of the country under several feet of volcanic ash.The film then goes back to five years before the incident, where tourists are seen viewing Old Faithful and exploring the hydrovolcanic features of the Yellowstone National Park. Inside the visitor's center, the same man from the video journal, Rick Lieberman, a USGS scientist in charge of the Yellowstone Volcano Observatory (YVO), is seen presenting to a crowd on Yellowstone's seismic activity. He states during the presentation, using a fictional holographic projector known as Virgil, that Yellowstone is on the verge of an eruption, though neither major nor hazardous.",
+  "likes": 1173,
+  "link": "http://www.facebook.com/pages/Supervolcano/116689115008370",
+  "name": "Supervolcano",
+  "were_here_count": 0,
+  "talking_about_count": 3,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "genre": "Suspense/Thriller, Sci-Fi/Fantasy, Action/Adventure",
   "plot_outline": "The Matrix follows the trials of Neo (Keanu Reeves), a young computer programmer, searching to determine the deepest reality of a post-Apocalyptic world. His journey uncovers a web of deceit and massive computer-generated illusions obscuring the truth. As Morpheus (Lawrence Fishburne) says to Neo, \u201cNo one can be told what the Matrix is. You have to see it for yourself.\u201d The same is true for this mind-blowing movie which was a worldwide box-office sensation when it debuted in 1999.",
@@ -1827,7 +2011,7 @@
   "directed_by": "The Wachowski's",
   "awards": "(1999) BMI Film Music Award\n(1999) Blockbuster Entertainment Award, Favorite Actor \u2013 Keanu Reeves\n(1999) Blockbuster Entertainment Award, Favorite Supporting Actor \u2013 Laurence Fishburne \n(1999) Bogey Award in Gold\n(1999) Golden Trailer, Best Action\n(1999) Golden Trailer, Best Art and Commerce\n(1999) Golden Trailer, Best Edit\n(1999) Golden Trailer, Best of Show \n(1999) Golden Screen \n(2000) MTV Movie Award, Best Fight, Best Male Performance (Keanu Reeves)\n(2000) MTV Movie Award, Best Movie\n(2000) C.A.S. Award, Outstanding Achievement in Sound Mixing for a Feature Film \n(2000) Golden Slate, Best Actor in a Leading Role (Keanu Reeves)\n(2000) Golden Slate, Best Actor in a Leading Role (Carrie-Anne Moss)  \n(2000) Empire Award, Best Film \n(2000) Empire Award,Best Debut (Carrie-Ann Moss)\n(2000) Key Art Award, Best of Show \u2013 Audiovisual \n(2000) Sierra Award, Best Visual Effects \n(2000) Mainichi Film Concours, Readers' Choice Award\n(2000) Mainichi Film Concours, Best Foreign Language Film \n(2000) Golden Reel Award, Best Sound Editing - Effects & Foley \n(2000) Oscar, Best Editing\n(2000) Oscar, Best Sound-Editing Effects\n(2000) Oscar, Best Visual Effects\n(2000) Oscar, Best Sounds \n(2000) Saturn Award, Best Director\n(2000) Saturn Award, Best Science Fiction Film \n(2000) Eddie: Best Edited Feature Film \n(2000) BAFTA Award, Best Sounds\n(2000) BAFTA Award, Best Achievement in Visual Effects \n(2003) DVD Exclusive Awards, Artistic Achievement Award ",
   "description": "Get \"The Matrix\" at WBShop.com: http://bit.ly/the_matrix_",
-  "likes": 5797395,
+  "likes": 5797683,
   "name": "The Matrix",
   "written_by": "The Wachowski's",
   "produced_by": "Bruce Berman, Dan Cracchiolo, Carol Hughes, Andrew Mason, Richard Mirisch, Barrie M. Osborne, Joel Silver, Erwin Stoff, Andy Wachowski, Lana Wachowski (as Larry Wachowski)",
@@ -1856,7 +2040,7 @@
   "directed_by": "Brett Ratner",
   "awards": "(1999) ALMA Award, Outstanding Actress in a Feature Film, Elizabeth Peña \n(1999) BMI Film Music Award, Lalo Schifrin \n(1999) Blockbuster Entertainment Award, Favorite Duo - Action/Adventure, Jackie Chan & Chris Tucker \n(1999) Bogey Award in Silver, Kinowelt Filmverleih\n(1999) Golden Screen, Kinowelt\n(1999) MTV Movie Award, Best On-Screen Duo, Jackie Chan & Chris Tucker \n",
   "description": "Get Rush Hour at the WB shop - http://bit.ly/rush_hour",
-  "likes": 3358445,
+  "likes": 3358693,
   "name": "Rush Hour",
   "written_by": "Ross LaManna",
   "produced_by": "Full producer credit on IMDB.com - http://www.imdb.com/title/tt0120812/fullcredits#cast",
@@ -1879,7 +2063,7 @@
   "category": "Movie",
   "username": "avengers",
   "description": "This Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
-  "likes": 8016293,
+  "likes": 8016920,
   "name": "Avengers",
   "release_date": "May 4, 2012",
   "were_here_count": 0,
@@ -1903,7 +2087,7 @@
   "username": "CaptainAmericaMovie",
   "directed_by": "Joe Johnston ",
   "description": "After being deemed unfit for military service, Steve Rogers volunteers for a top secret research project that turns him into Captain America, a superhero dedicated to defending America's ideals. ",
-  "likes": 8826005,
+  "likes": 8826649,
   "name": "Captain America",
   "release_date": "July 22, 2011",
   "were_here_count": 0,
@@ -1929,7 +2113,7 @@
   "username": "TheIncredibleHulkFilm",
   "category": "Movie",
   "directed_by": "Louis Leterrier",
-  "likes": 7021347,
+  "likes": 7022088,
   "name": "The Incredible Hulk",
   "produced_by": "Avi Arad, Gale Anne Hurd, Kevin Feige",
   "release_date": "10/21 on 3-Disc DVD & Blu-ray Hi-Def ",
@@ -1953,7 +2137,7 @@
   "category": "Movie",
   "username": "thedarkknightrises",
   "directed_by": "Christopher Nolan",
-  "likes": 4367531,
+  "likes": 4367698,
   "name": "The Dark Knight Rises",
   "written_by": "Christopher Nolan, Jonathan Nolan ",
   "produced_by": "Christopher Nolan, Emma Thomas, Charles Roven",
@@ -1978,23 +2162,13 @@
   "category": "Movie",
   "username": "harrypottermovie",
   "description": "Harry Potter™ Wizard's Collection\n\nNew Limited and Numbered 31-Disc Collection\n\nOrder here: http://www.amazon.com/Wizards-Collection-Blu-ray-UltraViolet-Digital/dp/B007FSEAHY \n\nFilms Included in Collection -- All on Blu-ray, DVD and UltraViolet™*\n\u2022     Harry Potter and the Sorcerer\u2019s Stone™ Theatrical Version and Extended Cut\n\u2022     Harry Potter and the Chamber of Secrets™ Theatrical Version and Extended Cut\n\u2022     Harry Potter and the Prisoner of Azkaban™\n\u2022     Harry Potter and the Goblet of Fire™\n\u2022     Harry Potter and the Order of the Phoenix™\n\u2022     Harry Potter and the Half-Blood Prince™\n\u2022     Harry Potter and the Deathly Hallows™ \u2013 Part 1 2D and 3D Versions\n\u2022     Harry Potter and the Deathly Hallows™ \u2013 Part 2 2D and 3D Versions\n\nSpecial Features - All previously released special feature discs including the 8-part documentary Creating the World of Harry Potter. All New! Creating the World of Harry Potter, Pt 7 Story and Creating the World of Harry Potter, Pt 8: Growing Up.\n\nNEW! Exclusive Bonus Disc\n\nMust-Have Collectibles\nMap of Hogwarts, concept art prints, catalogs of props and posters, all designed by the graphic designers from the films are exclusive to the set, and each item along with the rest of the contents of this epic collection will be revealed each week on harrypotter.com\n\nPremium gift box: 12-3/4\" x 10-9/16\" x 11-1/4\". Weight: 19 lbs.\n\n*ULTRAVIOLET™ \nWarner Bros. is taking Digital Copy to a whole new level. The Harry Potter Wizard\u2019s Collection UltraViolet Digital Copy includes a Standard Definition Digital Copy of all 8 Harry Potter main feature films. Special features not included. Limited Time Offer. Restrictions and limitations apply.  Go to ultraviolet.flixster.com/info for details.",
-  "likes": 66375704,
+  "likes": 66376636,
   "name": "Harry Potter",
   "release_date": "September 2012",
   "were_here_count": 0,
   "is_published": true,
   "talking_about_count": 983778
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
 {
   "genre": "Comedy, Unrated",
   "studio": "Paramount Pictures",
@@ -2012,7 +2186,7 @@
   "category": "Movie",
   "username": "anchormanmovie",
   "directed_by": "Adam McKay",
-  "likes": 3017711,
+  "likes": 3017951,
   "name": "Anchorman",
   "produced_by": "Judd Apatow",
   "release_date": "December 25th, 2013",
@@ -2038,7 +2212,7 @@
   "username": "rememberme",
   "category": "Movie",
   "directed_by": "Allen Coulter",
-  "likes": 8755563,
+  "likes": 8755924,
   "name": "Remember Me",
   "produced_by": "Nicholas Osborne, Trevor Engelson",
   "release_date": "On DVD & Blu-Ray June 22",
@@ -2047,16 +2221,23 @@
   "talking_about_count": 37386,
   "starring": "Robert Pattinson, Emilie de Ravin, Chris Cooper, Lena Olin, Pierce Brosnan"
 }
-{"error": {
-  "message": "Unknown path components: /302717273113887",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
+{
+  "id": "302717273113887",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash3/s720x720/156415_367883026597311_1448312957_n.jpg",
+    "cover_id": 367883026597311,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "website": "focusfeatures.com/the_pianist",
+  "likes": 1422074,
+  "link": "http://www.facebook.com/pages/The-Pianist/302717273113887",
+  "name": "The Pianist",
+  "were_here_count": 0,
+  "talking_about_count": 3377,
+  "is_published": true
+}
 {
   "genre": "Action-Thriller",
   "plot_outline": "Vin Diesel, Paul Walker and Dwayne Johnson lead the returning cast of all-stars as the global blockbuster franchise built on speed races to its next continent in Fast & Furious 6.  Reuniting for their most high-stakes adventure yet, fan favorites Jordana Brewster, Michelle Rodriguez, Tyrese Gibson, Sung Kang, Gal Gadot, Chris \u201cLudacris\u201d Bridges and Elsa Pataky are joined by badass series newcomers Luke Evans and Gina Carano.\n\nSince Dom (Diesel) and Brian\u2019s (Walker) Rio heist toppled a kingpin\u2019s empire and left their crew with $100 million, our heroes have scattered across the globe.  But their inability to return home and living forever on the lam have left their lives incomplete.  \n\nMeanwhile, Hobbs (Johnson) has been tracking an organization of lethally skilled mercenary drivers across 12 countries, whose mastermind (Evans) is aided by a ruthless second-in-command revealed to be the love Dom thought was dead, Letty (Rodriguez).  The only way to stop the criminal outfit is to outmatch them at street level, so Hobbs asks Dom to assemble his elite team in London.  Payment?  Full pardons for all of them so they can return home and make their families whole again.  \n\nBuilding on the worldwide blockbuster success of Fast Five and taking the action, stunts and narrative to even greater heights, Fast & Furious 6 sees director Justin Lin back behind the camera for the fourth time.  He is supported by longtime producers Neal H. Moritz and Vin Diesel, who welcome producer Clayton Townsend back to the series.",
@@ -2075,7 +2256,7 @@
   "username": "FastandFurious",
   "category": "Movie",
   "directed_by": "Justin Lin",
-  "likes": 39822099,
+  "likes": 39824405,
   "name": "Fast & Furious",
   "written_by": "Chris Morgan",
   "produced_by": "Neal H. Moritz, Vin Diesel, Clayton Townsend          Executive Producers: Justin Lin, Amanda Lewis, Samantha Vincent, Chris Morgan",
@@ -2101,7 +2282,7 @@
   "username": "Troy.Film",
   "directed_by": "Wolfgang Petersen",
   "description": "Get Troy at WBShop.com - http://bit.ly/troy_",
-  "likes": 4744013,
+  "likes": 4744279,
   "name": "Troy",
   "were_here_count": 0,
   "is_published": true,
@@ -2126,7 +2307,7 @@
   "username": "TheLastSong",
   "category": "Movie",
   "directed_by": "Julie Anne Robinson",
-  "likes": 8423532,
+  "likes": 8423641,
   "name": "The Last Song",
   "produced_by": "Adam Shankman, Jennifer Gibgot",
   "release_date": "On Blu-Ray Combo Pack, DVD and Movie Download August 17",
@@ -2151,7 +2332,7 @@
   "username": "WantedMovieOfficial",
   "directed_by": "Prabhu Dheva",
   "description": "Boney Kapoor's ambitious film WANTED starring Salman Khan, a remake of the regional film POKKIRI which did phenomenal business both in Tamil & Telugu, saw a world wide release on 18th September - 2009. Directed by popular choreographer/actor Prabhu Dheva WANTED was his first directorial venture in Hindi. It had chart bursting music by duo Sajid-Wajid. Filmed on the exotic locations of Greece, Bangkok, Chennai, Hyderabad, Panvel & Mumbai, the film stars Salman Khan in one of the most dynamic roles of his career. He is paired opposite Ayesha Takia for the first time. Others in the cast include Vinod Khanna, Mahesh Manjrekar, Mehak and Southern star Prakash Raj. The movie had to face many obstacles ever since it released. As producer Boney Kapoor said in one of his interviews \"WANTED had to face many obstacles. First of all it was released during the EID period which is not categorically right time to rel a movie (as 40% movie watchin audiences dont go for movies).Even though the movie got the advantage of EID holiday later.It was followed by navrathri celbrations which again took people away from theatres.plus thr was a major opposition from another movie in the form of Dil Bolle Hadippa produced by Indias No1 production house yashraj films.Also the movie was unfortunatley given an A certificate by the censor board which kept the family audience away\".Inspite of all these oppositions WANTED became the biggest hit of 2009 breaking box office records in almost 300 centres.WANTED has also become one of the top ten all time revenue earners.",
-  "likes": 1513439,
+  "likes": 1513443,
   "name": "Wanted Movie",
   "written_by": "Puri Jagannath",
   "produced_by": "Sahara One Motion Pictures & Boney Kapoor",
@@ -2177,7 +2358,7 @@
   "category": "Movie",
   "directed_by": " Ron Howard",
   "description": "Winner of 4 Academy Awards®, including Best Picture, A Beautiful Mind is directed by Academy Award® winner Ron Howard and produced by long-time partner and collaborator, Academy Award® winner Brian Grazer. A Beautiful Mind stars Russell Crowe in an astonishing performance as brilliant mathematician John Nash, on the brink of international acclaim when he becomes entangled in a mysterious conspiracy. Now only his devoted wife (Academy Award® winner Jennifer Connelly) can help him in this powerful story of courage, passion and triumph.",
-  "likes": 1436692,
+  "likes": 1436764,
   "name": "A Beautiful Mind",
   "written_by": "Based on the works of Sylvia Nasar",
   "produced_by": "Brian Grazer, Ron Howard",
@@ -2203,7 +2384,7 @@
   "category": "Movie",
   "username": "ThePursuitofHappyness",
   "directed_by": "Gabriele Muccino",
-  "likes": 1655794,
+  "likes": 1655933,
   "name": "Pursuit of Happyness",
   "produced_by": "Louis D'Esposito, Mark Clayman, David Alper, Teddy Zee, Todd Black, Jason Blumenthal, Steve Tisch, James Lassiter, Will Smith, Christopher P. Gardner\t ",
   "release_date": "Own the Pursuit of Happyness on Blu-ray and DVD: http://amzn.to/Ua5RB7",
@@ -2231,7 +2412,7 @@
   "category": "Movie",
   "directed_by": "Zack Snyder",
   "description": "Get Sucker Punch at WBShop.com - http://bit.ly/sckrpnch",
-  "likes": 1397755,
+  "likes": 1397875,
   "name": "Sucker Punch",
   "produced_by": "Zack Snyder, Deborah Snyder",
   "were_here_count": 0,
@@ -2239,11 +2420,18 @@
   "talking_about_count": 35485,
   "starring": "Emily Browning, Abbie Cornish, Vanessa Hudgens, Jamie Chung, Jena Malone, Carla Gugino, Scott Glenn, Oscar Isaac"
 }
-{"error": {
-  "message": "Unknown path components: /108336165857232",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "108336165857232",
+  "category": "Tv show",
+  "description": "My Wife and Kids is an American television family sitcom that ran on ABC from March 28, 2001 until May 17, 2005. Produced by Touchstone Television (now ABC Studios), it starred Damon Wayans and Tisha Campbell-Martin, and centers on the character of Michael Kyle, a loving husband and modern-day patriarch who rules his household with a unique and distinct parenting style. As he teaches his three children some of life's lessons, he does so with his own brand of humor. Wayans and veteran television writer/producer Don Reo co-created and executive produced the series.PremiseThe series revolves around the experiences of a man named Michael Kyle and his family who live in Stamford, Connecticut. After impregnating his wife Jay as a teenager, Michael has grown paranoid of his children eventually spoiling their own virginity, but aside from these concerns he possesses a number of odd, often irritating eccentricities that he virtually never avoids concealing regardless of the severity of the situation. Among his children are Michael Kyle, Jr. (nicknamed \"Junior\"), Michael's dimwitted eldest son; Claire, his vain, conceited teenage daughter; and Kady, his loveably endearing youngest daughter. Later on in the series, Michael's nightmares come true when Junior impregnates his girlfriend Vanessa, resulting in the addition of a son for Junior in the cast of characters in the series.EpisodesOne interesting note about the series is that, unusual for a sitcom of the show's length, at no point during My Wife and Kids' five-season run did the series have an episode centering on a major holiday .This could possibly be due to Wayans growing up a Jehovah's Witness. There also is no proper opening theme song, although the series did have two closing themes throughout its run.",
+  "likes": 2160784,
+  "link": "http://www.facebook.com/pages/My-Wife-and-Kids/108336165857232",
+  "name": "My Wife and Kids",
+  "were_here_count": 0,
+  "talking_about_count": 445,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "website": "www.thebucketlist.net",
   "link": "http://www.facebook.com/thebucketlist",
@@ -2257,7 +2445,7 @@
   },
   "category": "Movie",
   "username": "thebucketlist",
-  "likes": 879683,
+  "likes": 879724,
   "name": "The Bucket List",
   "release_date": "On DVD and Blu-ray June 10!",
   "were_here_count": 0,
@@ -2265,16 +2453,30 @@
   "talking_about_count": 5179,
   "starring": "Jack Nicholson and  Morgan Freeman"
 }
-{"error": {
-  "message": "Unknown path components: /112693952075544",
-  "code": 2500,
-  "type": "OAuthException"
-}}
-{"error": {
-  "message": "Unknown path components: /108196412535485",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "112693952075544",
+  "category": "Movie",
+  "description": "Rush Hour is a 1998 American martial arts action comedy buddy film and the first installment in the Rush Hour film series. Directed by Brett Ratner and starring Jackie Chan and Chris Tucker, Rush Hour was a major success and became the 7th top grossing film of 1998, with a gross of over $140 million dollars at the U.S. box office.PlotOn the last day of British rule in Hong Kong late 1997, Detective Inspector Lee (Jackie Chan) of the Hong Kong police leads a raid at a shipping bar wharf, hoping to arrest the mysterious crime lord Juntao. He finds only Sang (Ken Leung), Juntao's right hand man, who manages to escape. However, Lee successfully recovers numerous Chinese cultural treasures stolen by Juntao, which he presents as a farewell victory to his departing superiors: Chinese Consul Solon Han (Tzi Ma) and British Commander Thomas Griffin (Tom Wilkinson).Shortly after Han arrives in the United States to take up his new diplomatic post in Los Angeles, his daughter, Soo Yung, is kidnapped while on her way to her first day of school. The leader of the kidnappers is none other than Sang. Shortly after this incident, the FBI inform Consul Han, who calls in Lee to assist in the case.",
+  "likes": 821077,
+  "link": "http://www.facebook.com/pages/Rush-Hour/112693952075544",
+  "name": "Rush Hour",
+  "were_here_count": 0,
+  "talking_about_count": 166,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "id": "108196412535485",
+  "category": "Movie",
+  "description": "Rush Hour 2 is a 2001 martial arts buddy action comedy film. This is the second installment in the Rush Hour series. A sequel to the 1998 film Rush Hour, the film stars Jackie Chan and Chris Tucker who respectively reprise their roles as Inspector Lee and Detective Carter. The film finds Lee and Carter embroiled in a counterfeit scam involving the Triads.Rush Hour 2 was released August 3, 2001 to mixed reviews from critics, but it grossed $347,325,802 at the worldwide box office, becoming the eleventh highest-grossing film of 2001 worldwide. It is the highest-grossing live-action martial arts film of all time, and the second highest-grossing martial arts film of all time, behind Kung Fu Panda. The film was followed up with another sequel, Rush Hour 3, in 2007.PlotLos Angeles Police Department Detective James Carter (Chris Tucker) is on vacation in Hong Kong, visiting his friend, Hong Kong Police Force Chief Inspector Lee (Jackie Chan). The fun is put on hold when a bomb explodes at the United States Consulate General. Inspector Lee is assigned to the case, which becomes personal when it is discovered that it somehow involves Ricky Tan (John Lone), his late police officer father's former partner. Tan, who was suspected, but never proven, of having a role in Lee's father's death, is now a leader of the Triads.",
+  "likes": 1262288,
+  "link": "http://www.facebook.com/pages/Rush-Hour-2/108196412535485",
+  "name": "Rush Hour 2",
+  "were_here_count": 0,
+  "talking_about_count": 2518,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "studio": "Universal",
   "genre": "Action, Adventure, Thriller, Fantasy, Teen",
@@ -2295,7 +2497,7 @@
   "directed_by": "Stephen Sommers",
   "awards": "Saturn Award - Best Make-Up (2000)\nBMI Film Music Award (2000)\nBogey Award in Gold (1999)\nGolden Screen (1999)",
   "description": "A 3,000 year old legacy of terror has just been unearthed deep in the Egyptian desert!\n \nBased on Universal's legendary 1932 horror classic, it's a nonstop action epic that dazzles from beginning to end!",
-  "likes": 1529517,
+  "likes": 1529554,
   "name": "The Mummy",
   "written_by": "Stephen Sommers",
   "produced_by": "James Jacks & Sean Daniel",
@@ -2325,7 +2527,7 @@
   "category": "Movie",
   "directed_by": "Francis Lawrence",
   "description": "THE HUNGER GAMES: CATCHING FIRE, in theaters November 22nd, 2013. BUY TICKETS NOW at http://hungrgam.es/CFtix and get an exclusive FREE track download from the soundtrack. ",
-  "likes": 11302671,
+  "likes": 11303745,
   "name": "The Hunger Games",
   "produced_by": "Nina Jacobson & Jon Kilik ",
   "release_date": "November 22nd 2013",
@@ -2334,11 +2536,18 @@
   "is_published": true,
   "starring": "Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks, Lenny Kravitz, Philip Seymour Hoffman, Jeffrey Wright, Sam Claflin, Jena Malone, with Stanley Tucci and Donald Sutherland"
 }
-{"error": {
-  "message": "Unknown path components: /106018682762344",
-  "code": 2500,
-  "type": "OAuthException"
-}}
+{
+  "id": "106018682762344",
+  "category": "Movie",
+  "description": "Rush Hour 3 is a 2007 martial arts/action-comedy film, and the third installment in the Rush Hour series, starring Jackie Chan as Inspector Lee and Chris Tucker as Detective Carter. The film was officially announced on May 7, 2006, and filming began on July 4, 2006. The film is set in Paris and Los Angeles. Rush Hour 3 was released on August 10, 2007, in the United States. A fourth film is currently in consideration by the series' creators.Roman Polanski (a director and fan of the Rush Hour series) was given a small role as a French police official involved in Lee and Carter's case. In her first appearance in an American film, Noémie Lenoir portrays Geneviève, a beautiful stage performer who is one of the main suspects in the case as well as Carter's love interest. Tzi Ma reprises his role as Ambassador Han, Lee's boss and friend who appeared in Rush Hour. Yvan Attal co-stars as George, a cab driver who becomes Lee and Carter's new sidekick.PlotL.A.P.D. Detective Carter (Tucker) is directing traffic. Concurrently, Chinese Ambassador Han addresses the importance of fighting the Triads at the World Criminal Court, announcing that he may know the whereabouts of Shi Shen, a semi-mythical individual of great importance to the Triads. Before announcing, an assassin shoots Han in the shoulder, disrupting the conference. Chief Inspector Lee (Chan) pursues the shooter and corners him, discovering that the assassin is his Japanese foster brother Kenji (Sanada). When Lee hesitates to shoot Kenji, he makes his escape.",
+  "likes": 1247918,
+  "link": "http://www.facebook.com/pages/Rush-Hour-3/106018682762344",
+  "name": "Rush Hour 3",
+  "were_here_count": 0,
+  "talking_about_count": 2212,
+  "is_published": true,
+  "is_community_page": true
+}
 {
   "plot_outline": "Kill Everything That is Evil",
   "website": "http://www.boondocksaints.com/newsletter.php http://www.boondockstore.com http://www.boondocksaints.com http://www.theboondocksaintsii.com Send in art & tats & high res photos & vids to... boondockgallery@gmail.com Troy Duffy BDS writer/director - http://www.facebook.com/#!/officialboondocksaints Connor (Sean Patrick Flanery) http://www.facebook.com/seanpflanery Murphy (Norman Reedus) http://www.facebook.com/normanreedus Rocco (David Della Rocco) http://www.facebook.com/d.d.rocco ROMEO from BDS 2 (Clifton Collins Jr) http://www.facebook.com/clifton.collins.jr Detective Duffy (Brian Mahoney) http://www.facebook.com/cobra.pilot.in.hollywood Detective Greenly (Bob Marley) http://www.facebook.com/bobmarleycomedy Gorgeous George from BDS 2 (Bob Rubin) http://www.facebook.com/rubetime BDS EPK (Paul J Alessi) http://www.facebook.com/pjalessi Online Media : http://www.facebook.com/wendyshepherd9 ",
@@ -2355,7 +2564,7 @@
   "username": "boondocksaintsfans",
   "directed_by": "Troy Duffy",
   "description": "For Boondock Saints Customer Service & Web Merchandise contact through the website at http://www.boondockstore.com \n______________________\n\nBoondock Web LLC\n4470 W Sunset Blvd, No 281\nLos Angeles, CA 90027\n______________________\n\nDavid\nShipping Fulfillment\n323.469.1500\ndavid@boondocksaints.com \n",
-  "likes": 3244803,
+  "likes": 3244917,
   "name": "Boondock Saints",
   "were_here_count": 0,
   "is_published": true,
@@ -2378,7 +2587,7 @@
   "category": "Movie",
   "username": "StarWars",
   "description": "To help us maintain meaningful and constructive discussions on our Fan Page, we ask that you stay polite and always show respect if you disagree with someone\u2019s point of view.   Please don\u2019t post comments that are offensive to others or that contain foul language.  We must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable or violate the Community Guidelines. (Please find a link to our Facebook Terms of Use below)",
-  "likes": 10854940,
+  "likes": 10855297,
   "name": "Star Wars",
   "release_date": "1977",
   "were_here_count": 0,
@@ -2401,7 +2610,7 @@
   "username": "PrideandPrejudiceMovie",
   "directed_by": "Joe Wright",
   "description": "Academy Award® nominee Keira Knightley stars in the greatest love story of all time. When Elizabeth Bennet (Knightley) meets the handsome Mr. Darcy (Matthew Macfadyen), she believes he is the last man on earth she could ever marry. But as their lives become intertwined, she finds herself captivated by the very person she swore to loathe for all eternity. Jane Austen\u2019s masterpiece novel comes to the screen in the film critics said \u201cmakes you believe in true love and happily-ever-after\u201d (Stephen Holden, The New York Times).",
-  "likes": 3371079,
+  "likes": 3371109,
   "name": "Pride and Prejudice",
   "written_by": "Based on the works of Jane Austen",
   "produced_by": "Tim Bevan, Eric Fellner, Paul Webster",
@@ -2430,7 +2639,7 @@
   "category": "Movie",
   "directed_by": "Danny Boyle",
   "awards": "Academy Award winner:\nBest Picture\nBest Director\nBest Original Score\nBest Original Song\nBest Adapted Screenplay\nBest Cinematography\nBest Film Editing\nBest Sound Mixing\n",
-  "likes": 2834064,
+  "likes": 2834108,
   "name": "Slumdog Millionaire",
   "release_date": "on DVD March 31, 2009",
   "were_here_count": 0,
@@ -2455,7 +2664,7 @@
   "category": "Movie",
   "username": "Pussinboots",
   "directed_by": "Chris Miller",
-  "likes": 5643831,
+  "likes": 5644010,
   "name": "Puss In Boots",
   "release_date": "Available on Blu-Ray, Blu-ray 3D & DVD: http://amzn.to/yL4IEN",
   "were_here_count": 0,
@@ -2482,7 +2691,7 @@
   "category": "Movie",
   "directed_by": "Jason Friedberg & Aaron Seltzer",
   "awards": "At least 26 2011 Oscars",
-  "likes": 2985105,
+  "likes": 2985146,
   "name": "Official Vampires Suck Movie",
   "produced_by": "Peter Safran and Jason Friedberg & Aaron Seltzer",
   "release_date": "November 30, 2010",
@@ -2491,10 +2700,815 @@
   "is_published": true,
   "starring": "Matt Lanter, Chris Riggi, Jenn Proske, Diedrich Bader, and Ken Jeong "
 }
-{"error": {
-  "message": "Unsupported get request.",
-  "code": 100,
-  "type": "GraphMethodException"
-}}
 {
-  "genre":
+  "genre": "Comedy",
+  "plot_outline": "Carl Allen has stumbled across a way to shake free of post-divorce blues and a dead-end job: embrace life and say yes to everything. Working every funny bone in his nimble body and every muscle in his hilariously mobile face, Jim Carrey plays Carl in a YEScapade about opening up to life\u2019s possibilities especially when those possibilities include romance with an intriguing, free-spirited musician (Zooey Deschanel). From the director of The Break-Up comes an invitation to discover the comedy power of yes.",
+  "studio": "Warner Bros. Pictures",
+  "screenplay_by": "Nicholas Stoller, Jarrad Paul, & Andrew Mogel",
+  "website": "www.yesisthenewno.com",
+  "link": "http://www.facebook.com/yesman",
+  "about": "The official Facebook page for Yes Man | One word can change everything.",
+  "id": "31264174629",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/538813_10151161086869630_2143022149_n.png",
+    "cover_id": "10151161086869630",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "yesman",
+  "category": "Movie",
+  "directed_by": "Peyton Reed",
+  "description": "Get Yes Man at WBShop.com - http://bit.ly/Yes_Man\n\nExplore the Power of YES! Games, clips and downloads at http://www.learntosayyes.com",
+  "likes": 1594734,
+  "name": "Yes Man",
+  "written_by": "Danny Wallace (book)",
+  "release_date": "On Blu-ray, DVD and On Demand April 7, 2009!",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 5750,
+  "starring": "Jim Carrey, Zooey Deschanel and Bradley Cooper"
+}
+{
+  "genre": "Drama, Crime, Psychological Thriller",
+  "screenplay_by": "John Hodge",
+  "website": "http://www.miramax.com/movie/trainspotting",
+  "link": "http://www.facebook.com/TrainSpottingOfficial",
+  "about": "Never let your friends tie you to the tracks. http://bit.ly/STOREtrainspotting",
+  "id": "166762813391376",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/301996_501149969952657_1667880971_n.jpg",
+    "cover_id": 501149969952657,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "TrainSpottingOfficial",
+  "category": "Movie",
+  "directed_by": "Danny Boyle",
+  "awards": "Academy Award® and BAFTA Award® nominee \u2013 Best Adapted Screenplay\n",
+  "description": "The \u201chip, brutally honest and humane\u201d (Entertainment Weekly) tale about drug addiction that completely rocked audiences and critics - and that launched the careers of star Ewan McGregor and director Danny Boyle! Choose life. Choose a job. Choose a career. Choose a family. Choose\u2026TRAINSPOTTING. Director Danny Boyle (127 HOURS, SLUMDOG MILLIONAIRE) thrills in this \u201coriginal, daring\u201d (Salon.com) tale of a group of young drug addicts wheeling through blue collar Edinburgh that earned an Academy Award® for Best Adapted Screenplay. Starring Ewan McGregor (MOULIN ROUGE!) in an unforgettable breakthrough performance, TRAINSPOTTING electrified audiences and critics with its hilariously dark humor, stunning visuals and sharp honest take on both the exhilarating highs, and the terrifying lows, of addiction.",
+  "likes": 2335957,
+  "name": "Trainspotting",
+  "produced_by": "Andrew Macdonald",
+  "release_date": "February 23, 1996",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 6222,
+  "starring": "Ewan McGregor, Johnny Lee Miller, Robert Carlyle, Ewen Bremner, Kevin McKidd, Kelly Mcdonald"
+}
+{
+  "id": "246344278767961",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/420206_284948754907513_1815739402_n.jpg",
+    "cover_id": 284948754907513,
+    "offset_y": 27,
+    "offset_x": 0
+  },
+  "username": "BatmanBeginsMovie",
+  "category": "Movie",
+  "description": "Batman Begins explores the origins of the Batman legend and the Dark Knight's emergence as a force for good in Gotham. In the wake of his parents' murder, disillusioned industrial heir Bruce Wayne (Christian Bale) travels the world seeking the means to fight injustice and turn fear against those who prey on the fearful. He returns to Gotham and unveils his alter-ego: Batman, a masked crusader who uses his strength, intellect and an array of high tech deceptions to fight the sinister forces that threaten the city.",
+  "likes": 2898762,
+  "link": "http://www.facebook.com/BatmanBeginsMovie",
+  "name": "Batman Begins",
+  "about": "The official Facebook page for Batman Begins | \"Storm's coming.\"",
+  "were_here_count": 0,
+  "talking_about_count": 25191,
+  "is_published": true
+}
+{
+  "genre": "Animation",
+  "plot_outline": "Walt Disney Animation Studios\u2019 magical classic Beauty and the Beast returns to the big screen in Disney Digital 3D, introducing a whole new generation to the Disney classic with stunning new 3D imagery. The film captures the fantastic journey of Belle (voice of Paige O\u2019Hara), a bright and beautiful young woman who\u2019s taken prisoner by a hideous beast (voice of Robby Benson) in his castle. Despite her precarious situation, Belle befriends the castle\u2019s enchanted staff\u2014a teapot, a candelabra and a mantel clock, among others\u2014and ultimately learns to see beneath the Beast\u2019s exterior to discover the heart and soul of a prince.",
+  "studio": "Walt Disney Animation Studios",
+  "screenplay_by": "Linda Woolverton, Roger Allers, et al.",
+  "website": "www.facebook.com/disney www.facebook.com/disneyanimation http://www.facebook.com/BeautyandtheBeastBelle http://www.facebook.com/DisneyGaston http://www.facebook.com/DisneyPrincesses http://twitter.com/disneyanimation http://www.disneyanimation.com/index.html http://disneydvd.disney.go.com/beauty-and-the-beast.html",
+  "link": "http://www.facebook.com/DisneyBeautyAndTheBeast",
+  "about": "\"Tale as old as time...\"",
+  "id": "35044734096",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash3/s720x720/537061_10150899631224097_1288893923_n.jpg",
+    "cover_id": "10150899631224097",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "DisneyBeautyAndTheBeast",
+  "category": "Movie",
+  "directed_by": "Gary Trousdale, Kirk Wise",
+  "description": "Welcome to the official Disney page for Walt Disney Animation Studios' Beauty and the Beast. Become a fan and check back often for images, quotes, and more updates from Belle, Beast, Chip and friends.  \n____________________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.\n\n",
+  "likes": 10773237,
+  "name": "Beauty and the Beast",
+  "produced_by": "Howard Ashman, Don Hahn, and Sarah McArthur",
+  "release_date": "January 13",
+  "were_here_count": 0,
+  "talking_about_count": 181579,
+  "is_published": true,
+  "starring": "Paige O'Hara (Belle), Robby Benson (Beast), Richard White (Gaston), Jerry Orbach (Lumiere), David Ogden Stiers (Cogsworth/Narrator ), Angela Lansbury (Mrs. Potts), Bradley Pierce (Chip)"
+}
+{
+  "genre": "Comedy, Rated PG-13 for sexual content, language and some teen partying.",
+  "studio": "Paramount Pictures",
+  "screenplay_by": "Tina Fey",
+  "website": "http://j.mp/MeangirlsBD",
+  "link": "http://www.facebook.com/meangirls",
+  "about": "Only the strong survive!  http://j.mp/MeangirlsBD",
+  "id": "159366990751922",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/422125_367843626570923_1085975203_n.jpg",
+    "cover_id": 367843626570923,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "meangirls",
+  "category": "Movie",
+  "directed_by": "Mark Waters",
+  "description": "Raised in the African bush country by her zoologist parents, Cady (Lindsay Lohan) thinks she knows all about the \u201csurvival of the fittest.\u201d But the law of the jungle takes on a whole new meaning when the home-schooled 15-year-old enters public high school for the first time. Trying to find her place among jocks, mathletes and other subcultures, Cady crosses paths with the meanest species of all \u2013 the Queen Bee, aka the cool and calculating Regina (Rachel McAdams), leader of the school\u2019s most fashionable clique, The Plastics. When Cady falls for Regina\u2019s ex-boyfriend, though, the Queen Bee is stung \u2013 and she schemes to ruin Cady\u2019s social future. Cady\u2019s own claws soon come out as she leaps into a hilarious \u201cGirl World\u201d war that has the whole school running for cover.",
+  "likes": 4501119,
+  "name": "Mean Girls",
+  "produced_by": "Lorne Michaels",
+  "release_date": "April 30, 2004",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 122613,
+  "starring": "Lindsay Lohan, Rachel McAdams, Lacey Chabert, Amanda Seyfried, Tina Fey, Tim Meadows"
+}
+{
+  "genre": "Family, Action/Adventure",
+  "plot_outline": "From the imagination of Steven Spielberg, The Goonies plunges a band of small heroes into a swashbuckling surprise-around-every corner quest beyond their wildest dreams! Following a mysterious treasure map into a spectacular underground realm of twisting passages, outrageous booby-traps and a long-lost pirate ship full of golden doubloons, the kids race to stay one step ahead of a family of bumbling bad guys\u2026and a mild mannered monster with a face only a mother could love.",
+  "studio": "Warner Bros.",
+  "screenplay_by": "Chris Columbus",
+  "website": "http://bit.ly/GooniesWB",
+  "link": "http://www.facebook.com/thegooniesmovie",
+  "about": "The official Facebook page for The Goonies | \"Goonies never say die!\"",
+  "id": "161545050527155",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash3/s720x720/546992_600598766621779_1637414822_n.png",
+    "cover_id": 600598766621779,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "thegooniesmovie",
+  "category": "Movie",
+  "directed_by": "Richard Donner",
+  "awards": "(1986) Academy of Science Fiction, Fantasy & Horror Films, Best Supporting Actress\n(1986) Young Artist Awards, Best Starring Performance by a Young Actor Motion Picture ",
+  "description": "Get all \"The Goonies\" gear here: http://bit.ly/GooniesWB",
+  "likes": 2787627,
+  "name": "The Goonies",
+  "written_by": "Steven Spielberg ",
+  "produced_by": "Steven Spielberg",
+  "were_here_count": 0,
+  "talking_about_count": 84110,
+  "is_published": true,
+  "starring": "Sean Astin, Josh Brolin, Jeff Cohen, Corey Feldman, Kerri Green, Martha Plimpton, Jonathan Ke Quan, John Matuszak and Anne Ramsey"
+}
+{
+  "genre": "Comedy",
+  "plot_outline": "The all-star comedy cast from Grown Ups returns (with some exciting new additions) for more summertime laughs. Lenny (Adam Sandler) has relocated his family back to the small town where he and his friends grew up. This time around, the grown ups are the ones learning lessons from their kids on a day notoriously full of surprises: the last day of school.\n\nGrown Ups 2 has been rated pg-13 by the mpaa for the following reasons: crude and suggestive content, language and some male rear nudity. ",
+  "studio": "Sony Pictures",
+  "website": "http://www.GrownUps-Movie.com ",
+  "link": "http://www.facebook.com/GrownUpsMovie",
+  "about": "Available on Blu-ray Combo Pack, DVD & Digital November 5th. http://amzn.to/17EEpBq",
+  "id": "166665812477",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-prn2/s720x720/1231372_10151611650407478_1010085710_n.jpg",
+    "cover_id": "10151611650407478",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "GrownUpsMovie",
+  "directed_by": "Dennis Dugan",
+  "likes": 8768856,
+  "name": "Grown Ups",
+  "written_by": "Fred Wolf & Adam Sandler & Tim Herlihy",
+  "produced_by": "Adam Sandler, Jack Giarraputo",
+  "release_date": "Available on Blu-ray Combo Pack, DVD & Digital November 5th. http://amzn.to/17EEpBq",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 173012,
+  "starring": "Adam Sandler, Kevin James, Chris Rock, David Spade, Salma Hayek, Maya Rudolph, Maria Bello, Nick Swardson"
+}
+{
+  "plot_outline": "This 2D animated Disney classic tells the tale of a street-smart thief Aladdin, who falls in love with the Sultan's daughter and embarks on an epic journey to win her hand. During his quest, he unwittingly plays a pawn at the hands of the evil vizier, Jafar, who needs Aladdin's help to remove a mysterious lamp from the Cave of Wonders. Instead, Aladdin discovers that the secret of the lamp is a wisecracking Genie that grants him three wishes. But before he can use all three wishes, Jafar steals the lamp and Aladdin must outwit the vizier to save the Sultan's kingdom. \n",
+  "studio": "Walt Disney Animation Studios",
+  "website": "www.facebook.com/disney\nwww.facebook.com/disneyanimation\nhttp://twitter.com/disneyanimation\nhttp://www.disneyanimation.com\n",
+  "link": "http://www.facebook.com/DisneyAladdin",
+  "about": "\"I can show you the world, shining, shimmering, splendid!\"",
+  "id": "9653013547",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/563537_10150673691228548_455424393_n.jpg",
+    "cover_id": "10150673691228548",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "DisneyAladdin",
+  "directed_by": "Ron Clements John Musker",
+  "awards": "Two Academy Awards: \nBest Music, Original Score\nBest Music, Original Song ",
+  "description": "Welcome to the official Disney page for Walt Disney Animation Studios' Aladdin. Become a fan and check back often for images, quotes, visual development art and more updates from Aladdin, the Genie, Jafar and Jasmine.  \n_______________________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
+  "likes": 5653760,
+  "name": "Aladdin",
+  "release_date": "1992",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 36083
+}
+{
+  "genre": "Drama",
+  "plot_outline": "Every age has its visionaries who leave, in the wake of their genius, a changed world \u2013 but rarely without a battle over exactly what happened and who was there at the moment of creation.  In The Social Network, director David Fincher and screenwriter Aaron Sorkin explore the moment at which the most revolutionary social phenomena of the new century was invented -- through the warring perspectives of the super-smart young men who each claimed to be there at its inception.  The result is a drama rife with both creation and destruction; one that audaciously avoids a singular POV, but instead, by tracking dueling narratives, mirrors the clashing truths and constantly morphing social relationships that define our time.  Drawn from multiple sources, the film moves from the halls of Harvard to the cubicles of Palo Alto as it captures the visceral thrill of the heady early days of a culture-changing phenomenon in the making -- and the way it both pulled a group of young revolutionaries together and then split them apart.  In the midst of the chaos are the site's founder (JESSE EISENBERG), the brilliant Harvard student who conceived a website that seemed to redefine our social fabric overnight; Eduardo Saverin (ANDREW GARFIELD), once the founder's close friend, who provided the seed money for the fledgling company; Napster founder Sean Parker (JUSTIN TIMBERLAKE) who brought the site to Silicon Valley\u2019s venture capitalists; and the Winklevoss twins (ARMIE HAMMER and JOSH PENCE), the Harvard classmates who asserted that the founder stole their idea and then sued him for ownership of it. Each has his own narrative, his own version of the story \u2013 but they add up to more than the sum of their parts in what becomes a multi-level portrait of 21st Century success \u2013 both the youthful fantasy of it and its finite realities as well.  The film is produced by Scott Rudin, Dana Brunetti, Michael De Luca, and Ceán Chaffin and based on the book \u201cThe Accidental Billionaires\u201d by Ben Mezrich. ",
+  "studio": "Sony Pictures Entertainment",
+  "screenplay_by": "Aaron Sorkin",
+  "website": "http://500MillionFriends.com",
+  "link": "http://www.facebook.com/SocialNetworkMovie",
+  "about": "For a full list of accolades visit the official movie site at\n\nhttp://500MillionFriends.com\n\nClick Here to Buy it Now: http://amzn.to/cmXcVi",
+  "id": "160640653979986",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/550420_426496240727758_721765979_n.jpg",
+    "cover_id": 426496240727758,
+    "offset_y": 38,
+    "offset_x": 0
+  },
+  "username": "SocialNetworkMovie",
+  "category": "Movie",
+  "directed_by": "David Fincher",
+  "awards": "2011 GOLDEN GLOBES\n\nBest Motion Picture  Drama\nBest Director - Motion Picture (David Fincher)\nBest Screenplay - Motion Picture (Aaron Sorkin)\nBest Original Score - Motion Picture (Trent Reznor and Atticus Ross)\n\nAFRICAN AMERICAN FILM CRITICS ASSOCIATION\nBest Feature Film- The Social Network\n\nBOSTON FILM CRITICS ASSOCIATION\nBest Picture: The Social Network\nBest Actor: Jesse Eisenberg\nBest Director: David Fincher\nBest Screenplay: Aaron Sorkin\nBest Use of Music in a Film: Trent Reznor and Atticus Ross\n\nINDIANA FILM JOURNALIST AWARDS\nBest Film of the Year:  The Social Network\nBest Screenplay:  Aaron Sorkin, The Social Network\n\nLOS ANGELES FILMS CRITICS ASSOCIATION\nBest Picture: The Social Network \nBest Director: David Fincher (tie with Olivier Assayas, \"Carlos\")\nBest Screenplay: Aaron Sorkin Best Music/Score: Trent Reznor and Atticus Ross * (tie with \nAlexandre Desplat, \"The Ghost Writer\")\n\nNATIONAL BOARD OF REVIEW\nBest Film:  The Social Network\nBest Director:  David Fincher, The Social Network\nBest Actor:  Jesse Eisenberg, The Social Network\nBest Adapted Screenplay:  Aaron Sorkin, The Social Network\n\nNEW YORK FILM CRITICS\u2019 CIRCLE\nBest Film- The Social Network\nBest Director- David Fincher \n\nNEW YORK FILM CRITICS ONLINE\nPicture: The Social Network\nDirector: David Fincher\nScreenplay: Aaron Sorkin\n\nSIGHT AND SOUND\nBest Picture:  The Social Network\n\nSOUTHEASTERN FILM CRITIC ASSOCIATION\nBest Film- The Social Network\nBest Ensemble- The Social Network\nBest Director- David Fincher\nBest Adapted Screenplay- Aaron Sorkin, The Social Network\n\nTORONTO FILM CRITICS ASSOCIATION\nBest Picture- The Social Network\nBest Director- David Fincher\nBest Actor- Jesse Eisenberg\nBest Supporting Actor- Armie Hammer\nBest Screenplay- Aaron Sorkin\n\nUK REGIONAL CRITICS / RICHARD ATTENBOROUGH FILM AWARDS (RAFA\u2019S)\nFilm of the year: The Social Network\nScreenwriter of the year:  Aaron Sorkin - The Social Network\n\nWASHINGTON AREA FILM CRITICS ASSOCIATION\nBest Film:  The Social Network\nBest Director:  David Fincher, The Social Network\nBest Adapted Screenplay:  Aaron Sorkin, The Social Network\n",
+  "likes": 1423216,
+  "name": "The Social Network Movie",
+  "written_by": "Screenplay by : Aaron Sorkin, Based upon the book : \t\"The Accidental Billionaires\" by Ben Mezrich",
+  "produced_by": "Scott Rudin, Dana Brunetti, Michael De Luca, Cean Chaffin",
+  "release_date": "October 1, 2010",
+  "were_here_count": 0,
+  "talking_about_count": 1631,
+  "is_published": true,
+  "starring": "Jesse Eisenberg, Andrew Garfield, Justin Timberlake"
+}
+{
+  "genre": "Comedy",
+  "plot_outline": "This comedy with a strong hip-hop soundtrack features Craig (Ice Cube), who manages to get fired on his day off and spends the day hanging out with his buddy Smokey (Chris Tucker).\n\n\nJust another day. But what a day. A day that shows a lighter side to life in the \u2019hood. That brought Ice Cube (Barbershop) and Chris Tucker (Rush Hour) to a wider audience. And that\u2019s now even more uproarious in an Director\u2019s Cut Deluxe Edition never before available. It\u2019s Friday, and Craig (Cube) and Smokey (Tucker) must come up with $200 they owe a local bully or there won\u2019t be a Saturday. That\u2019s the plot. But co-writer Cube, director F. Gary Gray and other innovative movie talents lace it with shrewd and hilarious looks at family (including John Witherspoon), a preacher (Bernie Mac), a girl-next-door (Nia Long) and all manner of the good \u2019N\u2019 bad of life in South Central. This is keepin\u2019-it-real comedy for every day of the week.\n",
+  "studio": "New Line Cinema | Priority Films (I)",
+  "website": "http://bit.ly/FridayMovie",
+  "link": "http://www.facebook.com/FridayOfficial",
+  "about": "The official Facebook page for Friday. | \"A lot can go down between Thursday and Saturday...\"",
+  "id": "214743311872799",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash3/s720x720/559941_429262423754219_1449888229_n.jpg",
+    "cover_id": 429262423754219,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "FridayOfficial",
+  "category": "Movie",
+  "directed_by": "F. Gary Gray",
+  "description": "Get Friday on the WB shop - http://bit.ly/FridayMovie",
+  "likes": 9117461,
+  "name": "Friday",
+  "written_by": "Ice Cube, DJ Pooh",
+  "produced_by": "Full producer credit on IMDB.com - http://www.imdb.com/title/tt0113118/fullcredits#cast",
+  "release_date": "DVD Release Date: March 2, 1999",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 18585,
+  "starring": "Ice Cube, Chris Tucker and Nia Long"
+}
+{
+  "genre": "Adventure",
+  "studio": "Paramount Pictures",
+  "website": "http://www.startrekmovie.com/",
+  "link": "http://www.facebook.com/StarTrekMovie",
+  "about": "The Official Facebook Page for Star Trek Into Darkness",
+  "id": "7774903715",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-frc3/s720x720/1234184_10151649607228716_1056476506_n.png",
+    "cover_id": "10151649607228716",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "StarTrekMovie",
+  "directed_by": "J.J. Abrams",
+  "description": "\n",
+  "likes": 3124956,
+  "name": "Star Trek",
+  "release_date": "May 17, 2013",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 28904
+}
+{
+  "id": "104052522965312",
+  "category": "Movie",
+  "description": "Gladiator is a 2000 British\u2013American epic historical drama film directed by Ridley Scott, starring Russell Crowe, Joaquin Phoenix, Connie Nielsen, Ralf Möller, Oliver Reed (in his final film role), Djimon Hounsou, Derek Jacobi, John Shrapnel, and Richard Harris. Crowe portrays the fictional character, loyal Roman general Maximus Decimus Meridius, who is betrayed when the emperor's ambitious son, Commodus, murders his father and seizes the throne. Reduced to slavery, Maximus rises through the ranks of the gladiatorial arena to avenge the murder of his family and his emperor.Released in the United States on May 5, 2000, Gladiator was a box office success, receiving positive reviews, and was credited with rekindling interest in the historical epic. The film was nominated for and won multiple awards, notably five Academy Awards in the 73rd Academy Awards including Best Picture and Best Actor for Crowe.",
+  "likes": 1012522,
+  "link": "http://www.facebook.com/pages/Gladiator/104052522965312",
+  "name": "Gladiator",
+  "were_here_count": 0,
+  "talking_about_count": 1049,
+  "is_published": true,
+  "is_community_page": true
+}
+{
+  "genre": "Comedy",
+  "plot_outline": "For Harry and Lloyd every day is a no-brainer.\n\nJim Carry and Jeff Daniels star as two good-natured but incredibly stupid friends who drive across the United States to return a client's briefcase in this comedy blockbuster.",
+  "studio": "New Line Cinema, Warner Bros.",
+  "website": "http://bit.ly/wbdumbdumber",
+  "link": "http://www.facebook.com/DumbandDumberMovie",
+  "about": "The official Facebook page for Dumb and Dumber. | What the one doesn't have, the other is missing.",
+  "id": "453062304712571",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/s720x720/523190_477485175603617_743866091_n.jpg",
+    "cover_id": 477485175603617,
+    "offset_y": 52,
+    "offset_x": 0
+  },
+  "username": "DumbandDumberMovie",
+  "category": "Movie",
+  "directed_by": "Peter Farrelly",
+  "awards": "(1995) BMI Film and TV Awards, BMI Film Music Award\n(1994) Key Art Awards, Key Art Award",
+  "description": "Get \"Dumb and Dumber\" at the WB Shop: http://bit.ly/wbdumbdumber",
+  "likes": 2641190,
+  "name": "Dumb and Dumber",
+  "written_by": "Peter Farrelly, Bennett Yellin, Bobby Farrelly",
+  "release_date": "12/16/1994",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 58559,
+  "starring": "Jim Carrey, Jeff Daniels, Lauren Holly, Teri Garr, Karen Duffy, Mike Starr"
+}
+{
+  "genre": "Action (Rated R)",
+  "plot_outline": "The Expendables 3 - Now in production! Coming to theaters summer 2014!\n\nThe Expendables 2 - \n\nBarney Ross (Sylvester Stallone), Lee Christmas (Jason Statham), Yin Yang (Jet Li), Gunnar Jensen (Dolph Lundgren),Toll Road (Randy Couture) and Hale Caesar (Terry Crews) -- with newest members Billy the Kid (Liam Hemsworth) and Maggie (Yu Nan) aboard -- are reunited when Mr. Church (Bruce Willis) enlists the Expendables to take on a seemingly simple job.  The task looks like an easy paycheck for Barney and his band of old-school mercenaries.   But when things go wrong and one of their own is viciously killed, the Expendables are compelled to seek revenge in hostile territory where the odds are stacked against them.  Hell-bent on payback, the crew cuts a swath of destruction through opposing forces, wreaking havoc and shutting down an unexpected threat in the nick of time \u2014 five tons of weapons-grade plutonium, far more than enough to change the balance of power in the world.  But that's nothing compared to the justice they serve against the villainous adversary who savagely murdered their brother. \n \nThat is done the Expendables way....\n",
+  "studio": "Lionsgate",
+  "screenplay_by": "Richard Wenk and Sylvester Stallone. Story by Ken Kaufman & David Agosto and Richard Wenk. Based on the Characters Created by David Callaham",
+  "website": "www.theexpendables2film.com",
+  "link": "http://www.facebook.com/TheExpendablesMovie",
+  "about": "THE EXPENDABLES 3... Coming Summer 2014! - THE EXPENDABLES 2 on Blu-ray, DVD & Digital Download NOW! http://bit.ly/GetEx2",
+  "id": "10150112274840444",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-prn2/1176312_10153263884080444_942418121_n.jpg",
+    "cover_id": "10153263884080444",
+    "offset_y": 24,
+    "offset_x": 0
+  },
+  "username": "TheExpendablesMovie",
+  "category": "Movie",
+  "directed_by": "Simon West",
+  "likes": 6237204,
+  "name": "Expendables",
+  "produced_by": "Avi Lerner, Danny Lerner, Les Weldon, and Kevin King Templeton",
+  "release_date": "THE EXPENDABLES 3... Coming Summer 2014! - THE EXPENDABLES 2 on Blu-ray, DVD & Digital Download NOW! http://bit.ly/GetEx2",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 69780,
+  "starring": "Sylvester Stallone, Jason Statham, Jet Li, Dolph Lundgren, Terry Crews, Randy Couture, Mel Gibson, Harrison Ford, Wesley Snipes, Antonio Banderas  and Arnold Schwarzenegger"
+}
+{
+  "genre": "Animation",
+  "studio": "Walt Disney Animation Studios",
+  "website": "disney.com/wreckitralph",
+  "link": "http://www.facebook.com/WreckItRalph",
+  "about": "Disney's Wreck-It Ralph is now available on Blu-ray™ Combo Pack and HD Digital!",
+  "id": "217155721634610",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash3/s720x720/247610_643870668963111_143086093_n.png",
+    "cover_id": 643870668963111,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "WreckItRalph",
+  "directed_by": "Rich Moore",
+  "description": "Wreck-It Ralph (voice of Reilly) longs to be as beloved as his game\u2019s perfect Good Guy, Fix-It Felix (voice of McBrayer). Problem is, nobody loves a Bad Guy. But they do love heroes\u2026 so when a modern, first-person shooter game arrives featuring tough-as-nails Sergeant Calhoun (voice of Lynch), Ralph sees it as his ticket to heroism and happiness. He sneaks into the game with a simple plan\u2014win a medal\u2014but soon wrecks everything, and accidently unleashes a deadly enemy that threatens every game in the arcade. Ralph\u2019s only hope? Vanellope von Schweetz (voice of Silverman), a young troublemaking \u201cglitch\u201d from a candy-coated cart racing game who might just be the one to teach Ralph what it means to be a Good Guy. But will he realize he is good enough to become a hero before it\u2019s \u201cGame Over\u201d for the entire arcade?",
+  "likes": 2048057,
+  "name": "Wreck-It Ralph",
+  "produced_by": "Clark Spencer",
+  "release_date": "On HD Digital Feb 12 & on Blu-ray™ Combo Pack March 5.",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 15899,
+  "starring": "John C. Reilly, Sarah Silverman, Jack McBrayer and Jane Lynch"
+}
+{
+  "genre": "Drama/Mystery/Sci-Fi",
+  "plot_outline": "In the tradition of Urban Legends and Final Destination, Donnie Darko is an edgy, psychological thriller about a suburban teen coming face-to-face with his dark destiny. Jake Gyllenhaal leads a star-filled cast (including Drew Barrymore, Noah Wyle, Jena Malone, Patrick Swayze and Mary McDonnell) as a delusional high-school student visited by a demonic rabbit with eerie visions of the past - and deadly predictions for the future. This \"excitingly original\" (Entertainment Weekly) nail-biter will keep you on the edge of your seat until the mind-bending climax. ",
+  "studio": "20th Century Fox Home Entertainment",
+  "website": "www.donniedarkofilm.com",
+  "link": "http://www.facebook.com/28days6hours42minutes12seconds",
+  "about": "A troubled teenager is plagued by visions of a large bunny rabbit that manipulates him to commit a series of crimes, after narrowly escaping a bizarre accident.\n\nwww.donniedarkofilm.com",
+  "id": "202781966460833",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-prn1/s720x720/549272_321275414611487_174630124_n.jpg",
+    "cover_id": 321275414611487,
+    "offset_y": 84,
+    "offset_x": 0
+  },
+  "username": "28days6hours42minutes12seconds",
+  "category": "Movie",
+  "directed_by": "Richard Kelly",
+  "awards": "2002 Academy of Science Fiction, Fantasy & Horror Films, USA - Young Filmmaker's Showcase  Richard Kelly",
+  "likes": 1537865,
+  "name": "Donnie Darko",
+  "written_by": "Richard Kelly",
+  "produced_by": "Adam Fields",
+  "release_date": "October 26, 2001",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 58877,
+  "starring": "Jake Gyllenhaal, Maggie Gyllenhaal, Patrick Swayze"
+}
+{
+  "studio": "Screen Gems",
+  "website": "http://amzn.to/GT8kWG",
+  "link": "http://www.facebook.com/Underworld",
+  "about": "Underworld Awakening is out NOW on Blu-ray and DVD! http://amzn.to/GT8kWG    ",
+  "id": "250626018296895",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-prn1/s720x720/154738_456353354390826_840576690_n.jpg",
+    "cover_id": 456353354390826,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "Underworld",
+  "description": "UNDERWORLD AWAKENING brings a stunning new dimension to the epic battle between Vampires and Lycans, as the first film in the franchise to shoot in 3D.  \n\nKate Beckinsale, star of the first two films, returns in her lead role as the vampire warrioress Selene, who escapes imprisonment to find herself in a world where humans have discovered the existence of both Vampire and Lycan clans, and are conducting an all-out war to eradicate both immortal species. \n\nCast:\nKate Beckinsale\nStephen Rea\nMichael Ealy\nTheo James \nIndia Eisley \n& Charles Dance\n\nDirected By:\nMårlind & Stein\n\nScreenplay By:\nLen Wiseman\n& John Hlavin\nand J. Michael Straczynski\nand Allison Burnett\n\nStory By:\nLen Wiseman\n& John Hlavin\n\nBased On Characters Created By:\nKevin Grevioux\nand Len Wiseman\n& Danny McBride\n\nProduced By:\nTom Rosenberg\nGary Lucchesi\nLen Wiseman \nRichard Wright",
+  "likes": 4775380,
+  "name": "Underworld",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 28128
+}
+{
+  "genre": "Animation",
+  "plot_outline": "All the world's a racetrack as superstar Lightning McQueen zooms back into action, with best friend Mater in tow, to take on the globe's fastest and finest in this thrilling high-octane new installment of the \"Cars\" saga.  Mater and McQueen will need their passports as they find themselves in a world of intrigue, thrills and fast-paced comedic escapades.  While racing through England, Italy and Japan, they face a host of new and worthy competitors.  CARS 2 hits the track on June 24, 2011 and will be presented in Disney Digital 3D™ in select theaters. ",
+  "studio": "Disney\u2022Pixar",
+  "website": "www.facebook.com/DisneyPixar twitter.com/Disneypixar www.pixar.com/featurefilms/cars/ disney.go.com/cars/ www.youtube.com/user/DisneyPixar",
+  "link": "http://www.facebook.com/PixarCars",
+  "about": "Life is a journey. Enjoy the trip. ",
+  "id": "31159065182",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash3/s720x720/541589_10151402466115183_1100470829_n.jpg",
+    "cover_id": "10151402466115183",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "PixarCars",
+  "directed_by": "John Lasseter",
+  "description": "Welcome to the official Disney\u2022Pixar page for Pixar's Cars.  Become a fan and check back often for images, quotes, and other updates from Lightning McQueen, Mater, Mack and the rest of the Cars gang.\n___________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.\n",
+  "likes": 16115122,
+  "name": "Cars",
+  "release_date": "Available now on Blu-ray™ Combo Pack, Blu-ray 3D, DVD and Movie Download!",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 71417,
+  "starring": "Owen Wilson, Larry the Cable Guy, Michael Caine"
+}
+{
+  "genre": "Animation",
+  "studio": "Walt Disney Animation Studios",
+  "website": "http://movies.disney.com/the-lion-king",
+  "link": "http://www.facebook.com/DisneyTheLionKing",
+  "about": "You must take your place in the Circle of Life.",
+  "id": "12393266550",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash3/s720x720/44447_10151585689541551_484057500_n.jpg",
+    "cover_id": "10151585689541551",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "DisneyTheLionKing",
+  "description": "Welcome to the official Disney page for Walt Disney Animation Studios' The Lion King.  Become a fan and check back often for images, quotes, and more updates from Simba, Pumbaa, Nala, and the rest of the Lion King gang.\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
+  "likes": 18514927,
+  "name": "The Lion King",
+  "release_date": "March 6",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 58087
+}
+{
+  "genre": "Family Comedy",
+  "studio": "Walt Disney Pictures ",
+  "website": "http://disney.com/muppets http://www.twitter.com/MuppetsStudio http://www.youtube.com/MuppetsStudio",
+  "link": "http://www.facebook.com/muppets",
+  "about": "Muppets Most Wanted opens in theatres March 21, 2014! ",
+  "id": "177534557034",
+  "cover": {
+    "source": "http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash4/s720x720/1005336_10151503559542035_974773763_n.jpg",
+    "cover_id": "10151503559542035",
+    "offset_y": 0,
+    "offset_x": 50
+  },
+  "category": "Movie",
+  "username": "muppets",
+  "description": "Welcome to the official home of The Muppets on Facebook! Become a fan for updates from Kermit and the gang, and to be the first to learn about their upcoming film, The Muppets! \n_____________________________________________________\n\nThis Page is a place for our Fans. However, we do need to have certain rules. Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
+  "likes": 6151449,
+  "name": "The Muppets",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 47743
+}
+{
+  "genre": "Action, Adventure",
+  "plot_outline": "Director Brad Bird and Producer J.J. Abrams bring us the action packed, entertainment event of the holiday season with MISSION: IMPOSSIBLE \u2013 GHOST PROTOCOL.\n  \nThe new film in the series, which has grossed $2 billion dollars worldwide, will feature a new team: Tom Cruise, Jeremy Renner, Paula Patton and Simon Pegg.  \n\nThis is not just another mission.  \n\nThe IMF is shut down when it\u2019s implicated in a global terrorist bombing plot.  Ghost Protocol is initiated and Ethan Hunt and his rogue new team must go undercover to clear their organization\u2019s name.   No help, no contact, off the grid.  You have never seen a mission grittier and more intense than this.\n \nMISSION: IMPOSSIBLE \u2013 GHOST PROTOCOL is in theatres and IMAX December 2011.",
+  "studio": "Paramount Pictures",
+  "website": "http://www.MissionImpossible.com",
+  "link": "http://www.facebook.com/missionimpossiblemovie",
+  "about": " Own it TODAY on Blu-ray™ & DVD! http://j.mp/OwnMI4",
+  "id": "290487762729",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-prn1/s720x720/64173_10150609347622730_2000401444_n.jpg",
+    "cover_id": "10150609347622730",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "missionimpossiblemovie",
+  "directed_by": "Brad Bird",
+  "likes": 2097229,
+  "name": "Mission: Impossible",
+  "written_by": "JOSH APPELBAUM & ANDRÉ NEMEC",
+  "produced_by": "Tom Cruise J.J. Abrams  Bryan Burk. Executive Producers Jeffrey Chernov David Ellison Paul Schwake Dana Goldberg",
+  "release_date": "Dec. 21, 2011",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 9860,
+  "starring": "Tom Cruise, Jeremy Renner, Simon Pegg and Paula Patton"
+}
+{
+  "genre": "Action, Drama, War",
+  "plot_outline": "From acclaimed director Ridley Scott (Gladiator, Hannibal) and renowned producer Jerry Bruckheimer (Pearl Harbor, Armageddon) comes a gripping true story about bravery, camaradarie and the complex reality of war. Black Hawk Down stars an exceptional cast including Josh Hartnett (Pearl Harbor), Ewan McGregor (Moulin Rouge!), Tom Sizemore (Saving Private Ryan), Eric Bana (Chopper), William Fichtner (The Perfect Storm), Ewen Bremner (Snatch) and Sam Shepard (All The Pretty Horses). In 1993, an elite group of American Rangers and Delta Force soldiers are sent to Somalia on a critical mission to capture a violent warlord whose corrupt regime has lead to the starvation of hundreds of thousands of Somalis. When the mission goes terribly wrong, the men find themselves outnumbered and literally fighting for their lives.\n",
+  "studio": "Action, Drama, War",
+  "screenplay_by": "Ken Nolan",
+  "website": "http://www.sonypictures.com/homevideo/catalog/catalogDetail_DVD043396364271.html\n",
+  "link": "http://www.facebook.com/BlackHawkDown",
+  "id": "106287739449458",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc1/s720x720/579438_298488540229376_1479890567_n.jpg",
+    "cover_id": 298488540229376,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "BlackHawkDown",
+  "directed_by": "Ridley Scott",
+  "likes": 2116067,
+  "name": "Black Hawk Down",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 7800,
+  "starring": "Josh Hartnett  Ewan McGregor  Tom Sizemore  Eric Bana"
+}
+{
+  "plot_outline": "Casino Royale is set at the beginning of Bond's career as Agent 007, just as he is earning his licence to kill. After preventing a terrorist attack at Miami International Airport, Bond falls for Vesper Lynd, the treasury agent assigned to provide the money he needs to foil Le Chiffre's plans by beating him in a high-stakes poker game.",
+  "screenplay_by": " Neal Purvis, Robert Wade, and Paul Haggis",
+  "website": "http://www.sonypictures.com/homevideo/casinoroyale/",
+  "link": "http://www.facebook.com/CasinoRoyaleMovie",
+  "about": "Now Available on Blu-ray and DVD",
+  "id": "151523671552341",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/s720x720/522860_379839922054047_774381900_n.jpg",
+    "cover_id": 379839922054047,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "CasinoRoyaleMovie",
+  "directed_by": "Martin Campbell",
+  "likes": 1030862,
+  "name": "Casino Royale",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 6232,
+  "starring": "Daniel Craig"
+}
+{
+  "plot_outline": "Directed by Lasse Halström and based on the novel by best-selling author Nicholas Sparks, DEAR JOHN tells story of John Tyree (Channing Tatum), a young soldier home on leave, and Savannah Curtis (Amanda Seyfried), the idealistic college student he falls in love with during her spring vacation.  Over the next seven tumultuous years, the couple is separated by John\u2019s increasingly dangerous deployments.  While meeting only sporadically, they stay in touch by sending a continuous stream of love letters overseas--correspondence that eventually triggers fateful consequences. Coming February 5th!  ",
+  "studio": "Sony Pictures Home Entertainment",
+  "website": "http://www.dearjohn-movie.com/ ",
+  "link": "http://www.facebook.com/DearJohnMovie",
+  "about": "Now on Blu-ray & DVD! http://amzn.to/9Yz3Zu",
+  "id": "154526009569",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-prn1/s720x720/582532_10150727865504570_1192670924_n.jpg",
+    "cover_id": "10150727865504570",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "DearJohnMovie",
+  "directed_by": "Lasse Hallström",
+  "likes": 7363114,
+  "name": "Dear John",
+  "release_date": "Now on Blu-ray & DVD! http://amzn.to/9Yz3Zu",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 16108,
+  "starring": "John Tyree (Channing Tatum), Savannah Lynn Curtis (Amanda Seyfried), Tim Wheddon (Henry Thomas), Mr. Tyree (Richard Jenkins)"
+}
+{
+  "genre": "Animation, Family",
+  "plot_outline": "After challenging an evil dragon, rescuing a beautiful princess and saving your in-laws\u2019 kingdom, what\u2019s an ogre to do?  Well, if you\u2019re Shrek, you suddenly wind up a domesticated family man.  Instead of scaring villagers away like he used to, a reluctant Shrek now agrees to autograph pitch forks.  What\u2019s happened to this ogre\u2019s roar?  Longing for the days when he felt like a \u201creal ogre,\u201d Shrek is duped into signing a pact with the smooth-talking dealmaker, Rumpelstiltskin.  Shrek suddenly finds himself in a twisted, alternate version of Far Far Away, where ogres are hunted, Rumpelstiltskin is king and Shrek and Fiona have never met.  Now, it\u2019s up to Shrek to undo all he\u2019s done in the hopes of saving his friends, restoring his world and reclaiming his one True Love.",
+  "studio": "DreamWorks Animation",
+  "website": "http://www.shrek.com http://www.dreamworksanimation.com http://www.facebook.com/dreamworksanimation http://www.twitter.com/dwanimation http://dreamworksanimation.tumblr.com",
+  "link": "http://www.facebook.com/Shrek",
+  "about": "The official Facebook page for DreamWorks Animation's SHREK",
+  "id": "355374000182",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/420999_10151382329495183_1487250008_n.jpg",
+    "cover_id": "10151382329495183",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "Shrek",
+  "directed_by": "Mike Mitchell",
+  "likes": 43418617,
+  "name": "Shrek",
+  "produced_by": "Teresa Cheng, Gina Shay, Aron Warner, Andrew Adamson",
+  "release_date": "Available on Blu-Ray, Blu-ray 3D & DVD: http://amzn.to/wk0zsd",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 156409,
+  "starring": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas"
+}
+{
+  "genre": "Comedy",
+  "plot_outline": "In Just Go With It, a plastic surgeon, romancing a much younger schoolteacher, enlists his loyal assistant to pretend to be his soon to be ex-wife, in order to cover up a careless lie. When more lies backfire, the assistant's kids become involved, and everyone heads off for a weekend in Hawaii that will change all their lives.",
+  "studio": "Sony Pictures Entertainment ",
+  "website": "http://JustGoWithIt-Movie.com",
+  "link": "http://www.facebook.com/JustGoWIthItMovie",
+  "about": "Out now on Blu-ray, DVD, and digital download: http://amzn.to/jD4dll",
+  "id": "167793929905624",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash3/s720x720/537902_405399772811704_1257485558_n.jpg",
+    "cover_id": 405399772811704,
+    "offset_y": 65,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "JustGoWIthItMovie",
+  "likes": 2689166,
+  "name": "Just Go With It",
+  "release_date": "Out now on Blu-ray, DVD, and digital download! Order it here: http://amzn.to/jD4dll",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 6290
+}
+{
+  "plot_outline": "For years, there have been documented cases of UFO sightings around the world \u2013 Buenos Aires, Seoul, France, Germany, China.  But in 2011, what were once just sightings will become a terrifying reality when Earth is attacked by unknown forces.  As people everywhere watch the world\u2019s great cities fall, Los Angeles becomes the last stand for mankind in a battle no one expected. It\u2019s up to a Marine staff sergeant (Aaron Eckhart) and his new platoon to draw a line in the sand as they take on an enemy unlike any they\u2019ve ever encountered before. ",
+  "studio": "Columbia Pictures",
+  "website": "http://battlela.com/",
+  "link": "http://www.facebook.com/BattleLAMovie",
+  "about": "Welcome to the Official Facebook Movie page for BATTLE: LOS ANGELES!  Join W.A.T.C.H. at http://Facebook.com/ReportThreats",
+  "id": "140501999314987",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-prn1/524151_376386145726570_1577231435_n.jpg",
+    "cover_id": 376386145726570,
+    "offset_y": 51,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "BattleLAMovie",
+  "directed_by": " Jonathan Liebesman",
+  "likes": 938130,
+  "name": "Battle: Los Angeles",
+  "written_by": " Chris Bertolini",
+  "produced_by": " \tNeal H. Moritz   \tOri Marmur",
+  "release_date": "Coming Soon to Blu-ray & DVD!",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 897
+}
+{
+  "genre": "Action/Adventure",
+  "plot_outline": "From the team that brought the \u201cPirates of the Caribbean\u201d trilogy to the big screen, Walt Disney Pictures and Jerry Bruckheimer Films present \"Prince of Persia: The Sands of Time,\" an epic action-adventure set in the mystical lands of Persia.  A rogue prince (Jake Gyllenhaal) reluctantly joins forces with a mysterious princess (Gemma Arterton) and together, they race against dark forces to safeguard an ancient dagger capable of releasing the Sands of Time\u2014a gift from the gods that can reverse time and allow its possessor to rule the world.",
+  "studio": "Walt Disney Pictures",
+  "website": "Disney.com/PrinceOfPersia",
+  "link": "http://www.facebook.com/PrinceOfPersiaMovie",
+  "about": "\"Then you are a true prince of Persia. Brutal. Without honor.\"",
+  "id": "139195819664",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/s720x720/551219_10150784393579665_831281046_n.jpg",
+    "cover_id": "10150784393579665",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "PrinceOfPersiaMovie",
+  "category": "Movie",
+  "directed_by": "Mike Newell",
+  "description": "Welcome to Disney's official page for Walt Disney Pictures' Prince of Persia: The Sands of Time. Become a fan and check back often for images, quotes, and more updates from Prince of Persia.\n________________________________________________________\n\nThis Page is a place for our Fans.  However, we do need to have certain rules.  Please be aware that we do not accept or consider unsolicited idea submissions and, also, we must reserve the right to remove any posting or other material that we find off-topic, inappropriate or objectionable.",
+  "likes": 5345498,
+  "name": "Prince of Persia: The Sands of Time",
+  "produced_by": "Jerry Bruckheimer ",
+  "release_date": "USA: May 28, 2010",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 15945,
+  "starring": "Jake Gyllenhaal, Ben Kingsley, Gemma Arterton, Alfred Molina"
+}
+{
+  "genre": "Comedy, Teen",
+  "studio": "Universal",
+  "screenplay_by": "Tim Herlihy, Adam Sandler",
+  "website": "http://www.nbcuniversalstore.com/detail.php?p=297642",
+  "link": "http://www.facebook.com/HappyGilmoreMovie",
+  "about": "The Official Universal Studios Entertainment Facebook Page",
+  "id": "116104815135798",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/546673_311359945610283_146311181_n.jpg",
+    "cover_id": 311359945610283,
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "HappyGilmoreMovie",
+  "category": "Movie",
+  "directed_by": "Dennis Dugan",
+  "description": "Adam Sandler stars as Happy Gilmore in the over-the-top comedy that scores a hole in one for hilarity. After his dream of stardom on the hockey ice melts, Happy Gilmore discovers he has a gift that could bring him glory on the greens. Trouble is, with his hot head and hard-hitting drives, Happy doesn\u2019t just play golf\u2026he destroys it. With the help of a retired golfer (Carl Weathers) and hot publicist (Julie Bowen), can Happy perfect his game and tame his temper to win the tournament prize money? With unforgettable appearances by Bob Barker, Christopher McDonald and Kevin Nealon, this comedy favorite features non-stop laughs that are par for the course!",
+  "likes": 2627270,
+  "name": "Happy Gilmore",
+  "written_by": "Tim Herlihy, Adam Sandler",
+  "produced_by": "Robert Simonds",
+  "release_date": "June 7, 2011 on Blu-ray",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 6861,
+  "starring": "Adam Sandler, Christopher McDonald, Julie Bowen, Frances Bay, Carl Weathers, Allen Covert, Robert Smigel, Bob Barker"
+}
+{
+  "genre": "Action",
+  "plot_outline": "Based on the celebrated comic book arc, this epic action-adventure takes Wolverine (Hugh Jackman), the most iconic character of the X-Men universe, to modern day Japan.  Out of his depth in an unknown world he will face a host of unexpected and deadly opponents in a life-or-death battle that will leave him forever changed.  Vulnerable for the first time and pushed to his physical and emotional limits, he confronts not only lethal samurai steel but also his inner struggle against his own immortality.\n\n\n\nTHE WOLVERINE © 2013 Twentieth Century Fox Film Corporation.  MARVEL TM & © 2013 MARVEL & Subs.  All Rights Reserved.  © 2013 FOX.  All Rights Reserved.",
+  "studio": "20th Century Fox",
+  "screenplay_by": "Christopher McQuarrie, Mark Bomback",
+  "website": "http://TheWolverineMovie.com http://twitter.com/WolverineMovie http://youtube.com/TheWolverineMovie",
+  "link": "http://www.facebook.com/TheWolverineMovie",
+  "about": "The Wolverine, starring Hugh Jackman. On Digital HD Nov. 19. On Blu-Ray & DVD Dec. 3.\n http://TheWolverineMovie.com",
+  "id": "267047309977805",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-ash3/599348_709439855738546_1829199879_n.jpg",
+    "cover_id": 709439855738546,
+    "offset_y": 0,
+    "offset_x": 50
+  },
+  "category": "Movie",
+  "username": "TheWolverineMovie",
+  "directed_by": "James Mangold",
+  "likes": 3612252,
+  "name": "The Wolverine",
+  "release_date": "July 26, 2013",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 140220,
+  "starring": "Hugh Jackman, Will Yun Lee"
+}
+{
+  "genre": "Action Comedy",
+  "plot_outline": "Set in New York City, The Other Guys follows Detective Allen Gamble (Will Ferrell), a forensic accountant who's more interested in paperwork than hitting the streets, and Detective Terry Hoitz (Mark Wahlberg), a tough guy who has been stuck with Allen as his partner ever since an unfortunate run-in with Derek Jeter. Allen and Terry idolize the city's top cops, Danson and Highsmith (Dwayne Johnson and Samuel L. Jackson), but when an opportunity arises for the Other Guys to step up, things don't quite go as planned.",
+  "studio": "Sony Pictures",
+  "website": "http://Twitter.com/OtherGuysMovie\nhttp://OtherGuys-Movie.com",
+  "link": "http://www.facebook.com/otherguysmovie",
+  "about": "http://OtherGuys-Movie.com\n\nOwn it now! http://amzn.to/eRuG7Q",
+  "id": "368278541524",
+  "cover": {
+    "source": "http://scontent-a.xx.fbcdn.net/hphotos-ash2/s720x720/598965_10150846274711525_843283330_n.jpg",
+    "cover_id": "10150846274711525",
+    "offset_y": 18,
+    "offset_x": 0
+  },
+  "category": "Movie",
+  "username": "otherguysmovie",
+  "directed_by": "Adam McKay",
+  "likes": 2398140,
+  "name": "The Other Guys",
+  "release_date": "Now available on Unrated Blu-ray, Combo Pack & DVD!",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 2876,
+  "starring": "    Will Ferrell     Mark Wahlberg     Eva Mendes    Michael Keaton     Steve Coogan    Ray Stevenson    Samuel L. Jackson    Dwayne Johnson"
+}
+{
+  "genre": "Sci Fi",
+  "plot_outline": "Thirty years ago, aliens made first contact with Earth. Humans waited for the hostile attack, or the giant advances in technology. Neither came. Instead, the aliens were refugees, the last survivors of their home world. The creatures were set up in a makeshift home in South Africa\u2019s District 9 as the world\u2019s nations argued over what to do with them.\n\nNow, patience over the alien situation has run out. Control over the aliens has been contracted out to Multi-National United (MNU), a private company uninterested in the aliens\u2019 welfare \u2013 they will receive tremendous profits if they can make the aliens\u2019 awesome weaponry work. So far, they have failed; activation of the weaponry requires alien DNA.\n\nThe tension between the aliens and the humans comes to a head when an MNU field operative, Wikus van der Merwe (Sharlto Copley), contracts a mysterious virus that begins changing his DNA. Wikus quickly becomes the most hunted man in the world, as well as the most valuable \u2013 he is the key to unlocking the secrets of alien technology. Ostracized and friendless, there is only one place left for him to hide: District 9.\n",
+  "studio": "Sony Pictures Home Entertainment",
+  "screenplay_by": "Neill Blomkamp and Terri Tatchell ",
+  "website": "http://www.district9movie.com",
+  "link": "http://www.facebook.com/District9",
+  "about": "Nominated for 4 Academy Awards™ including BEST PICTURE!\n\nAvailable now on Blu-ray™ & DVD \n\nhttp://District9Movie.com",
+  "id": "76221618220",
+  "cover": {
+    "source": "http://scontent-b.xx.fbcdn.net/hphotos-frc3/s720x720/538446_10150726440723221_324645160_n.jpg",
+    "cover_id": "10150726440723221",
+    "offset_y": 0,
+    "offset_x": 0
+  },
+  "username": "District9",
+  "category": "Movie",
+  "directed_by": "Neill Blomkamp",
+  "likes": 1239901,
+  "name": "District 9",
+  "produced_by": "Peter Jackson and Carolynne Cunningham. Executive Producers Bill Block and Ken Kamins. Co-Executive Producers Paul Hanson and Elliot Ferwerda",
+  "release_date": "on Blu-ray™ & DVD Now",
+  "were_here_count": 0,
+  "is_published": true,
+  "talking_about_count": 3231,
+  "starring": "Sharlto Copley, Jason Cope, David James, Mandla Gaduka, William Allen Young, Vanessa Haywood, Kenneth Nkosi, Devlin Brown "
+}
+{
+  "genre": "Comedy",
+  "plot_outline": "In this hilarious box office hit, Vince Vaughn and Owen Wilson have perfected the art of wedding crashing but when one of them actually falls in love their sacred rule, \"never leave a fellow crasher behind,\" may be broken!\n\nAcademy Award-nominated Owen Wilson (\"The Royal Tenenbaums\" \"Starsky & Hutch\") and Vince Vaughn (\"Dodgeball: A True Underdog Story,\" \"Old School\") star as John Beck with and Jeremy Klein, two partying divo

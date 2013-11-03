@@ -17,7 +17,7 @@ public class Driver {
 //		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
 		
 		FacebookClient getter = new FacebookClient();
-		getter.getData("./files/extracted_https.txt");
+		getter.getData("./files/felix.txt");
 		
 		// Insert into database
 		/*MysqlPortal mysql_portal = new MysqlPortal();
