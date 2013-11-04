@@ -2,6 +2,7 @@ package qps;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 
 public interface QPSInterface extends Remote {
 	
@@ -43,4 +44,8 @@ public interface QPSInterface extends Remote {
 	public String getArtistsByCity(String city) throws RemoteException;
 	
 	public String getTeamsByCity(String city) throws RemoteException;
+	
+	public ArrayList<String> getCitiesByMovie(String movie) throws RemoteException;
+	
+	public ArrayList<String[]> getVenueByMovieAndRank(String movie, int rank) throws RemoteException;
 }

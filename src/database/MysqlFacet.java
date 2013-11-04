@@ -1,11 +1,12 @@
 package database;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public interface MysqlFacet {
 	
 	// Pass any query
-	public boolean query(String query);
+	public ResultSet query(String query);
 
 	// INSERT into <table> (<column>) values('<contents>')
 	public boolean insert(ArrayList<String> contents, String table, String column);

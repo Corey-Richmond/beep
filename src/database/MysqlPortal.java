@@ -25,10 +25,12 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param query Any valid mysql string query
 	 * @return True when complete
 	 */
-	public boolean query(String query){
+	public ArrayList<String> query(String query, String column){
 
 		Connection conn = null;
 		Statement stmt = null;
+		ResultSet rs = null;
+		ArrayList<String> result = new ArrayList<String>();
 
 		try{
 			//STEP 2: Register JDBC driver
@@ -40,7 +42,10 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			
-			stmt.execute(query);
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+				result.add(rs.getString(column));
+			}
 
 			//STEP 6: Clean-up environment
 			stmt.close();
@@ -57,13 +62,14 @@ public class MysqlPortal implements MysqlFacet{
 		
 		finally{
 			if (!close(conn, stmt))
-				return false;
+				return result;
 		}//end try
 
-		return true;
+		return result;
 	}
 	
 	// -------------------------------------------------------------------------------|
+	
 
 	/**
 	 * INSERT into <table> (<column>) values('<contents>')
@@ -364,6 +370,12 @@ public class MysqlPortal implements MysqlFacet{
 		}
 		
 		return true;
+	}
+
+	@Override
+	public ResultSet query(String query) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
 
