@@ -3,10 +3,22 @@ package database;
 import java.util.ArrayList;
 
 public interface MysqlFacet {
+	
+	// Pass any query
+	public boolean query(String query);
 
 	// INSERT into <table> (<column>) values('<contents>')
 	public boolean insert(ArrayList<String> contents, String table, String column);
 	
-	// SELECT <what> FROM <table>
-	public boolean get(String what, String table, ArrayList<String> contents);
+	// INSERT into <table> (<column>) values('<content>')
+	public boolean insert(String content, String table, String column);
+	
+	// UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
+	public boolean update(String table, String column, String value, String where, String whereValue);
+	
+	// UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
+	public boolean update(String table, String column, int value, String where, String whereValue);
+	
+	// SELECT <what> FROM <table> WHERE <where> = '<whereValue>'
+	public String get(String what, String table, String where, String whereValue, ArrayList<String> contents);
 }

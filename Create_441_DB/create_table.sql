@@ -1,26 +1,26 @@
 create table City(
 	cityID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	cityName    VARCHAR(40) NOT NULL,
-	cityState   VARCHAR(40) NOT NULL,
-	cityCountry VARCHAR(40) NOT NULL
+	cityName    VARCHAR(40), 
+	cityState   VARCHAR(40),
+	cityCountry VARCHAR(40)
 );
 
 create table MovieGenre(
 	movieGenreID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	genre VARCHAR(40) NOT NULL,
+	genre VARCHAR(40),
 	totalLikes INT
 );
 
 create table Person(
 	personID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	firstName  VARCHAR(40) NOT NULL,
+	firstName  VARCHAR(40),
 	middleName VARCHAR(40),
-	lastName VARCHAR(40) NOT NULL
+	lastName VARCHAR(40)
 );
 
 create table Sport(
 	sportID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	name  VARCHAR(40) NOT NULL,
+	name  VARCHAR(40),
 	totalLikes INT
 );
 
@@ -107,7 +107,7 @@ create table SportCitiesList(
 create table SportsVenue(
 	venueID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name    VARCHAR(40) NOT NULL,
-	address VARCHAR(80) NOT NULL,
+	address VARCHAR(80),
 	cityID INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID)
 );
@@ -157,7 +157,7 @@ create table AthleteCitiesList(
 create table MovieVenue(
 	venueID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name    VARCHAR(40) NOT NULL,
-	address VARCHAR(80) NOT NULL,
+	address VARCHAR(80),
 	cityID INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID)
 
@@ -167,7 +167,7 @@ create table MovieVenue(
 create table ConcertVenue(
 	venueID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name    VARCHAR(40) NOT NULL,
-	address VARCHAR(80) NOT NULL,
+	address VARCHAR(80),
 	cityID INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID)
 );

@@ -4,9 +4,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.PrintWriter;
+import database.MysqlPortal;
 
 public class Parser implements ParserFacet{
 
@@ -108,5 +110,74 @@ public class Parser implements ParserFacet{
 		}
 		
 		return true;
+	}
+	
+	public void parseCities() throws IOException{
+		
+		File file = new File("./files/felix/Data/cities.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+		MysqlPortal mysql = new MysqlPortal();
+		
+		String line = "";
+		
+		while (line != null){
+			line = reader.readLine();
+			
+			if (line != null){
+				System.out.println(line);
+				mysql.insert(line, "City", "cityName");
+			}
+		}
+	}
+	
+	public void parseTheatres() throws IOException{
+		
+		File file = new File("./files/felix/Data/theatres.csv");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		
+		MysqlPortal mysql = new MysqlPortal();
+		
+		String line = "";
+		
+		while (line != null){
+			
+			// Extract Venue
+			line = reader.readLine().trim();		
+			int terminator = line.indexOf(',', 0);
+			String venue = line.substring(0, terminator);
+			
+			// Extract Address
+			line = reader.readLine();
+			terminator = line.indexOf(',', 0);
+			String streetAddress = line.substring(0, terminator);
+			
+			// Another error Correction...
+			if (streetAddress.charAt(0) == ',')
+				continue;
+			
+			line = line.substring(terminator+1, line.length());
+			String city = line.trim();		
+			
+			// Disregard last line
+			reader.readLine();
+			
+			if (line != null){
+				System.out.println("Venue: " + venue);
+				
+				// Make new entry for movie
+				mysql.insert(venue, "MovieVenue", "name");
+				
+				// Insert the address of venue into the table
+				System.out.println("Street: " + streetAddress);
+				mysql.update("MovieVenue", "address", streetAddress, "name", venue);
+				
+				// Get the cityID from City table and insert into Movie VenueTable
+				String id = mysql.get("cityID", "City", "cityName", city, null);
+				if (id.equals(null) || id.equals(""))
+					continue;
+				mysql.update("MovieVenue", "cityID", Integer.parseInt(id), "name", venue);
+			}
+		}
 	}
 }

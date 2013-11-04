@@ -20,6 +20,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.HttpConnectionParams;
 
+import database.MysqlPortal;
+
 public class FacebookClient {
 
 	public void getData(String pathname){
@@ -47,11 +49,11 @@ public class FacebookClient {
 				// to https://graph.facebook.com/9283931?ref=br_rs
 				if (facebookPage.matches("https://graph.facebook.com/.*/.*/[0-9]+\\?ref=br_rs$"))
 					facebookPage = facebookPage.replaceAll("pages/.*/", "");
-
-				//System.out.println(facebookPage);
 				
+				// Get request
 				HttpGet get = new HttpGet(facebookPage);
 
+				// Performs GET request and receives response
 				HttpResponse response = client.execute(get);
 				
 				BufferedReader reader = new BufferedReader(new InputStreamReader(
@@ -62,16 +64,16 @@ public class FacebookClient {
 				for (String line = null; (line = reader.readLine()) != null; ) 
 					builder.append(line).append("\n");
 
+				// Verifies "error" doesn't exist in returned object
 				if (!builder.toString().contains("\"error\"")) {
 				
 					System.out.println(builder.toString());
 
 					JSONTokener tokener = new JSONTokener(builder.toString());
 					JSONObject info = new JSONObject(tokener);
-
-					try {
-						writer.println(info.toString(2));
-					} catch (JSONException e) {}
+					
+					// Enter information for each movie into the database
+					mysql(info);
 				}
 			}
 			writer.close();
@@ -79,5 +81,25 @@ public class FacebookClient {
 		catch (Exception e){
 			e.printStackTrace();
 		}
+	}
+	
+	/**
+	 * Inserts movie title into Movie table
+	 * Inserts total likes into Movie table
+	 * 
+	 * @param movie JSON movie object
+	 * @throws JSONException
+	 */
+	private void mysql(JSONObject movie) throws JSONException {
+		
+		MysqlPortal mysql = new MysqlPortal();
+		
+		// Inserts title into the database
+		if(movie.has("name"))
+			mysql.insert(movie.get("name").toString(), "Movie", "Title");
+		
+		// Inserts likes into the database
+		if (movie.has("likes"))
+			mysql.update("Movie", "totalLikes", Integer.parseInt(movie.get("likes").toString()), "title", movie.get("name").toString());
 	}
 }

@@ -16,29 +16,16 @@ public class Driver {
 //		Parser parser = new Parser();
 //		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
 		
+		// Grab movie info and populate database
 		FacebookClient getter = new FacebookClient();
 		getter.getData("./files/felix.txt");
 		
-		// Insert into database
-		/*MysqlPortal mysql_portal = new MysqlPortal();
-		mysql_portal.insert(contents, "info", "name");
-		
-		MongoPortal mongo_portal = new MongoPortal();
-		mongo_portal.insert();*/
-		
-		// Likes generator test
-		/*ArrayList<Integer> likes = new ArrayList<Integer>();
-		LikesGenerator gen = new LikesGenerator();
-		gen.generateLikes(300000, likes);
-		
-		int likesCounted = 0;
-		
-		for (int x = 0 ; x < likes.size(); x ++){
-			System.out.println(x + ": " + likes.get(x));
-			likesCounted += likes.get(x);
-		}
-		
-		
-		System.out.println(likesCounted);*/
+		Parser parser = new Parser();
+		try{
+			//parser.parseCities();
+			parser.parseTheatres();
+			
+		} catch (Exception e){}
+
 	}
 }
