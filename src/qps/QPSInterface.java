@@ -4,7 +4,9 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-public interface QPSInterface extends Remote {
+public interface QPSInterface extends Remote{
+	
+	public String helloWorld() throws RemoteException;
 	
 	/**
 	 * 

@@ -15,6 +15,10 @@ import database.MysqlPortal;
 public class QPS implements QPSInterface{
 	MysqlPortal mysql = new MysqlPortal();
 	
+	public String helloWorld(){
+		return "\nHello world!\n";
+	}
+	
 	public ArrayList<String> getCitiesByMovie(String movie){
 		//String movie = "Pirates of the Caribbean";
 		
@@ -37,7 +41,7 @@ public class QPS implements QPSInterface{
 		
 	}
 	
-	public static void main(){
+	public static void main(String args[]){
 	
 		// Protects against malicious code
         if (System.getSecurityManager() == null) {
@@ -45,22 +49,23 @@ public class QPS implements QPSInterface{
         }
         
 		try{
+	        
+	        System.out.println("================================================================");
+	        System.out.println("Binding \"QPS\"...");
+	        
 			// Get handle to registry
 	        Registry registry = LocateRegistry.getRegistry();
 	        
-	        System.out.println("================================================================");
-	        System.out.println("Binding \"Department\"...");
-	        
             //Register Department object in the naming registry
             String qpsRMIName = "QPS";
-            QPSInterface qpsObject = (QPSInterface)new QPS();
+            QPSInterface qpsObject = new QPS();
             QPSInterface qpsStub = (QPSInterface) UnicastRemoteObject.exportObject(qpsObject, 0);
             registry.rebind(qpsRMIName, qpsStub);
         	
-        	
+            System.out.println("\"QPS\" bound.");
 		} 
 		catch (Exception e) {
-			
+			System.err.println("\"QPS\" bind exception:");
 			e.printStackTrace();
 		}
 	}
@@ -125,15 +130,15 @@ public class QPS implements QPSInterface{
 		
 
 		result1 = mysql.query(
-		"select name, address from movievenue where cityID in " +
-		"(select cityID from moviecitiesList where movieID in " +
-		"(select movieID from movie where title = \""+movie+"\") " +
+		"select name, address from MovieVenue where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+movie+"\") " +
 				"and cityRank = "+rank+")", "name");
 		
 		result2 = mysql.query(
-		"select name, address from movievenue where cityID in " +
-		"(select cityID from moviecitiesList where movieID in " +
-		"(select movieID from movie where title = \""+movie+"\") " +
+		"select name, address from MovieVenue where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+movie+"\") " +
 				"and cityRank = "+rank+")", "address");
 		
 		for(int i = 0; i<result1.size(); ++i){
