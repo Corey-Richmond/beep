@@ -5,11 +5,13 @@ import facebook.FacebookClient;
 import database.MysqlPortal;
 import utilities.LikesGenerator;
 
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import qps.*;
 
@@ -88,17 +90,64 @@ public class Driver {
 //			System.out.println(result1.get(i) + ", " + result2.get(i)) ;
 //		}
 		
-		
+//*********************************************************************************************		
 		Registry registry;
 		try {
 			
-			registry = LocateRegistry.getRegistry();
+			registry = LocateRegistry.getRegistry(2001);
 			QPSInterface qps = (QPSInterface) registry.lookup("QPS");
-			ArrayList<String[]> result1 = qps.getVenueByMovieAndRank("Pirates of the Caribbean", 1);
-			System.out.println(result1.get(0)[0]);
+			while(true) {
+				Scanner scanner = new Scanner( System.in );
+				System.out.print( "\nFind List of most popular city by Movie Title.\n" +
+							      "What moive do you want to lookup? > " );
+				String input = scanner.nextLine();
+				
+				//Pirates of the Caribbean
+				ArrayList<String> result1 = qps.getCitiesByMovie(input);
+				for(int i = 0; i<result1.size(); ++i){
+					System.out.println((i+1) + ". " + result1.get(i)) ;
+				}
+				
+				System.out.print( "From the above list which city looks most appealing.\n" +
+					      		  "Enter the number from the above list > " );
+				int input1 = scanner.nextInt();
+				
+				System.out.print( "Do you also want the address [y/n] > " );
+				boolean input2 = (scanner.next().equals("y"));
+				
+				
+//				QPS qps = new QPS();
+				ArrayList<String[]> result2 = null;
+				try {
+					result2 = qps.getVenueByMovieAndRank(input, input1);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				for(int i = 0; i<result1.size(); ++i){
+					if(input2)
+						System.out.println("\nVenue " +(i+1) +" = " + result2.get(i)[0] + "\n" +
+										   "Address = " + result2.get(i)[1]) ;
+					else
+						System.out.println("\nVenue " +(i+1) +" = " + result2.get(i)[0]);
+						
+				}
+			
+			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+// *********************************************************************************************		
+	
+	
+
+		
+		
 	}
+	
+	
+	
+	
 }
