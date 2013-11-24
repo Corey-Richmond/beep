@@ -77,9 +77,9 @@ public class QPS implements QPSInterface{
 	public static void main(String args[]){
 	
 		// Protects against malicious code
-        if (System.getSecurityManager() == null) {
+        /*if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
-        }
+        }*/
         
 		try{
 	        

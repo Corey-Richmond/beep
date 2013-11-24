@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="mongo/mongo-java-driver-2.11.3.jar"/>
 	<classpathentry kind="lib" path="json/java-json.jar"/>
 	<classpathentry kind="lib" path="mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

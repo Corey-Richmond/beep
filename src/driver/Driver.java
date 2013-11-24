@@ -1,8 +1,16 @@
+/* University: University of Illinois at Chicago
+ * Class: CS 441, Distributed Object Programming Using Middleware
+ * Date: Fall 2013
+ * Professor: Mark Grechanik
+ * Group: 1
+ */
+
 package driver;
 
 import utilities.Parser;
 import facebook.FacebookClient;
 import database.MysqlPortal;
+import database.MongoPortal;
 import utilities.LikesGenerator;
 
 import java.rmi.RemoteException;
@@ -11,7 +19,11 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Scanner;
+
+import com.mongodb.DBObject;
 
 import qps.*;
 
@@ -90,7 +102,10 @@ public class Driver {
 //			System.out.println(result1.get(i) + ", " + result2.get(i)) ;
 //		}
 		
-//*********************************************************************************************		
+//*********************************************************************************************
+		
+	// << DEMO >>
+		/*
 		Registry registry;
 		try {
 			
@@ -137,17 +152,32 @@ public class Driver {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}*/
+		
+// *********************************************************************************************
+	// << MONGODB TESTING >>
+		
+		MongoPortal portal = new MongoPortal();
+		/*if(portal.createUser("Nala", "nala@aol.com", "nal8", "i<3tennisballs"))
+			System.out.println("Added new user");
+		
+		else
+			System.out.println("Failed to add new user");
+		
+		if (portal.storeHistory("nal8", "Bon Jovi"))
+			System.out.println("Stored successfully in the database");
+		
+		else
+			System.out.println("Failed to record history");*/
+		
+		ArrayList<DBObject> history = new ArrayList<DBObject>();
+		portal.getHistory("nal8", history);
+		
+		System.out.println("Size: " + history.size());
+		
+		Iterator<DBObject> i = history.iterator();
+		while (i.hasNext()){
+			System.out.println(i.next().get("query"));
 		}
-		
-// *********************************************************************************************		
-	
-	
-
-		
-		
 	}
-	
-	
-	
-	
 }

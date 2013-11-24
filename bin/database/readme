@@ -1,17 +1,10 @@
-Insert:
-INSERT INTO tablename (col1, col2) VALUES('data1', 'data2' );
+Mongodb 
 
-Retrieve:
-select * from info;
+mongo  (opens mongo from command line)
 
-Modify table to add an auto increment column
-ALTER TABLE info MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+MYSQL vs MongoDB command comparison:
+http://docs.mongodb.org/manual/reference/sql-comparison/
 
-DELETE FROM table_name WHERE some_column = '';
-
-----------------------------------------------
-Mongodb
-
-Check status and logs
-browser => http://localhost:28017/
-
+MYSQL 
+user: "student"
+pass: "441"
