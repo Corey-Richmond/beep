@@ -8,10 +8,9 @@
 package database;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 import com.mongodb.MongoClient;
+import com.mongodb.WriteResult;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.BasicDBObject;
@@ -24,7 +23,7 @@ public class MongoPortal implements MongoFacet{
 	static final String DOMAIN = "localhost";  
 	static final int PORT = 27017;
 	static final String DATABASE = "test";
-	static final String AUTH_COLLECTION = "users";
+	static final String USERS_COLLECTION = "users";
 	static final String HISTORY_COLLECTION = "history";
 	
 	// Field ID's
@@ -76,14 +75,16 @@ public class MongoPortal implements MongoFacet{
 	 */
 	public boolean createUser(String name, String email, String user_id, String password) {
 		
+		boolean success = false;
+		
 		try {
 			MongoClient mongoClient = new MongoClient(DOMAIN, PORT);
 			
 			DB db = mongoClient.getDB(DATABASE);
 			
-			DBCollection collection = db.getCollection(AUTH_COLLECTION);
+			DBCollection collection = db.getCollection(USERS_COLLECTION);
 			
-			if (!exists(collection, "user_id", user_id)){
+			if (!exists(collection, USER_ID, user_id)){
 			
 				DBObject document = new BasicDBObject();
 			
@@ -92,20 +93,20 @@ public class MongoPortal implements MongoFacet{
 				document.put(USER_ID, user_id);
 				document.put(PASSWORD, password);
 			
-				collection.insert(document);
-			
-				mongoClient.close();
+				WriteResult result = collection.insert(document);
+
+				if (result.getLastError().get("err") == null)
+					success = true;
 			}
 			
-			else 
-				return false;
+			mongoClient.close();
 		}
 		catch (Exception e){
 			e.printStackTrace();
 			return false;
 		}
-			
-		return true;
+		
+		return success;
 	}
 	
 	// -------------------------------------------------------------------------------|
@@ -118,29 +119,36 @@ public class MongoPortal implements MongoFacet{
 	 */
 	public boolean storeHistory(String user_id, String search){
 		
+		boolean success = false;
+		
 		try {
 			MongoClient mongoClient = new MongoClient(DOMAIN, PORT);
 			
 			DB db = mongoClient.getDB(DATABASE);
 			
 			DBCollection collection = db.getCollection(HISTORY_COLLECTION);
+
+			if (exists(db.getCollection(USERS_COLLECTION), USER_ID, user_id)){
 			
-			DBObject document = new BasicDBObject();
-		
-			document.put(USER_ID, user_id);
-			document.put(QUERY, search);
-		
-			collection.insert(document);
+				DBObject document = new BasicDBObject();
+			
+				document.put(USER_ID, user_id);
+				document.put(QUERY, search);
+			
+				WriteResult result = collection.insert(document);
+				
+				if (result.getLastError().get("err") == null)
+					success = true;
+			}
 		
 			mongoClient.close();
-			
 		}
 		catch (Exception e){
 			e.printStackTrace();
 			return false;
 		}
 		
-		return true;
+		return success;
 	}
 	
 	// -------------------------------------------------------------------------------|
@@ -152,6 +160,8 @@ public class MongoPortal implements MongoFacet{
 	 * @return True for successful, else false
 	 */
 	public boolean getHistory(String user_id, ArrayList<DBObject> history){
+		
+		boolean success = false;
 		
 		try {
 			MongoClient mongoClient = new MongoClient(DOMAIN, PORT);
@@ -166,7 +176,10 @@ public class MongoPortal implements MongoFacet{
 		
 			DBCursor cursor = collection.find(document);
 			
-			history.addAll(cursor.toArray());
+			if (cursor.size() != 0){
+				history.addAll(cursor.toArray());
+				success = true;
+			}
 		
 			mongoClient.close();
 		}
@@ -175,7 +188,44 @@ public class MongoPortal implements MongoFacet{
 			return false;
 		}
 	
-		return true;
+		return success;
+	}
+	
+	// -------------------------------------------------------------------------------|
+	
+	public boolean deleteRecords(String user_id){
+		
+		boolean success = false;
+		
+		try {
+			MongoClient mongoClient = new MongoClient(DOMAIN, PORT);
+			
+			DB db = mongoClient.getDB(DATABASE);
+			
+			DBCollection historyCollection = db.getCollection(HISTORY_COLLECTION);
+			
+			DBCollection userCollection = db.getCollection(USERS_COLLECTION);
+			
+			DBObject document = new BasicDBObject();
+		
+			document.put(USER_ID, user_id);
+
+			WriteResult resultHistCollect = historyCollection.remove(document);
+			
+			WriteResult resultUserCollect = userCollection.remove(document);
+			
+			if (resultHistCollect.getLastError().get("err") == null
+					&& resultUserCollect.getLastError().get("err") == null)
+				success = true;
+		
+			mongoClient.close();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		
+		return success;
 	}
 	
 	// -------------------------------------------------------------------------------|
@@ -189,16 +239,18 @@ public class MongoPortal implements MongoFacet{
 	 */
 	private boolean exists(DBCollection collection, String field, String entry){
 		
+		boolean success = false;
+		
 		DBObject document = new BasicDBObject();
 		
 		document.put(field, entry);
 		
 		DBCursor cursor = collection.find(document);
 		
-		if (cursor.size() <= 0)
-			return false;
+		if (cursor.size() > 0)
+			success = true;
 		
-		return true;
+		return success;
 	}
 	
 	// -------------------------------------------------------------------------------|
