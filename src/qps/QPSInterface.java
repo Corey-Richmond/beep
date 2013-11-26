@@ -4,7 +4,9 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-public interface QPSInterface extends Remote{
+import LoadBalancer.LoadBalanced;
+
+public interface QPSInterface extends Remote, LoadBalanced{
 	
 	public String helloWorld() throws RemoteException;
 	

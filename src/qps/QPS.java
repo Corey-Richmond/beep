@@ -6,6 +6,8 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
+import LoadBalancer.LoadBalanced;
+
 import database.MysqlPortal;
 
 //Registry registry = LocateRegistry.getRegistry();
@@ -13,7 +15,12 @@ import database.MysqlPortal;
 //RemoteDatabase remoteObject = (RemoteDatabase) registry.lookup("Database");
 
 public class QPS implements QPSInterface{
+	int count;
 	MysqlPortal mysql = new MysqlPortal();
+	
+	public QPS(){
+		count = 0;
+	}
 	
 	public String helloWorld(){
 		return "\nHello world!\n";
@@ -21,7 +28,7 @@ public class QPS implements QPSInterface{
 	
 	public ArrayList<String> getCitiesByMovie(String movie){
 		//String movie = "Pirates of the Caribbean";
-		
+		count ++;
 		int rank = 1;
 		
 		//Get List of cities by rank for a specific movie
@@ -29,14 +36,16 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result2 = new ArrayList<String>();
 
 		while(!(result1 = mysql.query(
-		"select cityName from city where cityID in " +
-		"(select cityID from moviecitiesList where movieID in " +
-		"(select movieID from movie where title = \""+movie+"\") " +
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+movie+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			result2.add(result1.get(0));
 			rank++;
 		}
+		
+		count--;
 		return result2;
 		
 	}
@@ -44,7 +53,7 @@ public class QPS implements QPSInterface{
 	@Override
 	public ArrayList<String[]> getVenueByMovieAndRank(String movie, int rank)
 			throws RemoteException {
-		
+		count++;
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = null;
@@ -70,7 +79,7 @@ public class QPS implements QPSInterface{
 			temp[1] = result2.get(i);
 			result3.add(temp);
 		}
-		
+		count--;
 		return result3;
 	}
 	
@@ -149,6 +158,16 @@ public class QPS implements QPSInterface{
 	public String getTeamsByCity(String city) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int getLoad() {
+		return count;
+	}
+
+	@Override
+	public void incrementLoad() throws RemoteException {
+		count++;
 	}
 
 
