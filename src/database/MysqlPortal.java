@@ -10,6 +10,8 @@ package database;
 import java.sql.*;
 import java.util.ArrayList;
 
+import utilities.Parser;
+
 public class MysqlPortal implements MysqlFacet{
 	
 	// -------------------------------------------------------------------------------|
@@ -384,6 +386,44 @@ public class MysqlPortal implements MysqlFacet{
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public void createDataBase(){
+		Connection conn = null;
+		Statement stmt = null;
+		System.out.println("HERE");
+		String file = "Create_441_DB/create_table.sql";
+		try {
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/",USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			Parser p = new Parser();
+			ArrayList<String> temp = new ArrayList<String>();
+			p.lineReadGeneric(file , temp);
+			
+			String str= "";
+			for (int i=0; i<temp.size(); ++i){
+				str += temp.get(i);
+				if(str.length()>0 && str.charAt(str.length()-1) == ';'){
+					stmt.executeUpdate(str);
+					str = "";
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+		
+	}
 }
+
+
+
 
 	// -------------------------------------------------------------------------------|

@@ -1,3 +1,6 @@
+create DATABASE beep;
+use beep;
+
 create table City(
 	cityID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	cityName    VARCHAR(40), 

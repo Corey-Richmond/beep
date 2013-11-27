@@ -39,6 +39,33 @@ public class Parser implements ParserFacet{
 		return true;
 	}
 	
+	public boolean lineReadGeneric (String pathname, ArrayList<String> contents){
+		
+		if (pathname == null || contents == null){
+			return false;
+		}
+		
+		File file = new File(pathname);
+		
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			//PrintWriter writer = new PrintWriter("movies_regex.txt", "UTF-8");
+			
+			while (reader.ready()){
+				 String line = reader.readLine();	 
+				 contents.add(line);
+			}
+			
+			reader.close();
+			//writer.close();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	
+		return true;
+	}
 	public boolean lineRead (String pathname, ArrayList<String> contents){
 		
 		if (pathname == null || contents == null){
