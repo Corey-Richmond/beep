@@ -5,19 +5,23 @@
  * Group: 1
  */
 
-package database;
+package Authentication;
 
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.util.ArrayList;
-import com.mongodb.DBObject;
 
-public interface MongoFacet {
-	
+public interface AuthenticationInterface extends Remote{
+
 	/**
-	 * Retrieves all collections and returns formatted string
-	 * @return String list of collections seperated by newlines
+	 * Returns true if user has an account, else returns false
+	 * @param user_id User's unique id
+	 * @param password User's password
+	 * @return True if authentication succeeds, else false
+	 * @throws RemoteException
 	 */
-	public String getCollections();
-
+	public boolean authenticate(String user_id, String password) throws RemoteException;
+	
 	/**
 	 * New user creation
 	 * @param name User's full name
@@ -26,7 +30,7 @@ public interface MongoFacet {
 	 * @param password Password
 	 * @return True if complete, else false
 	 */
-	public boolean createUser(String name, String email, String user_id, String password);
+	public boolean registerUser(String name, String email, String user_id, String password) throws RemoteException;
 	
 	/**
 	 * Stores a search query in the user's history (associated with user_id)
@@ -34,7 +38,7 @@ public interface MongoFacet {
 	 * @param user_id The user's unique identifier
 	 * @return True if completed successfully, else false
 	 */
-	public boolean storeHistory(String user_id, String search);
+	public boolean storeHistory(String user_id, String search) throws RemoteException;
 	
 	/**
 	 * Retrieve search history for all users
@@ -42,15 +46,5 @@ public interface MongoFacet {
 	 * @param history [out] List of user history
 	 * @return True for successful, else false
 	 */
-	public boolean getHistory(String user_id, ArrayList<DBObject> history);
-	
-	/**
-	 * Given a string name for a collection, check if a given entry exists in a given
-	 * field
-	 * @param collection String identifier for collection
-	 * @param field Field of interest
-	 * @param entry Value of interest
-	 * @return True if exists, else false
-	 */
-	public boolean exists(String collection, String field, String entry);
+	public ArrayList<String> getHistory(String user_id) throws RemoteException;
 }

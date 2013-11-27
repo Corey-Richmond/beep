@@ -231,6 +231,43 @@ public class MongoPortal implements MongoFacet{
 	// -------------------------------------------------------------------------------|
 	
 	/**
+	 * Given a string name for a collection, check if a given entry exists in a given
+	 * field
+	 * @param collection String identifier for collection
+	 * @param field Field of interest
+	 * @param entry Value of interest
+	 * @return True if exists, else false
+	 */
+	public boolean exists(String collection, String field, String entry){
+		
+		boolean success = false;
+		
+		try {
+			MongoClient mongoClient = new MongoClient(DOMAIN, PORT);
+			
+			DB db = mongoClient.getDB(DATABASE);
+			
+			DBCollection userCollection = db.getCollection(collection);
+			
+			DBObject document = new BasicDBObject();
+			
+			document.put(field, entry);
+			
+			DBCursor cursor = userCollection.find(document);
+			
+			if (cursor.size() > 0)
+				success = true;
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		
+		return success;
+	}
+	// -------------------------------------------------------------------------------|
+	
+	/**
 	 * Returns whether a document exists in a given collection
 	 * @param collection Reference to the collection to search
 	 * @param field Field which contains the entry for the search
