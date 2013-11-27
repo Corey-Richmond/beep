@@ -2,6 +2,11 @@
 package utilities;
 
 import java.util.ArrayList;
+import java.util.Random;
+
+import quicktime.std.movies.MovieController;
+
+import database.MysqlPortal;
 
 public class LikesGenerator implements LikesFacet{
 	
@@ -22,6 +27,24 @@ public class LikesGenerator implements LikesFacet{
 			likes.add((int)(numberOfLikes*rand));
 		}
 		
+		
+	}
+	
+	
+	public void connectMoviesAndCities(){
+		MysqlPortal msp = new MysqlPortal();
+		int movieCount = Integer.parseInt(msp.query("select count(*) from movie", "count(*)").get(0));
+		int cityCount  = Integer.parseInt(msp.query("select count(*) from city" , "count(*)").get(0));
+		
+		Random generator = new Random();
+		int randomCity;
+		System.out.println(movieCount +" , " + cityCount );
+		for(int i=1; i < movieCount; ++i){
+			for (int j=1; j<6; ++j){
+				randomCity = generator.nextInt(cityCount) + 1;
+				msp.insert( "NULL, "+randomCity+", "+i+", "+j , "MovieCitiesList");
+			}
+		}
 		
 	}
 }

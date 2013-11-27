@@ -54,6 +54,9 @@ public class Driver {
 			
 		} catch (Exception e){}
 		
+		LikesGenerator like = new LikesGenerator();
+		like.connectMoviesAndCities();
+		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file
 //		ArrayList<String> contents = new ArrayList<String>();

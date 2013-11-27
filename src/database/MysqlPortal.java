@@ -21,8 +21,8 @@ public class MysqlPortal implements MysqlFacet{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
 
 	//  Database credentials
-	static final String USER = "student";
-	static final String PASS = "441";
+	static final String USER = "root";
+	static final String PASS = "";
 	
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 	
@@ -163,6 +163,58 @@ public class MysqlPortal implements MysqlFacet{
 			String sql;
 
 			sql = "INSERT into "+ table +" ("+ column +") values('"+ content +"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		return true;
+	}
+	
+	// -------------------------------------------------------------------------------|
+	
+	/**
+	 * INSERT into <table> values('<content>')
+	 * 
+	 * For a given table and column, insert VARCHAR content
+	 * 
+	 * @param content VARCHAR item to insert
+	 * @param table Mysql table to insert into
+	 * @return True when complete
+	 */
+	public boolean insert(String content, String table){
+
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "INSERT into "+ table +" values("+ content +")";
+			System.out.println(sql);
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
