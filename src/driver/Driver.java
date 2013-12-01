@@ -41,26 +41,34 @@ public class Driver {
 		// Read contents from file
 		ArrayList<String> contents = new ArrayList<String>();
 		Parser parser = new Parser();
-		//parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
+		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
 		
 		// Grab movie info and populate database
-		//FacebookClient getter = new FacebookClient();
-		//getter.getData("./files/felix.txt");
+		FacebookClient getter = new FacebookClient();
+		getter.getData("./files/felix.txt");
 		
 		//Parser parser = new Parser();
 		System.out.println("Parsing Music Venues:");
 
 		try{
 			parser.parseCities();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		try{
 			parser.parseTheatres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		try {
 			parser.parseMusicVenues();
 			
 		} catch (Exception e){
 			e.printStackTrace();
 		}
 		
-		//LikesGenerator like = new LikesGenerator();
-		//like.connectMoviesAndCities();
+		LikesGenerator like = new LikesGenerator();
+		like.connectMoviesAndCities();
 		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file
