@@ -22,7 +22,7 @@ public class MysqlPortal implements MysqlFacet{
 
 	//  Database credentials
 	static final String USER = "root";
-	static final String PASS = "";
+	static final String PASS = "PASS";
 	
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 	
@@ -163,6 +163,51 @@ public class MysqlPortal implements MysqlFacet{
 			String sql;
 
 			sql = "INSERT into "+ table +" ("+ column +") values('"+ content +"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		return true;
+	}
+	
+	/*insert into concertvenue(name, address, cityID)
+	select 'New York', '123FAKE', cityID
+	from city 
+	where city.cityName = 'New York'
+	*/
+	public boolean insertConcert(String name, String address, String city) {
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+			
+			sql = "insert into concertvenue(name, address, cityID) select '"
+					+ name + "', '" + address + "' , cityID from city where city.cityName = '"+city+"';";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
