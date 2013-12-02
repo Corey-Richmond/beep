@@ -6,12 +6,32 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 import java.io.PrintWriter;
 
 import database.MysqlPortal;
 
+
+
 public class Parser implements ParserFacet{
+	final int MAX_LIKES = 100000;
+	final Random rand = new Random();
+	final double numMusicGenres = 35;
+	
+	public int numLikes(double place, double total, int max) {
+		int n = rand.nextInt(max);
+		while(n == 0) {
+			n = rand.nextInt(max);
+		}
+		//System.out.println(total-)
+		int b = (int)((total-place)/total * max);
+		if(n<=b || b==0) {
+			return n;
+		} else {
+			return rand.nextInt(b);
+		}
+	}
 
 	public boolean tokenize (String pathname, ArrayList<String> contents){
 		
@@ -194,27 +214,80 @@ public class Parser implements ParserFacet{
 		}
 	}
 	
+	public void parseMusicGenres() throws IOException { 
+		File file = new File("./files/felix/Data/musicgenres.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		int i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				mysql.insertMusicGenre(line, numLikes((double)i, numMusicGenres, MAX_LIKES));
+			}
+		}
+	}
+	
+	public void parseArtists() throws IOException { 
+		File file = new File("./files/felix/Data/testArtists.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		long i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				String [] t = line.split(" ");
+				if(t.length==1) {
+					mysql.insertArtistFull(t[0],"", "", numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else if(t.length==2) {
+					mysql.insertArtistFull(t[0], "", t[1], numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else {
+					mysql.insertArtistFull(t[0], t[2], t[1], numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				}
+			}
+		}
+	}
+	
+	public void parseMovieGenres() throws IOException{
+		File file = new File("./files/felix/Data/musicGenres.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		String line = "";
+
+		int i=0;
+		while (line != null){
+			i++;
+			line = reader.readLine();
+
+			if (line != null){
+				mysql.insertMovieGenres(line, numLikes((double)i, numMusicGenres, MAX_LIKES));
+			}
+						
+		}
+	}
+	
 	public void parseMusicVenues() throws IOException{
 		File file = new File("./files/felix/Data/musicVenues.txt");
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		MysqlPortal mysql = new MysqlPortal();
 		
-		String line = "", name="", city ="";
-		boolean isVenue = true;
-		l:while (line != null){
+		String line = "";
+
+		while (line != null){
 			line = reader.readLine();
-			if(line==null) { break l;}
-			if(isVenue) {
-				if (line != null){
-					city = line.substring(line.indexOf('\t')+1, line.length());
-					name = line.substring(0,line.indexOf('\t'));
-					isVenue=false;
-				}
-			} else {
-				line = line.substring(0,line.indexOf('\t'));
-				isVenue=true;
-				mysql.insertConcert(name, line, city);
+
+			if (line != null){
+				mysql.insert(line, "musicGenre", "genre");
 			}
+			
+			line = line.substring(0,line.indexOf('\t'));
+			
 		}
 	}
 	

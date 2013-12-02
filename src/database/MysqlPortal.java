@@ -186,6 +186,201 @@ public class MysqlPortal implements MysqlFacet{
 		return true;
 	}
 	
+	public boolean insertMovieGenres(String genre, int likes){
+
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "INSERT into moviegenre (genre, totalLikes) values('"+ genre +"', '"+likes+"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		return true;
+	}
+	
+	
+	public boolean insertArtistFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+			
+			sql = "insert into artist(personID, musicGenreID, totalLikes) "+ 
+			"values(" +
+					   "(select personID from person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+					    "(select musicGenreID from musicgenre where musicGenreID = "+genreID+"), " +
+					   "(totalLikes = "+likes+"));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+		
+		
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+			
+			sql = "insert into ArtistCitiesList(cityID, artistID, cityRank)"+
+			"values("+
+					"(select cityID from city where cityID = "+cityID+"),"+
+					"(select artist.artistID from artist inner join person on artist.personID = person.personID where person.firstName = '"+fname+"' and person.middleName = '"+mname+"' and person.lastName = '"+lname+"' limit 1),"+
+				   "(cityRank = 2));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+		
+		
+		return true;
+	}
+	
+	
+	public boolean insertMusicGenre(String content, int likes){
+
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into musicgenre(genre, totalLikes) values ('"+ content +"',"+ likes +")";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		return true;
+	}
+	
 	/*insert into concertvenue(name, address, cityID)
 	select 'New York', '123FAKE', cityID
 	from city 

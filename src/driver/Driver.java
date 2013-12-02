@@ -8,6 +8,7 @@
 package driver;
 
 import utilities.Parser;
+import utilities.zipUtil;
 import facebook.FacebookClient;
 import database.MysqlPortal;
 import database.MongoPortal;
@@ -47,14 +48,35 @@ public class Driver {
 		FacebookClient getter = new FacebookClient();
 		getter.getData("./files/felix.txt");
 		
+		zipUtil zu = new zipUtil();
+		zu.unZipIt();
 		//Parser parser = new Parser();
-		System.out.println("Parsing Music Venues:");
+		System.out.println("Parsing Data:");
 
 		try{
 			parser.parseCities();
 		} catch (Exception e){
 			e.printStackTrace();
 		}
+		
+		try{
+			parser.parseMovieGenres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		try{
+			parser.parseMusicGenres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		try{
+			parser.parseArtists();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
 		try{
 			parser.parseTheatres();
 		} catch (Exception e){

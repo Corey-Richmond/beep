@@ -169,7 +169,7 @@ create table MovieVenue(
 
 create table ConcertVenue(
 	venueID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	name    VARCHAR(40) NOT NULL,
+	name    VARCHAR(80) NOT NULL,
 	address VARCHAR(80),
 	cityID INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID)
