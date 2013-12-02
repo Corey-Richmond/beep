@@ -277,16 +277,23 @@ public class Parser implements ParserFacet{
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		MysqlPortal mysql = new MysqlPortal();
 		
-		String line = "";
+		boolean isVenue=true;
+		String line = "", name="", city="";
 
-		while (line != null){
+		l:while (line != null){
 			line = reader.readLine();
-
-			if (line != null){
-				mysql.insert(line, "musicGenre", "genre");
-			}
-			
-			line = line.substring(0,line.indexOf('\t'));
+			 if(line==null) { break l;}
+			 if(isVenue) {
+				 if (line != null){
+					 city = line.substring(line.indexOf('\t')+1, line.length());
+					 name = line.substring(0,line.indexOf('\t'));
+					 isVenue=false;
+				 }
+			 } else {
+			 	line = line.substring(0,line.indexOf('\t'));
+			 	isVenue=true;
+			 	mysql.insertConcert(name, line, city);
+			 }
 			
 		}
 	}
