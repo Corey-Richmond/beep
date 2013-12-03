@@ -37,7 +37,7 @@ public final class PrintSampleStream {
 			outGo = "outPut.txt";
 		}
     	File f = new File(inGo);
-    	ArrayList<String> al = new ArrayList<>();
+    	ArrayList<String> al = new ArrayList<String>();
     	Scanner sc = new Scanner(new File(inGo));    	
     	int i=0;
     	while(sc.hasNextLine()) {

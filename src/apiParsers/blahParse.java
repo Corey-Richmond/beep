@@ -32,7 +32,7 @@ public class blahParse {
 	      
 		
 		File f = new File(outGo);
-    	ArrayList<String> al = new ArrayList<>();
+    	ArrayList<String> al = new ArrayList<String>();
     	Scanner sdc = new Scanner(new File(outGo));    	
     	int i=0;
     	while(sdc.hasNextLine()) {
