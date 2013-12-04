@@ -33,12 +33,12 @@ public class LikesGenerator implements LikesFacet{
 	
 	public void connectMoviesAndCities(){
 		MysqlPortal msp = new MysqlPortal();
-		int movieCount = Integer.parseInt(msp.query("select count(*) from movie", "count(*)").get(0));
-		int cityCount  = Integer.parseInt(msp.query("select count(*) from city" , "count(*)").get(0));
+		int movieCount = Integer.parseInt(msp.query("select count(*) from Movie", "count(*)").get(0));
+		int cityCount  = Integer.parseInt(msp.query("select count(*) from City" , "count(*)").get(0));
 		
 		Random generator = new Random();
 		int randomCity;
-		System.out.println(movieCount +" , " + cityCount );
+		//System.out.println(movieCount +" , " + cityCount );
 		for(int i=1; i < movieCount; ++i){
 			for (int j=1; j<6; ++j){
 				randomCity = generator.nextInt(cityCount) + 1;

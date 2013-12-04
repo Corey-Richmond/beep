@@ -21,8 +21,8 @@ public class MysqlPortal implements MysqlFacet{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
 
 	//  Database credentials
-	static final String USER = "root";
-	static final String PASS = "PASS";
+	static final String USER = "student";
+	static final String PASS = "441";
 	
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 	
@@ -144,12 +144,13 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param content VARCHAR item to insert
 	 * @param table Mysql table to insert into
 	 * @param column Mysql column to insert into
-	 * @return True when complete
+	 * @return id of last insertion, -1 if there was an error
 	 */
-	public boolean insert(String content, String table, String column){
+	public int insert(String content, String table, String column){
 
 		Connection conn = null;
 		Statement stmt = null;
+		int id = -1;
 
 		try{
 			//STEP 2: Register JDBC driver
@@ -161,9 +162,13 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
+			
+			if(content.contains("'")){
+				content = content.replace("'", "");
+			}
 
 			sql = "INSERT into "+ table +" ("+ column +") values('"+ content +"')";
-			stmt.execute(sql);
+			id = stmt.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);
 
 			//STEP 6: Clean-up environment
 			stmt.close();
@@ -180,10 +185,10 @@ public class MysqlPortal implements MysqlFacet{
 		
 		finally{
 			if (!close(conn, stmt))
-				return false;
+				return id;
 		}//end try
 
-		return true;
+		return id;
 	}
 	
 	public boolean insertMovieGenres(String genre, int likes){
@@ -313,7 +318,7 @@ public class MysqlPortal implements MysqlFacet{
 			
 			sql = "insert into ArtistCitiesList(cityID, artistID, cityRank)"+
 			"values("+
-					"(select cityID from city where cityID = "+cityID+"),"+
+					"(select cityID from City where cityID = "+cityID+"),"+
 					"(select artist.artistID from artist inner join person on artist.personID = person.personID where person.firstName = '"+fname+"' and person.middleName = '"+mname+"' and person.lastName = '"+lname+"' limit 1),"+
 				   "(cityRank = 2));";
 			stmt.execute(sql);
@@ -341,6 +346,82 @@ public class MysqlPortal implements MysqlFacet{
 	}
 	
 	
+	public boolean insertAthleteFull(String fname, String mname, String lname, int likes, int rating, int teamID) {
+		Connection conn = null;
+		Statement stmt = null;
+	
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+	
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+	
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+	
+			sql = "insert into Person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
+			stmt.execute(sql);
+	
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+	
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+	
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+	
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+			
+			sql = "insert into Athlete(personID, totalLikes, rating, teamID) "+ 
+			"values(" +
+					   "(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+					   "(totalLikes = "+likes+"), " +
+					   		"(rating = " +rating+")," +
+					   				"(teamID =" +teamID+") );";
+			stmt.execute(sql);
+	
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try	
+		
+		return true;
+	}
+
 	public boolean insertMusicGenre(String content, int likes){
 
 		Connection conn = null;

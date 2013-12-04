@@ -1,5 +1,7 @@
 create DATABASE beep;
 use beep;
+SET FOREIGN_KEY_CHECKS=0;
+
 
 create table City(
 	cityID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

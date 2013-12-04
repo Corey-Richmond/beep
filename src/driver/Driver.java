@@ -36,61 +36,8 @@ public class Driver {
 
 	public static void main (String args[]){
 		//*****************STARTS DATABASE POPULATION*******************************
-		MysqlPortal p = new MysqlPortal();
-		p.createDataBase();
-		
-		// Read contents from file
-		ArrayList<String> contents = new ArrayList<String>();
-		Parser parser = new Parser();
-		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
-		
-		// Grab movie info and populate database
-		FacebookClient getter = new FacebookClient();
-		getter.getData("./files/felix.txt");
-		
-		zipUtil zu = new zipUtil();
-		zu.unZipIt();
-		//Parser parser = new Parser();
-		System.out.println("Parsing Data:");
-
-		try{
-			parser.parseCities();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		
-		try{
-			parser.parseMovieGenres();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		
-		try{
-			parser.parseMusicGenres();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		
-		try{
-			parser.parseArtists();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		
-		try{
-			parser.parseTheatres();
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		try {
-			parser.parseMusicVenues();
-			
-		} catch (Exception e){
-			e.printStackTrace();
-		}
-		
-		LikesGenerator like = new LikesGenerator();
-		like.connectMoviesAndCities();
+		DatabasePopulator dp = new DatabasePopulator();
+		dp.populateDatabase();
 		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file

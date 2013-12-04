@@ -319,9 +319,14 @@ public class Parser implements ParserFacet{
 			terminator = line.indexOf(',', 0);
 			String streetAddress = line.substring(0, terminator);
 			
-			// Another error Correction...
-			if (streetAddress.charAt(0) == ',')
-				continue;
+			try{
+				// Another error Correction...
+				if (streetAddress.charAt(0) == ',')
+					continue;
+			}
+			catch(StringIndexOutOfBoundsException e){
+			}
+			
 			
 			line = line.substring(terminator+1, line.length());
 			String city = line.trim();		
@@ -332,6 +337,8 @@ public class Parser implements ParserFacet{
 			if (line != null){
 				System.out.println("Venue: " + venue);
 				
+				if(venue.contains("'"))
+					venue = venue.replace("'", "");
 				// Make new entry for movie
 				mysql.insert(venue, "MovieVenue", "name");
 				
@@ -346,5 +353,6 @@ public class Parser implements ParserFacet{
 				mysql.update("MovieVenue", "cityID", Integer.parseInt(id), "name", venue);
 			}
 		}
-	}
+	}	
+	
 }
