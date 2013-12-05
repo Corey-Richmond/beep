@@ -1,4 +1,4 @@
-/* Author: Donald Siuchninski
+/* Author: Donald Siuchninski & Patrick Masier
  * University: University of Illinois at Chicago
  * Class: CS 441, Distributed Object Programming Using Middleware
  * Date: Fall 2013

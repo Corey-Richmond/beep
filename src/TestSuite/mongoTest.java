@@ -6,11 +6,6 @@
  * Group: 1
  */
 
-/*
- * TO DO:
- * 1) Need to make each test completely independent 
- */
-
 package TestSuite;
 
 import static org.junit.Assert.*;
