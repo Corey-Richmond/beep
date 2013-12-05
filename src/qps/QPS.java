@@ -6,9 +6,12 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
+import apiParsers.Tweaper;
+
 import LoadBalancer.LoadBalanced;
 
 import database.MysqlPortal;
+import facebook.FacebookClient.Domain;
 
 //Registry registry = LocateRegistry.getRegistry();
 //System.out.println("Obtaining original remote object value.");
@@ -17,7 +20,6 @@ import database.MysqlPortal;
 public class QPS implements QPSInterface{
 	int count;
 	MysqlPortal mysql = new MysqlPortal();
-	
 	public QPS(){
 		count = 0;
 	}
@@ -120,8 +122,12 @@ public class QPS implements QPSInterface{
 
 	@Override
 	public String getMovie(String search) throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
+		count++;
+		Tweaper tweaper = new Tweaper(search, Domain.MOVIE, mysql);
+		tweaper.filterSample(new String[]{search});
+		System.out.println("filter finish");
+		count --;
+		return getCitiesByMovie(search).toString();
 	}
 
 	@Override

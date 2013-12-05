@@ -9,13 +9,16 @@ package database;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
+
+import facebook.FacebookClient.Domain;
 
 import utilities.Parser;
 
 public class MysqlPortal implements MysqlFacet{
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
@@ -23,11 +26,11 @@ public class MysqlPortal implements MysqlFacet{
 	//  Database credentials
 	static final String USER = "student";
 	static final String PASS = "441";
-	
+
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * Allows ANY MySql string query to be passed
 	 * 
@@ -50,7 +53,7 @@ public class MysqlPortal implements MysqlFacet{
 
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
-			
+
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				result.add(rs.getString(column));
@@ -68,7 +71,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return result;
@@ -76,9 +79,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return result;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 
 	/**
 	 * INSERT into <table> (<column>) values('<contents>')
@@ -125,7 +128,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -133,9 +136,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * INSERT into <table> (<column>) values('<content>')
 	 * 
@@ -162,7 +165,7 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
+
 			if(content.contains("'")){
 				content = content.replace("'", "");
 			}
@@ -182,7 +185,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return id;
@@ -190,7 +193,7 @@ public class MysqlPortal implements MysqlFacet{
 
 		return id;
 	}
-	
+
 	public boolean insertMovieGenres(String genre, int likes){
 
 		Connection conn = null;
@@ -222,7 +225,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -230,8 +233,8 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
-	
+
+
 	public boolean insertArtistFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
 		Connection conn = null;
 		Statement stmt = null;
@@ -247,7 +250,7 @@ public class MysqlPortal implements MysqlFacet{
 			stmt = conn.createStatement();
 			String sql;
 
-			sql = "insert into person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
+			sql = "insert into Person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
@@ -262,7 +265,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -278,12 +281,12 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
-			sql = "insert into artist(personID, musicGenreID, totalLikes) "+ 
+
+			sql = "insert into Artist(personID, musicGenreID, totalLikes) "+ 
 			"values(" +
-					   "(select personID from person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
-					    "(select musicGenreID from musicgenre where musicGenreID = "+genreID+"), " +
-					   "(totalLikes = "+likes+"));";
+			"(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+			"(select musicGenreID from musicGenre where musicGenreID = "+genreID+"), " +
+			"(totalLikes = "+likes+"));";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
@@ -298,13 +301,13 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
 		}//end try
-		
-		
+
+
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName(jdbcDriver);
@@ -315,12 +318,12 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
+
 			sql = "insert into ArtistCitiesList(cityID, artistID, cityRank)"+
 			"values("+
-					"(select cityID from City where cityID = "+cityID+"),"+
-					"(select artist.artistID from artist inner join person on artist.personID = person.personID where person.firstName = '"+fname+"' and person.middleName = '"+mname+"' and person.lastName = '"+lname+"' limit 1),"+
-				   "(cityRank = 2));";
+			"(select cityID from City where cityID = "+cityID+"),"+
+			"(select Artist.artistID from Artist inner join Person on Artist.personID = Person.personID where Person.firstName = '"+fname+"' and Person.middleName = '"+mname+"' and Person.lastName = '"+lname+"' limit 1),"+
+			"(cityRank = 2));";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
@@ -335,35 +338,35 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
 		}//end try
-		
-		
+
+
 		return true;
 	}
-	
-	
+
+
 	public boolean insertAthleteFull(String fname, String mname, String lname, int likes, int rating, int teamID) {
 		Connection conn = null;
 		Statement stmt = null;
-	
+
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName(jdbcDriver);
-	
+
 			//STEP 3: Open a connection
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-	
+
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-	
+
 			sql = "insert into Person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
 			stmt.execute(sql);
-	
+
 			//STEP 6: Clean-up environment
 			stmt.close();
 			conn.close();
@@ -376,31 +379,31 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
 		}//end try
-	
+
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName(jdbcDriver);
-	
+
 			//STEP 3: Open a connection
 			conn = DriverManager.getConnection(DB_URL,USER,PASS);
-	
+
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
+
 			sql = "insert into Athlete(personID, totalLikes, rating, teamID) "+ 
 			"values(" +
-					   "(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
-					   "(totalLikes = "+likes+"), " +
-					   		"(rating = " +rating+")," +
-					   				"(teamID =" +teamID+") );";
+			"(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+			"(totalLikes = "+likes+"), " +
+			"(rating = " +rating+")," +
+			"(teamID =" +teamID+") );";
 			stmt.execute(sql);
-	
+
 			//STEP 6: Clean-up environment
 			stmt.close();
 			conn.close();
@@ -413,12 +416,12 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
 		}//end try	
-		
+
 		return true;
 	}
 
@@ -453,7 +456,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -461,12 +464,12 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	/*insert into concertvenue(name, address, cityID)
 	select 'New York', '123FAKE', cityID
 	from city 
 	where city.cityName = 'New York'
-	*/
+	 */
 	public boolean insertConcert(String name, String address, String city) {
 		Connection conn = null;
 		Statement stmt = null;
@@ -481,9 +484,9 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
+
 			sql = "insert into concertvenue(name, address, cityID) select '"
-					+ name + "', '" + address + "' , cityID from city where city.cityName = '"+city+"';";
+				+ name + "', '" + address + "' , cityID from city where city.cityName = '"+city+"';";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment
@@ -498,7 +501,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -506,9 +509,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * INSERT into <table> values('<content>')
 	 * 
@@ -550,7 +553,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -558,9 +561,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
 	 * 
@@ -605,7 +608,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -613,9 +616,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
 	 * 
@@ -660,7 +663,7 @@ public class MysqlPortal implements MysqlFacet{
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
-		
+
 		finally{
 			if (!close(conn, stmt))
 				return false;
@@ -668,9 +671,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return true;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * SELECT <what> FROM <table> WHERE <where> = '<whereValue>'
 	 * 
@@ -687,7 +690,7 @@ public class MysqlPortal implements MysqlFacet{
 		Statement stmt = null;
 
 		String returnValue = "";
-		
+
 		try{
 			//STEP 2: Register JDBC driver
 			Class.forName(jdbcDriver);
@@ -698,7 +701,7 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
 			String sql;
-			
+
 			sql = "SELECT "+what+" FROM "+table+ " WHERE "+where+" = '"+whereValue+"'";
 			ResultSet rs = stmt.executeQuery(sql);
 
@@ -722,9 +725,9 @@ public class MysqlPortal implements MysqlFacet{
 
 		return returnValue;
 	}
-	
+
 	// -------------------------------------------------------------------------------|
-	
+
 	/**
 	 * Closes connection
 	 * 
@@ -750,16 +753,44 @@ public class MysqlPortal implements MysqlFacet{
 			se.printStackTrace();
 			return false;
 		}
-		
+
 		return true;
 	}
 
 	@Override
 	public ResultSet query(String query) {
-		// TODO Auto-generated method stub
-		return null;
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+
+			//STEP 6: Clean-up environment
+			rs.close();
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		return rs;
 	}
-	
+
 	public void createDataBase(){
 		Connection conn = null;
 		Statement stmt = null;
@@ -777,7 +808,7 @@ public class MysqlPortal implements MysqlFacet{
 			Parser p = new Parser();
 			ArrayList<String> temp = new ArrayList<String>();
 			p.lineReadGeneric(file , temp);
-			
+
 			String str= "";
 			for (int i=0; i<temp.size(); ++i){
 				str += temp.get(i);
@@ -786,12 +817,55 @@ public class MysqlPortal implements MysqlFacet{
 					str = "";
 				}
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
+		}		
+	}
+
+	public List<String> getCities(){
+		return query("select * from City;", "cityName");
+	}
+
+	public int getDomainID(Domain d, String name){
+		name = name.replace("'", "");
+		try{
+			switch(d){
+			case ARTIST:
+				return query("select artistID from Artist JOIN Person on Artist.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';").getInt(1);
+			case ATHLETE:
+				return query("select AthleteID from Athlete JOIN Person on Athlete.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';").getInt(1);
+			case MOVIE:
+				return query("select movieID from Movie where title = '" + name + "';").getInt(1);
+			case TEAM:
+				return query("select teamID from Team where teamName = '" + name + "';").getInt(1);
+			}
+		}catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		return -1;
+	}
+	
+	public int getCityID(String cityName){
+		try {
+			return query("select cityID from City where cityName = '" + cityName + "';").getInt(1);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return -1;
+	}
 
-
+	/**
+	 * 
+	 * @param d domain (MOVIE, ARTIST, TEAM, ATHLETE)
+	 * @param name name of object being tracked
+	 * @param cityName name of city to add likes
+	 * @param likes likes to be added to like count
+	 */
+	public void incrementLikes(Domain d, String name,String cityName, int likes){
+		//TODO
 		
 	}
 }
@@ -799,4 +873,4 @@ public class MysqlPortal implements MysqlFacet{
 
 
 
-	// -------------------------------------------------------------------------------|
+// -------------------------------------------------------------------------------|
