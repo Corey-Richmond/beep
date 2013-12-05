@@ -1,4 +1,5 @@
-/* University: University of Illinois at Chicago
+/* Author: Donald Siuchninski
+ * University: University of Illinois at Chicago
  * Class: CS 441, Distributed Object Programming Using Middleware
  * Date: Fall 2013
  * Professor: Mark Grechanik
@@ -7,13 +8,12 @@
 
 package database;
 
-import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public interface MysqlFacet {
 	
-	// Pass any query
-	public ResultSet query(String query);
+	// Execute any custom query. Store results in String column
+	public ArrayList<String> query(String query, String column);
 
 	// INSERT into <table> (<column>) values('<contents>')
 	public boolean insert(ArrayList<String> contents, String table, String column);
@@ -28,5 +28,8 @@ public interface MysqlFacet {
 	public boolean update(String table, String column, int value, String where, String whereValue);
 	
 	// SELECT <what> FROM <table> WHERE <where> = '<whereValue>'
-	public String get(String what, String table, String where, String whereValue, ArrayList<String> contents);
+	public String get(String what, String table, String where, String whereValue);
+	
+	// Deletes all rows from the given table
+	public int deleteRowsInTable(String table);
 }

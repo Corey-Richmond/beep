@@ -29,10 +29,10 @@ public class MysqlPortal implements MysqlFacet{
 	// -------------------------------------------------------------------------------|
 	
 	/**
-	 * Allows ANY MySql string query to be passed
-	 * 
-	 * @param query Any valid mysql string query
-	 * @return True when complete
+	 * Execute any custom query and return an ArrayList<String> of results
+	 * @param query
+	 * @param column
+	 * @return ArrayList<String> 
 	 */
 	public ArrayList<String> query(String query, String column){
 
@@ -60,10 +60,6 @@ public class MysqlPortal implements MysqlFacet{
 			stmt.close();
 			conn.close();
 		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
-		}
 		catch(Exception e){
 			//Handle errors for Class.forName
 			e.printStackTrace();
@@ -79,7 +75,6 @@ public class MysqlPortal implements MysqlFacet{
 	
 	// -------------------------------------------------------------------------------|
 	
-
 	/**
 	 * INSERT into <table> (<column>) values('<contents>')
 	 * 
@@ -116,10 +111,6 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 6: Clean-up environment
 			stmt.close();
 			conn.close();
-		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
 		}
 		catch(Exception e){
 			//Handle errors for Class.forName
@@ -169,10 +160,6 @@ public class MysqlPortal implements MysqlFacet{
 			stmt.close();
 			conn.close();
 		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
-		}
 		catch(Exception e){
 			//Handle errors for Class.forName
 			e.printStackTrace();
@@ -192,6 +179,8 @@ public class MysqlPortal implements MysqlFacet{
 	 * INSERT into <table> values('<content>')
 	 * 
 	 * For a given table and column, insert VARCHAR content
+	 * 
+	 * (UNUSED)
 	 * 
 	 * @param content VARCHAR item to insert
 	 * @param table Mysql table to insert into
@@ -220,10 +209,6 @@ public class MysqlPortal implements MysqlFacet{
 			//STEP 6: Clean-up environment
 			stmt.close();
 			conn.close();
-		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
 		}
 		catch(Exception e){
 			//Handle errors for Class.forName
@@ -276,10 +261,6 @@ public class MysqlPortal implements MysqlFacet{
 			stmt.close();
 			conn.close();
 		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
-		}
 		catch(Exception e){
 			//Handle errors for Class.forName
 			e.printStackTrace();
@@ -331,10 +312,6 @@ public class MysqlPortal implements MysqlFacet{
 			stmt.close();
 			conn.close();
 		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
-		}
 		catch(Exception e){
 			//Handle errors for Class.forName
 			e.printStackTrace();
@@ -361,7 +338,7 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param whereValue Value of 'where' column to be matched
 	 * @return String value from database
 	 */
-	public String get(String what, String table, String where, String whereValue, ArrayList<String> contents){
+	public String get(String what, String table, String where, String whereValue){
 		Connection conn = null;
 		Statement stmt = null;
 
@@ -376,9 +353,10 @@ public class MysqlPortal implements MysqlFacet{
 
 			//STEP 4: Execute a query
 			stmt = conn.createStatement();
-			String sql;
+			String sql = "";
 			
 			sql = "SELECT "+what+" FROM "+table+ " WHERE "+where+" = '"+whereValue+"'";
+			
 			ResultSet rs = stmt.executeQuery(sql);
 
 			//STEP 5: Extract data from result set
@@ -390,16 +368,54 @@ public class MysqlPortal implements MysqlFacet{
 			stmt.close();
 			conn.close();
 		}
-		catch(SQLException se){
-			//Handle errors for JDBC
-			se.printStackTrace();
-		}
 		catch(Exception e){
 			//Handle errors for Class.forName
 			e.printStackTrace();
 		}
 
 		return returnValue;
+	}
+	
+	// -------------------------------------------------------------------------------|
+	
+	/**
+	 * Deletes all rows in a given table
+	 * @param Table name
+	 * @return Number of rows affected by delete
+	 */
+	public int deleteRowsInTable(String table){
+
+		Connection conn = null;
+		Statement stmt = null;
+		int rowCount = 0;
+		ArrayList<String> result = new ArrayList<String>();
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			rowCount = stmt.executeUpdate("DELETE FROM " + table);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+		
+		finally{
+			if (!close(conn, stmt))
+				return rowCount;
+		}//end try
+
+		return rowCount;
 	}
 	
 	// -------------------------------------------------------------------------------|
@@ -432,12 +448,8 @@ public class MysqlPortal implements MysqlFacet{
 		
 		return true;
 	}
-
-	@Override
-	public ResultSet query(String query) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+	// -------------------------------------------------------------------------------|
 	
 	public void createDataBase(){
 		Connection conn = null;
@@ -469,13 +481,7 @@ public class MysqlPortal implements MysqlFacet{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-
-		
 	}
-}
-
-
-
-
+	
 	// -------------------------------------------------------------------------------|
+}

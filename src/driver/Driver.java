@@ -1,4 +1,5 @@
-/* University: University of Illinois at Chicago
+/* Authors: Donald Siuchninski & Corey Richmond
+ * University: University of Illinois at Chicago
  * Class: CS 441, Distributed Object Programming Using Middleware
  * Date: Fall 2013
  * Professor: Mark Grechanik

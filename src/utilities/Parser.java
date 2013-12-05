@@ -1,3 +1,11 @@
+/* Author: Donald Siuchninski
+ * University: University of Illinois at Chicago
+ * Class: CS 441, Distributed Object Programming Using Middleware
+ * Date: Fall 2013
+ * Professor: Mark Grechanik
+ * Group: 1
+ */
+
 package utilities;
 
 import java.io.BufferedReader;
@@ -200,7 +208,7 @@ public class Parser implements ParserFacet{
 				mysql.update("MovieVenue", "address", streetAddress, "name", venue);
 				
 				// Get the cityID from City table and insert into Movie VenueTable
-				String id = mysql.get("cityID", "City", "cityName", city, null);
+				String id = mysql.get("cityID", "City", "cityName", city);
 				if (id.equals(null) || id.equals(""))
 					continue;
 				mysql.update("MovieVenue", "cityID", Integer.parseInt(id), "name", venue);
