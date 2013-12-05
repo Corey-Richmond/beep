@@ -1,167 +1,270 @@
 New York
+New York
 Los Angeles
+California
 Chicago
+Illinois
 Houston
+Texas
 Philadelphia
+Pennsylvania
 Phoenix
+Arizona
 San Antonio
+Texas
 San Diego
+California
 Dallas
+Texas
 San Jose
+California
 Austin
+Texas
 Jacksonville
+Florida
 Indianapolis
+Indiana
 San Francisco
+California
 Columbus
+Ohio
 Fort Worth
+Texas
 Charlotte
+North Carolina
 Detroit
+Michigan
 El Paso
+Texas
 Memphis
+Tennessee
 Boston
+Massachusetts
 Seattle
+Washington
 Denver
+Colorado
 Nashville
+Tennessee
 Baltimore
+Maryland
 Louisville
+Kentucky
 Portland
+Oregon
 Oklahoma City
+Oklahoma
 Milwaukee
+Wisconsin
 Las Vegas
+Nevada
 Albuquerque
+New Mexico
 Tucson
+Arizona
 Fresno
+California
 Sacramento
+California
 Long Beach
+California
 Kansas City
+Kansas
 Mesa
+Arizona
 Virginia Beach
+Virginia
 Atlanta
+Georgia
 Colorado Springs
+Colorado
 Raleigh
+North Carolina
 Omaha
+Nebraska
 Miami
+Florida
 Oakland
+California
 Tulsa
+Oklahoma
 Minneapolis
+Minnesota
 Cleveland
+Ohio
 Wichita
+Kansas
 Arlington
+Texas
 New Orleans
+Louisiana
 Bakersfield
+California
 Tampa
+Florida
 Honolulu
+Hawaii
 Anaheim
+Florida
 Aurora
+Illinois
 Santa Ana
+California
 St. Louis
-Riverside
+Missouri
 Corpus Christi
+Texas
 Pittsburgh
+Pennsylvania
 Lexington
+Kentucky
 Anchorage
+Alaska
 Cincinnati
-Saint Paul
+Ohio
 Toledo
+Ohio
 Newark
+New Jersey
 Greensboro
+North Carolina
 Plano
+Texas
 Henderson
+Nevada
 Lincoln
+Oregon
 Buffalo
+New York
 Fort Wayne
+Indiana
 Jersey City
+New Jersey
 Chula Vista
+California
 Orlando
+Florida
 St. Petersburg
+Russia
 Norfolk
+Virginia
 Chandler
+Arizona
 Laredo
+Texas
 Madison
+Wisconsin
 Durham
+North Carolina
 Lubbock
-Winston–Salem
+Texas
 Garland
-Glendale
+Texas
 Hialeah
+Florida
 Reno
+Nevada
 Baton Rouge
+Louisiana
 Irvine
-Chesapeake
+California
 Irving
+Texas
 Scottsdale
+Arizona
 North Las Vegas
+Nevada
 Fremont
+Michigan
 Gilbert
+Arizona
 San Bernardino
+California
 Boise
+Idaho
 Birmingham
+Alabama
 Rochester
+New York
 Richmond
+Virginia
 Spokane
+Washington
 Des Moines
+Iowa
 Montgomery
+Alabama
 Modesto
+California
 Fayetteville
+North Carolina
 Tacoma
+Washington
 Shreveport
+Louisiana
 Fontana
+California
 Oxnard
-Aurora
+California
 Moreno Valley
+California
 Akron
+Ohio
 Yonkers
+New York
 Columbus
+Ohio
 Augusta
+Georgia
 Little Rock
+Arkansas
 Amarillo
+Texas
 Mobile
+Alabama
 Huntington Beach
-Glendale
+California
 Grand Rapids
+Michigan
 Salt Lake City
+Utah
 Tallahassee
+Florida
 Huntsville
+Alabama
 Worcester
+Massachusetts
 Knoxville
+Tennessee
 Grand Prairie
-Newport News
+Texas
 Brownsville
+Texas
 Santa Clarita
+California
 Overland Park
+Kansas
 Providence
-Jackson
-Garden Grove
-Oceanside
+Rhode Island
 Chattanooga
+Tennessee
 Fort Lauderdale
-Rancho Cucamonga
-Santa Rosa
-Port St. Lucie
-Ontario
-Tempe
+Florida
 Vancouver
-Springfield
-Cape Coral
-Pembroke Pines
-Sioux Falls
-Peoria
-Lancaster
-Elk Grove
-Corona
-Eugene
-Salem
-Palmdale
-Salinas
-Springfield
-Pasadena
-Rockford
-Pomona
-Hayward
-Fort Collins
-Joliet
-Escondido
+Canada
 Kansas City
+Kansas
+Warsaw
+Poland
+Moscow
+Russia
+London
+England
+Beijing
+China
+Shanghai
+China
+#######
 Torrance
 Bridgeport
 Alexandria

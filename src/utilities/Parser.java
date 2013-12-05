@@ -14,11 +14,32 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 import java.io.PrintWriter;
+
 import database.MysqlPortal;
 
+
+
 public class Parser implements ParserFacet{
+	final int MAX_LIKES = 100000;
+	final Random rand = new Random();
+	final double numMusicGenres = 35;
+	
+	public int numLikes(double place, double total, int max) {
+		int n = rand.nextInt(max);
+		while(n == 0) {
+			n = rand.nextInt(max);
+		}
+		//System.out.println(total-)
+		int b = (int)((total-place)/total * max);
+		if(n<=b || b==0) {
+			return n;
+		} else {
+			return rand.nextInt(b);
+		}
+	}
 
 	public boolean tokenize (String pathname, ArrayList<String> contents){
 		
@@ -147,6 +168,22 @@ public class Parser implements ParserFacet{
 		return true;
 	}
 	
+	
+	/**
+	 * UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
+	 * 
+	 * Inserts one single VARCHAR item into table at column where a condition
+	 * holds true
+	 * 
+	 * @param table Table to insert into
+	 * @param column Column to insert into
+	 * @param value VARCHAR value to insert
+	 * @param where Column whose value must be satisfied in the query
+	 * @param whereValue Value of the column that must be satisfied
+	 * @return True when complete
+	 */
+	//public boolean update(String table, String column, String value, String where, String whereValue)
+	
 	public void parseCities() throws IOException{
 		
 		File file = new File("./files/felix/Data/cities.txt");
@@ -155,14 +192,117 @@ public class Parser implements ParserFacet{
 		MysqlPortal mysql = new MysqlPortal();
 		
 		String line = "";
+		boolean hasState = true;
 		
-		while (line != null){
+		l:while (line != null){
 			line = reader.readLine();
-			
-			if (line != null){
-				System.out.println(line);
-				mysql.insert(line, "City", "cityName");
+			if(line==null) {
+				break l;
 			}
+			if(line.equals("#######")) {
+				hasState=false;
+				line = reader.readLine();
+			}
+			
+			if(!hasState) {
+				if (line != null){
+					//System.out.println(line);
+					mysql.insert(line, "City", "cityName");
+				}
+			} else {
+				String state = reader.readLine();
+				mysql.insert(line, "City", "cityName");
+				if(state.equals("Russia")||state.equals("Canada")||state.equals("Poland")||state.equals("China")||state.equals("England")) {
+					mysql.update("City", "cityCountry", state, "cityName", line);
+				} else {
+					mysql.update("City", "cityCountry", "USA", "cityName", line);
+					mysql.update("City", "cityState", state, "cityName", line);
+				}
+			}
+		}
+	}
+	
+	public void parseMusicGenres() throws IOException { 
+		File file = new File("./files/felix/Data/musicgenres.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		int i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				mysql.insertMusicGenre(line, numLikes((double)i, numMusicGenres, MAX_LIKES));
+			}
+		}
+	}
+	
+	public void parseArtists() throws IOException { 
+		File file = new File("./files/felix/Data/testArtists.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		long i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				String [] t = line.split(" ");
+				if(t.length==1) {
+					mysql.insertArtistFull(t[0],"", "", numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else if(t.length==2) {
+					mysql.insertArtistFull(t[0], "", t[1], numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else {
+					mysql.insertArtistFull(t[0], t[2], t[1], numLikes((double)i, numMusicGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				}
+			}
+		}
+	}
+	
+	public void parseMovieGenres() throws IOException{
+		File file = new File("./files/felix/Data/musicGenres.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		String line = "";
+
+		int i=0;
+		while (line != null){
+			i++;
+			line = reader.readLine();
+
+			if (line != null){
+				mysql.insertMovieGenres(line, numLikes((double)i, numMusicGenres, MAX_LIKES));
+			}
+						
+		}
+	}
+	
+	public void parseMusicVenues() throws IOException{
+		File file = new File("./files/felix/Data/musicVenues.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		boolean isVenue=true;
+		String line = "", name="", city="";
+
+		l:while (line != null){
+			line = reader.readLine();
+			 if(line==null) { break l;}
+			 if(isVenue) {
+				 if (line != null){
+					 city = line.substring(line.indexOf('\t')+1, line.length());
+					 name = line.substring(0,line.indexOf('\t'));
+					 isVenue=false;
+				 }
+			 } else {
+			 	line = line.substring(0,line.indexOf('\t'));
+			 	isVenue=true;
+			 	mysql.insertConcert(name, line, city);
+			 }
+			
 		}
 	}
 	
@@ -187,9 +327,14 @@ public class Parser implements ParserFacet{
 			terminator = line.indexOf(',', 0);
 			String streetAddress = line.substring(0, terminator);
 			
-			// Another error Correction...
-			if (streetAddress.charAt(0) == ',')
-				continue;
+			try{
+				// Another error Correction...
+				if (streetAddress.charAt(0) == ',')
+					continue;
+			}
+			catch(StringIndexOutOfBoundsException e){
+			}
+			
 			
 			line = line.substring(terminator+1, line.length());
 			String city = line.trim();		
@@ -200,6 +345,8 @@ public class Parser implements ParserFacet{
 			if (line != null){
 				System.out.println("Venue: " + venue);
 				
+				if(venue.contains("'"))
+					venue = venue.replace("'", "");
 				// Make new entry for movie
 				mysql.insert(venue, "MovieVenue", "name");
 				
@@ -214,5 +361,6 @@ public class Parser implements ParserFacet{
 				mysql.update("MovieVenue", "cityID", Integer.parseInt(id), "name", venue);
 			}
 		}
-	}
+	}	
+	
 }

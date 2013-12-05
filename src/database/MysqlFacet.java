@@ -8,6 +8,7 @@
 
 package database;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public interface MysqlFacet {
@@ -19,7 +20,7 @@ public interface MysqlFacet {
 	public boolean insert(ArrayList<String> contents, String table, String column);
 	
 	// INSERT into <table> (<column>) values('<content>')
-	public boolean insert(String content, String table, String column);
+	public int insert(String content, String table, String column);
 	
 	// UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
 	public boolean update(String table, String column, String value, String where, String whereValue);
@@ -32,4 +33,6 @@ public interface MysqlFacet {
 	
 	// Deletes all rows from the given table
 	public int deleteRowsInTable(String table);
+
+	public ResultSet query(String query);
 }

@@ -124,7 +124,7 @@ boolean result = false;
 	@Test
 	public void testInsertStringStringString() {
 		
-		boolean result = false;
+		int result = -1;
 		
 		MysqlPortal portal = new MysqlPortal();
 		
@@ -136,7 +136,7 @@ boolean result = false;
 		
 		// Insert into database
 		result = portal.insert(content, table, column);
-		assertTrue(result);
+		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
 		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
@@ -157,7 +157,7 @@ boolean result = false;
 	@Test
 	public void testUpdateStringStringStringStringString() {
 
-		boolean result = false;
+		int result = -1;
 		
 		MysqlPortal portal = new MysqlPortal();
 		
@@ -171,7 +171,7 @@ boolean result = false;
 		
 		// Insert into database
 		result = portal.insert(content, table, column);
-		assertTrue(result);
+		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
 		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
@@ -198,7 +198,7 @@ boolean result = false;
 	@Test
 	public void testUpdateStringStringIntStringString() {
 
-		boolean result = false;
+		int result = -1;
 		
 		MysqlPortal portal = new MysqlPortal();
 		
@@ -212,7 +212,7 @@ boolean result = false;
 		
 		// Insert into database
 		result = portal.insert(content, table, column);
-		assertTrue(result);
+		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
 		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "Firstname");
