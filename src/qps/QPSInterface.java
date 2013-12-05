@@ -28,5 +28,7 @@ public interface QPSInterface extends Remote, LoadBalanced{
 	public ArrayList<String> getPopularAthletesByCity(String city) throws RemoteException;
 	
 	public ArrayList<String> getPopularTeamsByCity(String city) throws RemoteException;
+
+	public ArrayList<String[]> getVenueByMovieAndRank(String input, int input1) throws RemoteException;
 	
 }

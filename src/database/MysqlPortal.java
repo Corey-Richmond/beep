@@ -1,4 +1,4 @@
-/* Authors: Donald Siuchninski, Felix Rodriguez & Patrick Masier
+/* Authors: Donald Siuchninski, Corey Richmond, Felix Rodriguez & Patrick Masier
  * University: University of Illinois at Chicago
  * Class: CS 441, Distributed Object Programming Using Middleware
  * Date: Fall 2013
@@ -25,8 +25,8 @@ public class MysqlPortal implements MysqlFacet{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
 
 	//  Database credentials
-	static final String USER = "student";
-	static final String PASS = "441";
+	static final String USER = "root";
+	static final String PASS = "";
 
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 

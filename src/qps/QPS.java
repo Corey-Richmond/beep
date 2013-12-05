@@ -32,33 +32,7 @@ public class QPS implements QPSInterface{
 		count = 0;
 	}
 	
-	public ArrayList<String> getCitiesByMovie(String movie){
-		
-		// Load balance count
-		count++;
-		
-		int rank = 1;
-		
-		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
-
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+movie+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
-		
-		count--;
-		
-		return result2;
-	}
-	
-	/*@Override
+	@Override
 	public ArrayList<String[]> getVenueByMovieAndRank(String movie, int rank)
 			throws RemoteException {
 		count++;
@@ -89,7 +63,7 @@ public class QPS implements QPSInterface{
 		}
 		count--;
 		return result3;
-	}*/
+	}
 	
 	public static void main(String args[]){
 	
@@ -144,7 +118,6 @@ public class QPS implements QPSInterface{
 		count--;
 		
 		return result2;
-		return null;
 	}
 
 	@Override
@@ -171,7 +144,7 @@ public class QPS implements QPSInterface{
 		count--;
 		
 		return result2;
-		return null;
+
 	}
 
 	@Override
@@ -277,7 +250,6 @@ public class QPS implements QPSInterface{
 		count--;
 		
 		return result2;
-		return null;
 	}
 
 	@Override
@@ -304,7 +276,6 @@ public class QPS implements QPSInterface{
 		count--;
 		
 		return result2;
-		return null;
 	}
 
 	@Override

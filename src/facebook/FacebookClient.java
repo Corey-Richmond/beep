@@ -26,7 +26,9 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 
 import database.MysqlPortal;
 
@@ -37,8 +39,10 @@ public class FacebookClient {
 	public void getData(String inputFileName, String outputFileName, Domain d){
 		
 		//Parser 
-		HttpClient client = new DefaultHttpClient();
-		HttpConnectionParams.setConnectionTimeout(client.getParams(), 10000);
+		final HttpParams httpParams = new BasicHttpParams();
+		HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+		HttpConnectionParams.setSoTimeout(httpParams, 3000);
+		HttpClient client = new DefaultHttpClient(httpParams);
 
 		File file = new File(inputFileName);
 		
@@ -62,6 +66,8 @@ public class FacebookClient {
 				// to https://graph.facebook.com/9283931?ref=br_rs
 				if (facebookPage.matches("https://graph.facebook.com/.*/.*/[0-9]+\\?ref=br_rs$"))
 					facebookPage = facebookPage.replaceAll("pages/.*/", "");
+					if (!facebookPage.contains("https://graph.facebook.com"))
+						continue;
 				try{
 					// Get request
 					HttpGet get = new HttpGet(facebookPage);
