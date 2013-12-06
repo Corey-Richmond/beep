@@ -14,6 +14,8 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
+import javax.jws.WebService;
+
 import apiParsers.Tweaper;
 import LoadBalancer.LoadBalanced;
 import database.MysqlPortal;

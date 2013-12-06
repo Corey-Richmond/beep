@@ -262,7 +262,7 @@ public class Parser implements ParserFacet{
 	}
 	
 	public void parseMovieGenres() throws IOException{
-		File file = new File("./files/felix/Data/musicGenres.txt");
+		File file = new File("./files/felix/Data/musicgenres.txt");
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 		MysqlPortal mysql = new MysqlPortal();
 		

@@ -82,7 +82,6 @@ public class FacebookClient {
 
 					for (String line = null; (line = reader.readLine()) != null; ) 
 						builder.append(line).append("\n");
-
 					// Verifies "error" doesn't exist in returned object
 					if (!builder.toString().contains("\"error\"")) {
 					
@@ -90,9 +89,9 @@ public class FacebookClient {
 
 						JSONTokener tokener = new JSONTokener(builder.toString());
 						JSONObject info = new JSONObject(tokener);
-						
 						// Enter information for each object into the database
 						mysql(info, d);
+
 					}
 				}catch (Exception e) {
 					e.printStackTrace();
@@ -114,7 +113,8 @@ public class FacebookClient {
 	 * @throws JSONException
 	 */
 	private void mysql(JSONObject object, Domain d) throws JSONException {
-		
+		if(object.length() <= 0)
+			return;
 		MysqlPortal mysql = new MysqlPortal();
 		
 		switch(d){
