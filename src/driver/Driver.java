@@ -37,8 +37,8 @@ public class Driver {
 
 	public static void main (String args[]){
 		//*****************STARTS DATABASE POPULATION*******************************
-		DatabasePopulator dp = new DatabasePopulator();
-		dp.populateDatabase();
+//		DatabasePopulator dp = new DatabasePopulator();
+//		dp.populateDatabase();
 		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file
@@ -128,15 +128,15 @@ public class Driver {
 				System.out.print( "\nFind List of most popular city by Movie Title.\n" +
 							      "What moive do you want to lookup? > " );
 				String input = scanner.nextLine();
-				
+
 				//Pirates of the Caribbean
-				ArrayList<String> result1 = qps.getCitiesByMovie(input);
+				ArrayList<String[]> result1 = qps.getCitiesByMovie(input);
 				for(int i = 0; i<result1.size(); ++i){
-					System.out.println((i+1) + ". " + result1.get(i)) ;
+					System.out.println((i+1) + ". " + result1.get(i)[0]) ;
 				}
 				
-				System.out.print( "From the above list which city looks most appealing.\n" +
-					      		  "Enter the number from the above list > " );
+				System.out.print( "From the above list which city looks most appealing?\n" +
+					      		  "Enter the number from the list above > " );
 				int input1 = scanner.nextInt();
 				
 				System.out.print( "Do you also want the address [y/n] > " );
@@ -151,7 +151,7 @@ public class Driver {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				for(int i = 0; i<result1.size(); ++i){
+				for(int i = 0; i<result2.size(); ++i){
 					if(input2)
 						System.out.println("\nVenue " +(i+1) +" = " + result2.get(i)[0] + "\n" +
 										   "Address = " + result2.get(i)[1]) ;

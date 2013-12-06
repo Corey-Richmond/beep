@@ -78,7 +78,7 @@ boolean result = false;
 		result = portal.insert(contents, table, column);
 		assertTrue(result);
 		
-		ArrayList<String> retrieved = portal.query("SELECT * FROM test", column);
+		ArrayList<String[]> retrieved = portal.query("SELECT * FROM test", column);
 		
 		assertEquals(retrieved.size(),1);
 	}
@@ -106,7 +106,7 @@ boolean result = false;
 		assertTrue(result);
 		
 		// Verify people were inserted correctly
-		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
+		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "FirstName");
 		assertEquals(extractedContents.size(), contents.size());
 		
 		// Delete the rows that were just inserted
@@ -139,7 +139,7 @@ boolean result = false;
 		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
-		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
+		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "FirstName");
 		assertEquals(extractedContents.size(), 1);
 		
 		// Delete the rows that were just inserted
@@ -174,8 +174,8 @@ boolean result = false;
 		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
-		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
-		assertEquals(extractedContents.get(0), "Person1");
+		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "FirstName");
+		assertEquals(extractedContents.get(0)[0], "Person1");
 		
 		portal.update(table, column, value, where, whereValue);
 		
@@ -215,8 +215,8 @@ boolean result = false;
 		assertTrue(result >= 0);
 		
 		// Verify people were inserted correctly
-		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "Firstname");
-		assertEquals(extractedContents.get(0), "Person1");
+		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "Firstname");
+		assertEquals(extractedContents.get(0)[0], "Person1");
 		
 		extractedContents = portal.query("SELECT * FROM test", "Age");
 		assertEquals(extractedContents.get(0), null);
@@ -291,7 +291,7 @@ boolean result = false;
 		assertTrue(result);
 		
 		// Verify update completed correctly
-		ArrayList<String> extractedContents = portal.query("SELECT * FROM test", "FirstName");
+		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "FirstName");
 		assertEquals(extractedContents.size(), 1);
 		
 		int rows = portal.deleteRowsInTable(table);
