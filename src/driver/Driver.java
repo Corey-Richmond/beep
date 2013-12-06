@@ -131,6 +131,9 @@ public class Driver {
 
 				//Pirates of the Caribbean
 				ArrayList<String[]> result1 = qps.getCitiesByMovie(input);
+				if(result1.isEmpty()) 
+					System.out.println("Sorry we do not have that movie on record");
+				
 				for(int i = 0; i<result1.size(); ++i){
 					System.out.println((i+1) + ". " + result1.get(i)[0]) ;
 				}

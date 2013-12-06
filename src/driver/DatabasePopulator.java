@@ -22,16 +22,13 @@ public class DatabasePopulator {
 
 	public void populateDatabase(){
 		//*****************STARTS DATABASE POPULATION*******************************
-		MysqlPortal p = new MysqlPortal();
-		p.createDataBase();
+		//MysqlPortal p = new MysqlPortal();
+		//p.createDataBase();
 		
 		// Read contents from file
 		ArrayList<String> contents = new ArrayList<String>();
 		Parser parser = new Parser();
-//		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
-		
-		
-		
+
 		// Grab movie info and populate database
 		FacebookClient getter = new FacebookClient();
 		getter.getData("./files/felix.txt", "./files/json_movies.txt", Domain.MOVIE);
