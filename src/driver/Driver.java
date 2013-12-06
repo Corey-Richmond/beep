@@ -37,8 +37,8 @@ public class Driver {
 
 	public static void main (String args[]){
 		//*****************STARTS DATABASE POPULATION*******************************
-		DatabasePopulator dp = new DatabasePopulator();
-		dp.populateDatabase();
+//		DatabasePopulator dp = new DatabasePopulator();
+//		dp.populateDatabase();
 		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file
@@ -151,7 +151,7 @@ public class Driver {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				for(int i = 0; i<result1.size(); ++i){
+				for(int i = 0; i<result2.size(); ++i){
 					if(input2)
 						System.out.println("\nVenue " +(i+1) +" = " + result2.get(i)[0] + "\n" +
 										   "Address = " + result2.get(i)[1]) ;

@@ -37,32 +37,16 @@ public class QPS implements QPSInterface{
 			throws RemoteException {
 		count++;
 		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = null;
-		ArrayList<String[]> result3 = new ArrayList<String[]>();
+		ArrayList<String[]> result;
 		
-		
-
-		result1 = mysql.query(
+		result = mysql.query(
 		"select name, address from MovieVenue where cityID in " +
 		"(select cityID from MovieCitiesList where movieID in " +
 		"(select movieID from Movie where title = \""+movie+"\") " +
-				"and cityRank = "+rank+")", "name");
-		
-		result2 = mysql.query(
-		"select name, address from MovieVenue where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+movie+"\") " +
-				"and cityRank = "+rank+")", "address");
-		
-		for(int i = 0; i<result1.size(); ++i){
-			String[] temp = new String[2];
-			temp[0] = result1.get(i);
-			temp[1] = result2.get(i);
-			result3.add(temp);
-		}
+				"and cityRank = "+rank+")", "name, address");
+			
 		count--;
-		return result3;
+		return result;
 	}
 
 	@Override
@@ -76,15 +60,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -102,15 +86,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -130,15 +114,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -156,15 +140,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -182,15 +166,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -208,15 +192,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -234,16 +218,16 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
-		
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
+//		
 		count--;
 		
 		return result2;
@@ -261,15 +245,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -287,15 +271,15 @@ public class QPS implements QPSInterface{
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		
@@ -312,16 +296,16 @@ public class QPS implements QPSInterface{
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
-
-		while(!(result1 = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			//System.out.println(result1.get(0));
-			result2.add(result1.get(0));
-			rank++;
-		}
+//
+//		while(!(result1 = mysql.query(
+//		"select cityName from City where cityID in " +
+//		"(select cityID from MovieCitiesList where movieID in " +
+//		"(select movieID from Movie where title = \""+city+"\") " +
+//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+//			//System.out.println(result1.get(0));
+//			result2.add(result1.get(0));
+//			rank++;
+//		}
 		
 		count--;
 		

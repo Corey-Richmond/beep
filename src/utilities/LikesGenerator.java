@@ -40,8 +40,8 @@ public class LikesGenerator implements LikesFacet{
 	
 	public void connectMoviesAndCities(){
 		MysqlPortal msp = new MysqlPortal();
-		int movieCount = Integer.parseInt(msp.query("select count(*) from Movie", "count(*)").get(0));
-		int cityCount  = Integer.parseInt(msp.query("select count(*) from City" , "count(*)").get(0));
+		int movieCount = Integer.parseInt(msp.query("select count(*) from Movie", "count(*)").get(0)[0]);
+		int cityCount  = Integer.parseInt(msp.query("select count(*) from City" , "count(*)").get(0)[0]);
 		
 		Random generator = new Random();
 		int randomCity;
