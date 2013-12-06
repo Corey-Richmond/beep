@@ -1,0 +1,10 @@
+Mongodb 
+
+mongo  (opens mongo from command line)
+
+MYSQL vs MongoDB command comparison:
+http://docs.mongodb.org/manual/reference/sql-comparison/
+
+MYSQL 
+user: "student"
+pass: "441"

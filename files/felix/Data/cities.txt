@@ -1,0 +1,390 @@
+New York
+New York
+Los Angeles
+California
+Chicago
+Illinois
+Houston
+Texas
+Philadelphia
+Pennsylvania
+Phoenix
+Arizona
+San Antonio
+Texas
+San Diego
+California
+Dallas
+Texas
+San Jose
+California
+Austin
+Texas
+Jacksonville
+Florida
+Indianapolis
+Indiana
+San Francisco
+California
+Columbus
+Ohio
+Fort Worth
+Texas
+Charlotte
+North Carolina
+Detroit
+Michigan
+El Paso
+Texas
+Memphis
+Tennessee
+Boston
+Massachusetts
+Seattle
+Washington
+Denver
+Colorado
+Nashville
+Tennessee
+Baltimore
+Maryland
+Louisville
+Kentucky
+Portland
+Oregon
+Oklahoma City
+Oklahoma
+Milwaukee
+Wisconsin
+Las Vegas
+Nevada
+Albuquerque
+New Mexico
+Tucson
+Arizona
+Fresno
+California
+Sacramento
+California
+Long Beach
+California
+Kansas City
+Kansas
+Mesa
+Arizona
+Virginia Beach
+Virginia
+Atlanta
+Georgia
+Colorado Springs
+Colorado
+Raleigh
+North Carolina
+Omaha
+Nebraska
+Miami
+Florida
+Oakland
+California
+Tulsa
+Oklahoma
+Minneapolis
+Minnesota
+Cleveland
+Ohio
+Wichita
+Kansas
+Arlington
+Texas
+New Orleans
+Louisiana
+Bakersfield
+California
+Tampa
+Florida
+Honolulu
+Hawaii
+Anaheim
+Florida
+Aurora
+Illinois
+Santa Ana
+California
+St. Louis
+Missouri
+Corpus Christi
+Texas
+Pittsburgh
+Pennsylvania
+Lexington
+Kentucky
+Anchorage
+Alaska
+Cincinnati
+Ohio
+Toledo
+Ohio
+Newark
+New Jersey
+Greensboro
+North Carolina
+Plano
+Texas
+Henderson
+Nevada
+Lincoln
+Oregon
+Buffalo
+New York
+Fort Wayne
+Indiana
+Jersey City
+New Jersey
+Chula Vista
+California
+Orlando
+Florida
+St. Petersburg
+Russia
+Norfolk
+Virginia
+Chandler
+Arizona
+Laredo
+Texas
+Madison
+Wisconsin
+Durham
+North Carolina
+Lubbock
+Texas
+Garland
+Texas
+Hialeah
+Florida
+Reno
+Nevada
+Baton Rouge
+Louisiana
+Irvine
+California
+Irving
+Texas
+Scottsdale
+Arizona
+North Las Vegas
+Nevada
+Fremont
+Michigan
+Gilbert
+Arizona
+San Bernardino
+California
+Boise
+Idaho
+Birmingham
+Alabama
+Rochester
+New York
+Richmond
+Virginia
+Spokane
+Washington
+Des Moines
+Iowa
+Montgomery
+Alabama
+Modesto
+California
+Fayetteville
+North Carolina
+Tacoma
+Washington
+Shreveport
+Louisiana
+Fontana
+California
+Oxnard
+California
+Moreno Valley
+California
+Akron
+Ohio
+Yonkers
+New York
+Columbus
+Ohio
+Augusta
+Georgia
+Little Rock
+Arkansas
+Amarillo
+Texas
+Mobile
+Alabama
+Huntington Beach
+California
+Grand Rapids
+Michigan
+Salt Lake City
+Utah
+Tallahassee
+Florida
+Huntsville
+Alabama
+Worcester
+Massachusetts
+Knoxville
+Tennessee
+Grand Prairie
+Texas
+Brownsville
+Texas
+Santa Clarita
+California
+Overland Park
+Kansas
+Providence
+Rhode Island
+Chattanooga
+Tennessee
+Fort Lauderdale
+Florida
+Vancouver
+Canada
+Kansas City
+Kansas
+Warsaw
+Poland
+Moscow
+Russia
+London
+England
+Beijing
+China
+Shanghai
+China
+#######
+Torrance
+Bridgeport
+Alexandria
+Sunnyvale
+Cary
+Lakewood
+Hollywood
+Paterson
+Syracuse
+Naperville
+McKinney
+Mesquite
+Clarksville
+Savannah
+Dayton
+Orange
+Fullerton
+Pasadena
+Hampton
+McAllen
+Killeen
+Warren
+West Valley City
+Columbia
+New Haven
+Sterling Heights
+Olathe
+Miramar
+Thousand Oaks
+Frisco
+Cedar Rapids
+Topeka
+Visalia
+Waco
+Elizabeth
+Bellevue
+Gainesville
+Simi Valley
+Charleston
+Carrollton
+Coral Springs
+Stamford
+Hartford
+Concord
+Roseville
+Thornton
+Kent
+Lafayette
+Surprise
+Denton
+Victorville
+Evansville
+Midland
+Santa Clara
+Athens
+Allentown
+Abilene
+Beaumont
+Vallejo
+Independence
+Springfield
+Ann Arbor
+Provo
+Peoria
+Norman
+Berkeley
+El Monte
+Murfreesboro
+Lansing
+Columbia
+Downey
+Costa Mesa
+Inglewood
+Miami Gardens
+Manchester
+Elgin
+Wilmington
+Waterbury
+Fargo
+Arvada
+Carlsbad
+Westminster
+Rochester
+Gresham
+Clearwater
+Lowell
+West Jordan
+Pueblo
+San Buenaventura
+Fairfield
+West Covina
+Billings
+Murrieta
+High Point
+Round Rock
+Richmond
+Cambridge
+Norwalk
+Odessa
+Antioch
+Temecula
+Green Bay
+Everett
+Wichita Falls
+Burbank
+Palm Bay
+Centennial
+Daly City
+Richardson
+Pompano Beach
+Broken Arrow
+North Charleston
+West Palm Beach
+Boulder
+Rialto
+Santa Maria
+El Cajon
+Davenport
+Erie
+Las Cruces
+South Bend
+Flint
+Kenosha
