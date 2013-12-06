@@ -37,8 +37,8 @@ public class Driver {
 
 	public static void main (String args[]){
 		//*****************STARTS DATABASE POPULATION*******************************
-//		DatabasePopulator dp = new DatabasePopulator();
-//		dp.populateDatabase();
+		DatabasePopulator dp = new DatabasePopulator();
+		dp.populateDatabase();
 		
 		//*****************ENDS DATABASE POPULATION*******************************
 //		// Read contents from file

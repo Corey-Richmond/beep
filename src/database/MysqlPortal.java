@@ -25,8 +25,8 @@ public class MysqlPortal implements MysqlFacet{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
 
 	//  Database credentials
-	static final String USER = "root";
-	static final String PASS = "";
+	static final String USER = "student";
+	static final String PASS = "441";
 
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 
@@ -655,6 +655,9 @@ public class MysqlPortal implements MysqlFacet{
 			stmt = conn.createStatement();
 			String sql;
 
+			if(whereValue.contains("'"))
+				whereValue = whereValue.replace("'", "");
+			
 			sql = "UPDATE "+table+" SET "+column+" = "+value+" WHERE "+where+" = '"+whereValue+"'";
 			stmt.execute(sql);
 
