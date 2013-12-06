@@ -64,35 +64,6 @@ public class QPS implements QPSInterface{
 		count--;
 		return result3;
 	}
-	
-	public static void main(String args[]){
-	
-		// Protects against malicious code
-        /*if (System.getSecurityManager() == null) {
-            System.setSecurityManager(new SecurityManager());
-        }*/
-        
-		try{
-	        
-	        System.out.println("================================================================");
-	        System.out.println("Binding \"QPS\"...");
-	        
-			// Get handle to registry
-	        Registry registry = LocateRegistry.createRegistry(2001);
-	        
-            //Register Department object in the naming registry
-            String qpsRMIName = "QPS";
-            QPSInterface qpsObject = new QPS();
-            QPSInterface qpsStub = (QPSInterface) UnicastRemoteObject.exportObject(qpsObject, 0);
-            registry.rebind(qpsRMIName, qpsStub);
-        	
-            System.out.println("\"QPS\" bound.");
-		} 
-		catch (Exception e) {
-			System.err.println("\"QPS\" bind exception:");
-			e.printStackTrace();
-		}
-	}
 
 	@Override
 	public ArrayList<String> getCitiesByActor(String city) throws RemoteException {
@@ -366,6 +337,29 @@ public class QPS implements QPSInterface{
 	public void incrementLoad() throws RemoteException {
 		count++;
 	}
-
+	
+	public static void main(String args[]){
+        
+		try{
+	        
+	        System.out.println("================================================================");
+	        System.out.println("Binding \"QPS\"...");
+	        
+			// Get handle to registry
+	        Registry registry = LocateRegistry.createRegistry(2001);
+	        
+            //Register Department object in the naming registry
+            String qpsRMIName = "QPS";
+            QPSInterface qpsObject = new QPS();
+            QPSInterface qpsStub = (QPSInterface) UnicastRemoteObject.exportObject(qpsObject, 0);
+            registry.rebind(qpsRMIName, qpsStub);
+        	
+            System.out.println("\"QPS\" bound.");
+		} 
+		catch (Exception e) {
+			System.err.println("\"QPS\" bind exception:");
+			e.printStackTrace();
+		}
+	}
 
 }
