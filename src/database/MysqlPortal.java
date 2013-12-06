@@ -61,6 +61,7 @@ public class MysqlPortal implements MysqlFacet{
 				String a[]= new String[columns.size()];
 				for(int i = 0; i<columns.size(); ++i) {
 					a[i] = rs.getString(columns.get(i));
+					//System.out.println(a[i]);
 				}
 				result.add(a);
 			}
@@ -91,10 +92,10 @@ public class MysqlPortal implements MysqlFacet{
 			end = column.indexOf(',' , start);
 			if(end > 0) {
 				strs.add(column.substring(start, end));
-				System.out.println(column.substring(start, end));
+				//System.out.println(column.substring(start, end));
 			} else {
 				strs.add(column.substring(start));
-				System.out.println(column.substring(start));
+				//System.out.println(column.substring(start));
 			}
 			start = end+1;
 		} while(start > 0);
@@ -841,7 +842,7 @@ public class MysqlPortal implements MysqlFacet{
 	public void createDataBase(){
 		Connection conn = null;
 		Statement stmt = null;
-		System.out.println("HERE");
+		System.out.println("Starting to populate database");
 		String file = "Create_441_DB/create_table.sql";
 		try {
 			//STEP 2: Register JDBC driver

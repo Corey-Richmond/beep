@@ -83,13 +83,12 @@ public class QPS implements QPSInterface{
 		//Get List of cities by rank for a specific movie
 		ArrayList<String[]> result = null;
 
-		System.out.println("LKJDHFLKJHSDLKFJH");
 		while(!(result = mysql.query(
 		"select cityName from City where cityID in " +
 		"(select cityID from MovieCitiesList where movieID in " +
 		"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			System.out.println(result.get(0)[0]);
+			//System.out.println(result.get(0)[0]);
 			rank++;
 		}
 		
