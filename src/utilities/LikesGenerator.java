@@ -46,7 +46,7 @@ public class LikesGenerator implements LikesFacet{
 		Random generator = new Random();
 		int randomCity;
 		//System.out.println(movieCount +" , " + cityCount );
-		for(int i=1; i < movieCount; ++i){
+		for(int i=1; i <= movieCount; ++i){
 			for (int j=1; j<6; ++j){
 				randomCity = generator.nextInt(cityCount) + 1;
 				msp.insert( "NULL, "+randomCity+", "+i+", "+j , "MovieCitiesList");
