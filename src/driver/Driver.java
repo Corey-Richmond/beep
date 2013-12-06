@@ -135,8 +135,8 @@ public class Driver {
 					System.out.println((i+1) + ". " + result1.get(i)[0]) ;
 				}
 				
-				System.out.print( "From the above list which city looks most appealing.\n" +
-					      		  "Enter the number from the above list > " );
+				System.out.print( "From the above list which city looks most appealing?\n" +
+					      		  "Enter the number from the list above > " );
 				int input1 = scanner.nextInt();
 				
 				System.out.print( "Do you also want the address [y/n] > " );
@@ -146,7 +146,6 @@ public class Driver {
 //				QPS qps = new QPS();
 				ArrayList<String[]> result2 = null;
 				try {
-					System.out.println("Sfdgsdfgsdfg");
 					result2 = qps.getVenueByMovieAndRank(input, input1);
 				} catch (RemoteException e) {
 					// TODO Auto-generated catch block
