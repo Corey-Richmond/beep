@@ -79,7 +79,7 @@ public class MysqlPortal implements MysqlFacet{
 				return result;
 		}//end try
 
-		return null;
+		return result;
 	}
 	
 	public ArrayList<String> getArrayOfColumns(String column){

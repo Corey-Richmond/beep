@@ -15,9 +15,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
 import apiParsers.Tweaper;
-
 import LoadBalancer.LoadBalanced;
-
 import database.MysqlPortal;
 import facebook.FacebookClient.Domain;
 
@@ -38,7 +36,7 @@ public class QPS implements QPSInterface{
 		count++;
 		//Get List of cities by rank for a specific movie
 		ArrayList<String[]> result;
-		
+		System.out.println("sfdgsdg");
 		result = mysql.query(
 		"select name, address from MovieVenue where cityID in " +
 		"(select cityID from MovieCitiesList where movieID in " +
@@ -76,34 +74,33 @@ public class QPS implements QPSInterface{
 	}
 
 	@Override
-	public ArrayList<String> getCitiesByMovie(String city) throws RemoteException {
+	public ArrayList<String[]> getCitiesByMovie(String city) throws RemoteException {
 		// Load balance count
 		count++;
 		
 		int rank = 1;
 		
 		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result = null;
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		System.out.println("LKJDHFLKJHSDLKFJH");
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			System.out.println(result.get(0)[0]);
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
 
 	}
 
 	@Override
-	public ArrayList<String> getCitiesByArtist(String city) throws RemoteException {
+	public ArrayList<String[]> getCitiesByArtist(String city) throws RemoteException {
 		
 		// Load balance count
 		count++;
@@ -112,25 +109,25 @@ public class QPS implements QPSInterface{
 		
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result;
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
 	}
 	
 	@Override
-	public ArrayList<String> getCitiesByAthlete(String city) throws RemoteException {
+	public ArrayList<String[]> getCitiesByAthlete(String city) throws RemoteException {
+		
 		// Load balance count
 		count++;
 		
@@ -138,103 +135,24 @@ public class QPS implements QPSInterface{
 		
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result;
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
 	}
 
 	@Override
-	public ArrayList<String> getCitiesByTeam(String city) throws RemoteException {
-		// Load balance count
-		count++;
-		
-		int rank = 1;
-		
-		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
-
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
-		
-		count--;
-		
-		return result2;
-	}
-	
-	@Override
-	public ArrayList<String> getPopularActorsByCity(String city) throws RemoteException {
-		// Load balance count
-		count++;
-		
-		int rank = 1;
-		
-		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
-
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
-		
-		count--;
-		
-		return result2;
-	}
-
-	@Override
-	public ArrayList<String> getPopularMoviesByCity(String city) throws RemoteException {
-		// Load balance count
-		count++;
-		
-		int rank = 1;
-		
-		//Get List of cities by rank for a specific movie
-		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
-
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
-//		
-		count--;
-		
-		return result2;
-	}
-
-	@Override
-	public ArrayList<String> getPopularArtistsByCity(String city) throws RemoteException {
+	public ArrayList<String[]> getCitiesByTeam(String city) throws RemoteException {
 		
 		// Load balance count
 		count++;
@@ -243,25 +161,25 @@ public class QPS implements QPSInterface{
 		
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result;
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
 	}
 	
 	@Override
-	public ArrayList<String> getPopularAthletesByCity(String city) throws RemoteException {
+	public ArrayList<String[]> getPopularActorsByCity(String city) throws RemoteException {
+		
 		// Load balance count
 		count++;
 		
@@ -269,25 +187,25 @@ public class QPS implements QPSInterface{
 		
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result;
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
 	}
 
 	@Override
-	public ArrayList<String> getPopularTeamsByCity(String city) throws RemoteException {
+	public ArrayList<String[]> getPopularMoviesByCity(String city) throws RemoteException {
+		
 		// Load balance count
 		count++;
 		
@@ -295,21 +213,98 @@ public class QPS implements QPSInterface{
 		
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
-//
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
+		ArrayList<String[]> result;
+
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
 		
 		count--;
 		
-		return result2;
+		return result;
+	}
+
+	@Override
+	public ArrayList<String[]> getPopularArtistsByCity(String city) throws RemoteException {
+		
+		// Load balance count
+		count++;
+		
+		int rank = 1;
+		
+		//Get List of cities by rank for a specific movie
+		ArrayList<String> result1 = null;
+		ArrayList<String[]> result;
+
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
+		
+		count--;
+		
+		return result;
+	}
+	
+	@Override
+	public ArrayList<String[]> getPopularAthletesByCity(String city) throws RemoteException {
+		
+		// Load balance count
+		count++;
+		
+		int rank = 1;
+		
+		//Get List of cities by rank for a specific movie
+		ArrayList<String> result1 = null;
+		ArrayList<String[]> result;
+
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
+		
+		count--;
+		
+		return result;
+	}
+
+	@Override
+	public ArrayList<String[]> getPopularTeamsByCity(String city) throws RemoteException {
+		
+		// Load balance count
+		count++;
+		
+		int rank = 1;
+		
+		//Get List of cities by rank for a specific movie
+		ArrayList<String> result1 = null;
+		ArrayList<String[]> result;
+
+		while(!(result = mysql.query(
+		"select cityName from City where cityID in " +
+		"(select cityID from MovieCitiesList where movieID in " +
+		"(select movieID from Movie where title = \""+city+"\") " +
+				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+			//System.out.println(result1.get(0));
+			rank++;
+		}
+		
+		count--;
+		
+		return result;
 	}
 
 	@Override

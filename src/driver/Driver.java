@@ -128,11 +128,11 @@ public class Driver {
 				System.out.print( "\nFind List of most popular city by Movie Title.\n" +
 							      "What moive do you want to lookup? > " );
 				String input = scanner.nextLine();
-				
+
 				//Pirates of the Caribbean
-				ArrayList<String> result1 = qps.getCitiesByMovie(input);
+				ArrayList<String[]> result1 = qps.getCitiesByMovie(input);
 				for(int i = 0; i<result1.size(); ++i){
-					System.out.println((i+1) + ". " + result1.get(i)) ;
+					System.out.println((i+1) + ". " + result1.get(i)[0]) ;
 				}
 				
 				System.out.print( "From the above list which city looks most appealing.\n" +
@@ -146,6 +146,7 @@ public class Driver {
 //				QPS qps = new QPS();
 				ArrayList<String[]> result2 = null;
 				try {
+					System.out.println("Sfdgsdfgsdfg");
 					result2 = qps.getVenueByMovieAndRank(input, input1);
 				} catch (RemoteException e) {
 					// TODO Auto-generated catch block
