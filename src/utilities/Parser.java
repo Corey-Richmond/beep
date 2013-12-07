@@ -26,6 +26,7 @@ public class Parser implements ParserFacet{
 	final int MAX_LIKES = 100000;
 	final Random rand = new Random();
 	final double numMusicGenres = 35;
+	final double numMovieGenres = 22;
 	
 	public int numLikes(double place, double total, int max) {
 		int n = rand.nextInt(max);
@@ -234,6 +235,64 @@ public class Parser implements ParserFacet{
 			line = reader.readLine();
 			if (line != null){
 				mysql.insertMusicGenre(line, numLikes((double)i, numMusicGenres, MAX_LIKES));
+			}
+		}
+	}
+	
+	
+	public void parseActors() throws IOException { 
+		File file = new File("./files/felix/Data/testActors.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		long i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				String [] t = line.split(", ");
+				for(int j=0; j<t.length; j++) {
+					System.out.print(t[j] + t.length);
+				}
+				System.out.println();
+				
+				if(t.length==1) {
+					mysql.insertActorFull(t[0],"", "", numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else if(t.length==2) {
+					mysql.insertActorFull(t[1], "", t[0], numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else {
+					mysql.insertActorFull(t[1], t[2], t[0], numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				}
+			}
+		}
+	}
+	
+	
+	public void parseActress() throws IOException { 
+		File file = new File("./files/felix/Data/testActress.txt");
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		MysqlPortal mysql = new MysqlPortal();
+		
+		long i=0;
+		String line = "";
+		while (line != null){
+			i++;
+			line = reader.readLine();
+			if (line != null){
+				String [] t = line.split(", ");
+				for(int j=0; j<t.length; j++) {
+					System.out.print(t[j] + t.length);
+				}
+				System.out.println();
+				
+				if(t.length==1) {
+					mysql.insertActorFull(t[0],"", "", numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else if(t.length==2) {
+					mysql.insertActorFull(t[1], "", t[0], numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				} else {
+					mysql.insertActorFull(t[1], t[2], t[0], numLikes((double)i, numMovieGenres, 29), numLikes((double)i, (double)i, MAX_LIKES), numLikes((double)i, (double)i, 256));
+				}
 			}
 		}
 	}
