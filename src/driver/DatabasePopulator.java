@@ -28,10 +28,7 @@ public class DatabasePopulator {
 		// Read contents from file
 		ArrayList<String> contents = new ArrayList<String>();
 		Parser parser = new Parser();
-//		parser.extractFBMovieLinks("./files/raw_facebook.txt", contents);
-		
-		
-		
+
 		// Grab movie info and populate database
 		FacebookClient getter = new FacebookClient();
 		getter.getData("./files/felix.txt", "./files/json_movies.txt", Domain.MOVIE);
@@ -40,6 +37,20 @@ public class DatabasePopulator {
 		getter.getData("./files/felix/Data/showsURLs.txt", "./files/json_shows.txt", Domain.MOVIE);
 		getter.getData("./files/felix/Data/teams.txt", "./files/json_teams.txt", Domain.TEAM);
 
+		zipUtil zu = new zipUtil();
+		zu.unZipIt();
+		
+		try{
+			parser.parseActors();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		try{
+			parser.parseActress();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
 
 		try{
 			parser.parseCities();

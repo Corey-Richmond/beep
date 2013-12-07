@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public interface MysqlFacet {
 	
 	// Execute any custom query. Store results in String column
-	public ArrayList<String> query(String query, String column);
+	public ArrayList<String[]> query(String query, String column);
 
 	// INSERT into <table> (<column>) values('<contents>')
 	public boolean insert(ArrayList<String> contents, String table, String column);

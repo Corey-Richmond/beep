@@ -38,12 +38,13 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param column
 	 * @return ArrayList<String> 
 	 */
-	public ArrayList<String> query(String query, String column){
+	public ArrayList<String[]> query(String query, String column){
 
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
-		ArrayList<String> result = new ArrayList<String>();
+		ArrayList<String> columns = getArrayOfColumns(column);
+		ArrayList<String[]> result = new ArrayList<String[]>();
 
 		try{
 			//STEP 2: Register JDBC driver
@@ -57,7 +58,12 @@ public class MysqlPortal implements MysqlFacet{
 
 			rs = stmt.executeQuery(query);
 			while (rs.next()) {
-				result.add(rs.getString(column));
+				String a[]= new String[columns.size()];
+				for(int i = 0; i<columns.size(); ++i) {
+					a[i] = rs.getString(columns.get(i));
+					//System.out.println(a[i]);
+				}
+				result.add(a);
 			}
 
 			//STEP 6: Clean-up environment
@@ -75,6 +81,26 @@ public class MysqlPortal implements MysqlFacet{
 		}//end try
 
 		return result;
+	}
+	
+	public ArrayList<String> getArrayOfColumns(String column){
+		column = column.replaceAll(" ","");
+		ArrayList<String> strs = new ArrayList<String>();
+		int end = 0;
+		int start = 0;
+		do {
+			end = column.indexOf(',' , start);
+			if(end > 0) {
+				strs.add(column.substring(start, end));
+				//System.out.println(column.substring(start, end));
+			} else {
+				strs.add(column.substring(start));
+				//System.out.println(column.substring(start));
+			}
+			start = end+1;
+		} while(start > 0);
+
+		return strs;
 	}
 
 	// -------------------------------------------------------------------------------|
@@ -223,6 +249,119 @@ public class MysqlPortal implements MysqlFacet{
 	}
 
 
+	public boolean insertActorFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into Person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into Actor(personID, totalLikes) "+ 
+			"values(" +
+			"(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+			"(totalLikes = "+likes+"));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into ActorCitiesList(cityID, actorID, cityRank)"+
+			"values("+
+			"(select cityID from City where cityID = "+cityID+"),"+
+			"(select Actor.actorID from Actor inner join Person on Actor.personID = Person.personID where Person.firstName = '"+fname+"' and Person.middleName = '"+mname+"' and Person.lastName = '"+lname+"' limit 1),"+
+			"(cityRank = 2));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+
+		return true;
+	}
+	
+	
 	public boolean insertArtistFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
 		Connection conn = null;
 		Statement stmt = null;
@@ -816,7 +955,7 @@ public class MysqlPortal implements MysqlFacet{
 	public void createDataBase(){
 		Connection conn = null;
 		Statement stmt = null;
-		System.out.println("HERE");
+		System.out.println("Starting to populate database");
 		String file = "Create_441_DB/create_table.sql";
 		try {
 			//STEP 2: Register JDBC driver
@@ -848,7 +987,7 @@ public class MysqlPortal implements MysqlFacet{
 	// -------------------------------------------------------------------------------|
 
 
-	public List<String> getCities(){
+	public List<String[]> getCities(){
 		return query("select * from City;", "cityName");
 	}
 	
