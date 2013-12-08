@@ -249,6 +249,119 @@ public class MysqlPortal implements MysqlFacet{
 	}
 
 
+	public boolean insertActorFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
+		Connection conn = null;
+		Statement stmt = null;
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into Person(firstName, middleName, lastName) values ('"+ fname +"', '"+mname+"', '"+ lname +"')";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into Actor(personID, totalLikes) "+ 
+			"values(" +
+			"(select personID from Person where firstName = '"+fname+"' and middleName = '"+mname+"' and lastName = '"+lname+"' limit 1 )," +
+			"(totalLikes = "+likes+"));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+			String sql;
+
+			sql = "insert into ActorCitiesList(cityID, actorID, cityRank)"+
+			"values("+
+			"(select cityID from City where cityID = "+cityID+"),"+
+			"(select Actor.actorID from Actor inner join Person on Actor.personID = Person.personID where Person.firstName = '"+fname+"' and Person.middleName = '"+mname+"' and Person.lastName = '"+lname+"' limit 1),"+
+			"(cityRank = 2));";
+			stmt.execute(sql);
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(SQLException se){
+			//Handle errors for JDBC
+			se.printStackTrace();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return false;
+		}//end try
+
+
+		return true;
+	}
+	
+	
 	public boolean insertArtistFull(String fname, String mname, String lname, int genreID, int likes, int cityID) {
 		Connection conn = null;
 		Statement stmt = null;

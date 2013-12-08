@@ -22,8 +22,8 @@ public class DatabasePopulator {
 
 	public void populateDatabase(){
 		//*****************STARTS DATABASE POPULATION*******************************
-		//MysqlPortal p = new MysqlPortal();
-		//p.createDataBase();
+		MysqlPortal p = new MysqlPortal();
+		p.createDataBase();
 		
 		// Read contents from file
 		ArrayList<String> contents = new ArrayList<String>();
@@ -37,6 +37,20 @@ public class DatabasePopulator {
 		getter.getData("./files/felix/Data/showsURLs.txt", "./files/json_shows.txt", Domain.MOVIE);
 		getter.getData("./files/felix/Data/teams.txt", "./files/json_teams.txt", Domain.TEAM);
 
+		zipUtil zu = new zipUtil();
+		zu.unZipIt();
+		
+		try{
+			parser.parseActors();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		try{
+			parser.parseActress();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
 
 		try{
 			parser.parseCities();
