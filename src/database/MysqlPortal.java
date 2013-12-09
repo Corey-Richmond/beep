@@ -612,8 +612,8 @@ public class MysqlPortal implements MysqlFacet{
 			stmt = conn.createStatement();
 			String sql;
 
-			sql = "insert into concertvenue(name, address, cityID) select '"
-				+ name + "', '" + address + "' , cityID from city where city.cityName = '"+city+"';";
+			sql = "insert into ConcertVenue(name, address, cityID) select '"
+				+ name + "', '" + address + "' , cityID from City where City.cityName = '"+city+"';";
 			stmt.execute(sql);
 
 			//STEP 6: Clean-up environment

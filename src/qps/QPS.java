@@ -44,7 +44,10 @@ public class QPS implements QPSInterface{
 		"(select cityID from MovieCitiesList where movieID in " +
 		"(select movieID from Movie where title = \""+movie+"\") " +
 				"and cityRank = "+rank+")", "name, address");
-		System.out.println(result.get(0)[0]);	
+		if(result.size() > 0){
+			if(result.get(0).length > 0)
+				System.out.println(result.get(0)[0]);	
+		}
 		count--;
 		return result;
 	}
@@ -86,16 +89,18 @@ public class QPS implements QPSInterface{
 		ArrayList<String[]> getResult = null;
 		ArrayList<String[]> result = new ArrayList<String[]>();
 		
-
-		while(!(getResult = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
-				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-			result.add(getResult.get(0));
-			rank++;
-		}
+		getResult = mysql.query(
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
+						"and cityRank is not null)", "cityName");
 		
+		for(String [] s : getResult){
+			if(s.length > 0){
+				result.add(s);
+				rank++;
+			}
+		}		
 		count--;
 		
 		return result;

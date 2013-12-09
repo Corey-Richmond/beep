@@ -24,7 +24,7 @@ public class DatabasePopulator {
 		//*****************STARTS DATABASE POPULATION*******************************
 		MysqlPortal p = new MysqlPortal();
 		p.createDataBase();
-		
+
 		// Read contents from file
 		ArrayList<String> contents = new ArrayList<String>();
 		Parser parser = new Parser();
@@ -39,13 +39,13 @@ public class DatabasePopulator {
 
 		zipUtil zu = new zipUtil();
 		zu.unZipIt();
-		
+
 		try{
 			parser.parseActors();
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		try{
 			parser.parseActress();
 		} catch (Exception e){
@@ -57,25 +57,25 @@ public class DatabasePopulator {
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		try{
 			parser.parseMovieGenres();
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		try{
 			parser.parseMusicGenres();
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		try{
 			parser.parseArtists();
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		try{
 			parser.parseTheatres();
 		} catch (Exception e){
@@ -83,20 +83,94 @@ public class DatabasePopulator {
 		}
 		try {
 			parser.parseMusicVenues();
-			
+
 		} catch (Exception e){
 			e.printStackTrace();
 		}
-		
+
 		LikesGenerator like = new LikesGenerator();
 		like.connectMoviesAndCities();
-		
+
 		//*****************ENDS DATABASE POPULATION*******************************
 
 	}
-	
-	public static void main(String[]args){
-		new DatabasePopulator().populateDatabase();
+
+	public void populateWithFile(){
+		//*****************STARTS DATABASE POPULATION*******************************
+		MysqlPortal p = new MysqlPortal();
+		p.createDataBase();
+
+		// Read contents from file
+		ArrayList<String> contents = new ArrayList<String>();
+		Parser parser = new Parser();
+
+		// Grab movie info and populate database
+		FacebookClient getter = new FacebookClient();
+		getter.populateWithFile("movieFacebook.txt", Domain.MOVIE);
+		getter.populateWithFile("athleteFacebook.txt", Domain.ATHLETE);
+		getter.populateWithFile("artistsFacebook.txt", Domain.ARTIST);
+		getter.populateWithFile("teamFacebook.txt", Domain.TEAM);
+
+		zipUtil zu = new zipUtil();
+		zu.unZipIt();
+
+		try{
+			parser.parseActors();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseActress();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseCities();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseMovieGenres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseMusicGenres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseArtists();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		try{
+			parser.parseTheatres();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		try {
+			parser.parseMusicVenues();
+
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+
+		LikesGenerator like = new LikesGenerator();
+		like.connectMoviesAndCities();
+
+		//*****************ENDS DATABASE POPULATION*******************************
 	}
-	
+
+	public static void main(String[]args){
+		//new DatabasePopulator().populateDatabase();
+		new DatabasePopulator().populateWithFile();
+	}
+
 }

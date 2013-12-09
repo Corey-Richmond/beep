@@ -47,6 +47,7 @@ create table ActorCitiesList(
 	cityID INT,
 	actorID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (actorID) REFERENCES Actor(actorID)
 );
@@ -65,6 +66,7 @@ create table ArtistCitiesList(
 	cityID INT,
 	artistID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (artistID) REFERENCES Artist(artistID)
 );
@@ -93,6 +95,7 @@ create table MovieCitiesList(
 	cityID INT,
 	movieID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (movieID) REFERENCES Movie(movieID)
 );
@@ -105,6 +108,7 @@ create table SportCitiesList(
 	cityID INT,
 	sportID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (sportID) REFERENCES Sport(sportID)
 );
@@ -135,6 +139,7 @@ create table TeamCitiesList(
 	cityID INT,
 	teamID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (teamID) REFERENCES Team(teamID)
 );
@@ -154,6 +159,7 @@ create table AthleteCitiesList(
 	cityID INT,
 	athleteID INT,
 	cityRank INT,
+	likes INT,
 	FOREIGN KEY (cityID) REFERENCES City(cityID),
 	FOREIGN KEY (athleteID) REFERENCES Athlete(athleteID)
 );
