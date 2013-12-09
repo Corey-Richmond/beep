@@ -1038,8 +1038,30 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param likes likes to be added to like count
 	 */
 	public void incrementLikes(Domain d, String name,String cityName, int likes){
-		//TODO
-		
+		String table = "";
+		String idColumn = "";
+		int id = getDomainID(d, name);		
+		int cityID = getCityID(cityName);
+
+		switch(d){
+		case ARTIST:
+			table = "ArtistCitiesList";
+			idColumn = "artistID";
+			break;
+		case ATHLETE:
+			table = "AthleteCitiesList";
+			idColumn = "athleteID";
+			break;
+		case MOVIE:
+			table = "MovieCitiesList";
+			idColumn = "movieID";
+			break;
+		case TEAM:
+			table = "TeamCitiesList";
+			idColumn = "teamID";
+			break;
+		}
+		query("update " + table + " set likes = (likes + " + likes + ") where cityID = " + cityID + " and " + idColumn + " = '" + id + "';" );
 	}
 }
 // -------------------------------------------------------------------------------|

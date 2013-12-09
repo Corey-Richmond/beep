@@ -349,4 +349,33 @@ public class QPS implements QPSInterface{
 		}
 	}
 
+	@Override
+	public void listenFor(Domain d, String keyword) {
+		count ++;
+		Tweaper t = new Tweaper(keyword, d, mysql);
+		t.startListening();
+		count --;
+	}
+
+	@Override
+	public void addNewEntry(Domain d, String name) {
+		count ++;
+		switch(d){
+		case ARTIST:
+			mysql.insertArtistFull(name, "", "", -1, 0, 0);
+			break;
+		case ATHLETE:
+			mysql.insertAthleteFull(name, "", "", 0, 0, -1);
+			break;
+		case MOVIE:
+			mysql.insert(name, "Movie", "Title");
+			mysql.update("Movie", "totalLikes", "" + 0, "title", name);
+			break;
+		case TEAM:
+			mysql.insert(name, "Team", "teamName");
+			break;
+		}
+		count --;
+	}
+
 }

@@ -86,11 +86,5 @@ public class LoadBalancer implements Balancer{
 
 	public static void main(String[] args){
 		LoadBalancer lb = new LoadBalancer();
-//		try {
-//			System.out.println(lb.getQPS().getMovie("batman"));
-//		} catch (RemoteException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 	}
 }

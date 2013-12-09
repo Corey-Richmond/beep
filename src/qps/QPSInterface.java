@@ -4,6 +4,8 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
+import facebook.FacebookClient.Domain;
+
 import LoadBalancer.LoadBalanced;
 
 public interface QPSInterface extends Remote, LoadBalanced{
@@ -30,5 +32,9 @@ public interface QPSInterface extends Remote, LoadBalanced{
 	public ArrayList<String[]> getPopularTeamsByCity(String city) throws RemoteException;
 
 	public ArrayList<String[]> getVenueByMovieAndRank(String input, int input1) throws RemoteException;
+	
+	public void listenFor(Domain d, String keyword) throws RemoteException;
+	
+	public void addNewEntry(Domain d, String name) throws RemoteException;
 	
 }

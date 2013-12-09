@@ -85,6 +85,17 @@ public class Tweaper {
 		filter.locations(bb);
 		twitterStream.filter(filter);
 	}
+	
+	public void startListening(){
+		FilterQuery fq = new FilterQuery();
+		double[][] bb= {{-180, -90}, {180, 90}};
+		fq.locations(bb);
+		twitterStream.filter(fq);
+	}
+	
+	public void stopListening(){
+		twitterStream.shutdown();
+	}
 
 	public static void main(String[] args){
 		new Tweaper().filterSample(new String[]{"muse"});

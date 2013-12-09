@@ -11,6 +11,7 @@ package driver;
 import utilities.Parser;
 import utilities.zipUtil;
 import facebook.FacebookClient;
+import facebook.FacebookClient.Domain;
 import database.MysqlPortal;
 import database.MongoPortal;
 import utilities.LikesGenerator;
@@ -37,8 +38,8 @@ public class Driver {
 
 	public static void main (String args[]){
 		//*****************STARTS DATABASE POPULATION*******************************
-		DatabasePopulator dp = new DatabasePopulator();
-		dp.populateWithFile();
+//		DatabasePopulator dp = new DatabasePopulator();
+//		dp.populateWithFile();
 
 		//*****************ENDS DATABASE POPULATION*******************************
 		//		// Read contents from file
@@ -126,13 +127,17 @@ public class Driver {
 			while(true) {
 				Scanner scanner = new Scanner( System.in );
 				System.out.print( "\nFind List of most popular city by Movie Title.\n" +
-				"What moive do you want to lookup? > " );
+				"What movie do you want to lookup? > " );
 				String input = scanner.nextLine();
 
 				//Pirates of the Caribbean
 				ArrayList<String[]> result1 = qps.getCitiesByMovie(input);
 				if(result1.isEmpty()) {
-					System.out.println("Sorry we do not have that movie on record");
+					System.out.println("Sorry we do not have that movie on record.\n" +
+							"We are listening in on social networks to gather this information.\n" +
+							"Please check back later for results");
+					qps.addNewEntry(Domain.MOVIE, input);
+					qps.listenFor(Domain.MOVIE, input);
 				}else{
 
 					for(int i = 0; i<result1.size(); ++i){
@@ -147,12 +152,10 @@ public class Driver {
 					boolean input2 = (scanner.next().equals("y"));
 
 
-					//				QPS qps = new QPS();
 					ArrayList<String[]> result2 = null;
 					try {
 						result2 = qps.getVenueByMovieAndRank(input, input1);
 					} catch (RemoteException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 					if(result2.isEmpty()){
