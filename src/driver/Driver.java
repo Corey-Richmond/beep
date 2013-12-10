@@ -137,7 +137,6 @@ public class Driver {
 							"We are listening in on social networks to gather this information.\n" +
 							"Please check back later for results");
 					qps.addNewEntry(Domain.MOVIE, input);
-					qps.listenFor(Domain.MOVIE, input);
 				}else{
 
 					for(int i = 0; i<result1.size(); ++i){

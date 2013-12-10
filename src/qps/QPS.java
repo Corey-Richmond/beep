@@ -16,7 +16,9 @@ import java.util.ArrayList;
 
 import javax.jws.WebService;
 
-import apiParsers.Tweaper;
+import tweaper.Tweaper;
+import worker.Worker;
+
 import LoadBalancer.LoadBalanced;
 import database.MysqlPortal;
 import facebook.FacebookClient.Domain;
@@ -28,21 +30,30 @@ import facebook.FacebookClient.Domain;
 public class QPS implements QPSInterface{
 	int count;
 	MysqlPortal mysql = new MysqlPortal();
-	public QPS(){
-		count = 0;
-	}
+	Worker w;
 	
+	public QPS(){
+		try {
+			count = 0;
+			Registry registry = LocateRegistry.getRegistry(2001);
+			w = (Worker) registry.lookup("TwitterWorker");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	@Override
 	public ArrayList<String[]> getVenueByMovieAndRank(String movie, int rank)
-			throws RemoteException {
+	throws RemoteException {
 		count++;
+		w.updateDB(Domain.MOVIE, movie);
 		//Get List of cities by rank for a specific movie
 		ArrayList<String[]> result;
 
 		result = mysql.query(
-		"select name, address from MovieVenue where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+movie+"\") " +
+				"select name, address from MovieVenue where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+movie+"\") " +
 				"and cityRank = "+rank+")", "name, address");
 		if(result.size() > 0){
 			if(result.get(0).length > 0)
@@ -56,25 +67,25 @@ public class QPS implements QPSInterface{
 	public ArrayList<String> getCitiesByActor(String city) throws RemoteException {
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String> result2 = new ArrayList<String>();
 
-//		while(!(result1 = mysql.query(
-//		"select cityName from City where cityID in " +
-//		"(select cityID from MovieCitiesList where movieID in " +
-//		"(select movieID from Movie where title = \""+city+"\") " +
-//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
-//			//System.out.println(result1.get(0));
-//			result2.add(result1.get(0));
-//			rank++;
-//		}
-		
+		//		while(!(result1 = mysql.query(
+		//		"select cityName from City where cityID in " +
+		//		"(select cityID from MovieCitiesList where movieID in " +
+		//		"(select movieID from Movie where title = \""+city+"\") " +
+		//				"and cityRank = "+rank+")", "cityName")).isEmpty()){
+		//			//System.out.println(result1.get(0));
+		//			result2.add(result1.get(0));
+		//			rank++;
+		//		}
+
 		count--;
-		
+
 		return result2;
 	}
 
@@ -82,19 +93,19 @@ public class QPS implements QPSInterface{
 	public ArrayList<String[]> getCitiesByMovie(String city) throws RemoteException {
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String[]> getResult = null;
 		ArrayList<String[]> result = new ArrayList<String[]>();
-		
+
 		getResult = mysql.query(
 				"select cityName from City where cityID in " +
 				"(select cityID from MovieCitiesList where movieID in " +
 				"(select movieID from Movie where title = \""+city+"\") " +
-						"and cityRank is not null)", "cityName");
-		
+				"and cityRank is not null)", "cityName");
+
 		for(String [] s : getResult){
 			if(s.length > 0){
 				result.add(s);
@@ -102,216 +113,216 @@ public class QPS implements QPSInterface{
 			}
 		}		
 		count--;
-		
+
 		return result;
 
 	}
 
 	@Override
 	public ArrayList<String[]> getCitiesByArtist(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
-	
+
 	@Override
 	public ArrayList<String[]> getCitiesByAthlete(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
 
 	@Override
 	public ArrayList<String[]> getCitiesByTeam(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
-	
+
 	@Override
 	public ArrayList<String[]> getPopularActorsByCity(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
 
 	@Override
 	public ArrayList<String[]> getPopularMoviesByCity(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
 
 	@Override
 	public ArrayList<String[]> getPopularArtistsByCity(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
-	
+
 	@Override
 	public ArrayList<String[]> getPopularAthletesByCity(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
 
 	@Override
 	public ArrayList<String[]> getPopularTeamsByCity(String city) throws RemoteException {
-		
+
 		// Load balance count
 		count++;
-		
+
 		int rank = 1;
-		
+
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
 		ArrayList<String[]> result;
 
 		while(!(result = mysql.query(
-		"select cityName from City where cityID in " +
-		"(select cityID from MovieCitiesList where movieID in " +
-		"(select movieID from Movie where title = \""+city+"\") " +
+				"select cityName from City where cityID in " +
+				"(select cityID from MovieCitiesList where movieID in " +
+				"(select movieID from Movie where title = \""+city+"\") " +
 				"and cityRank = "+rank+")", "cityName")).isEmpty()){
 			//System.out.println(result1.get(0));
 			rank++;
 		}
-		
+
 		count--;
-		
+
 		return result;
 	}
 
@@ -324,24 +335,24 @@ public class QPS implements QPSInterface{
 	public void incrementLoad() throws RemoteException {
 		count++;
 	}
-	
+
 	public static void main(String args[]){
-        
+
 		try{
-	        
-	        System.out.println("================================================================");
-	        System.out.println("Binding \"QPS\"...");
-	        
+
+			System.out.println("================================================================");
+			System.out.println("Binding \"QPS\"...");
+
 			// Get handle to registry
-	        Registry registry = LocateRegistry.createRegistry(2001);
-	        
-            //Register Department object in the naming registry
-            String qpsRMIName = "QPS";
-            QPSInterface qpsObject = new QPS();
-            QPSInterface qpsStub = (QPSInterface) UnicastRemoteObject.exportObject(qpsObject, 0);
-            registry.rebind(qpsRMIName, qpsStub);
-        	
-            System.out.println("\"QPS\" bound.");
+			Registry registry = LocateRegistry.createRegistry(2001);
+
+			//Register Department object in the naming registry
+			String qpsRMIName = "QPS";
+			QPSInterface qpsObject = new QPS();
+			QPSInterface qpsStub = (QPSInterface) UnicastRemoteObject.exportObject(qpsObject, 0);
+			registry.rebind(qpsRMIName, qpsStub);
+
+			System.out.println("\"QPS\" bound.");
 		} 
 		catch (Exception e) {
 			System.err.println("\"QPS\" bind exception:");
@@ -350,30 +361,36 @@ public class QPS implements QPSInterface{
 	}
 
 	@Override
-	public void listenFor(Domain d, String keyword) {
-		count ++;
-		Tweaper t = new Tweaper(keyword, d, mysql);
-		t.startListening();
-		count --;
-	}
-
-	@Override
 	public void addNewEntry(Domain d, String name) {
 		count ++;
 		switch(d){
 		case ARTIST:
-			mysql.insertArtistFull(name, "", "", -1, 0, 0);
+			if(!mysql.isAlreadyInDB(d, name)){
+				mysql.insertArtistFull(name, "", "", -1, 0, 0);
+			}
 			break;
 		case ATHLETE:
-			mysql.insertAthleteFull(name, "", "", 0, 0, -1);
+			if(!mysql.isAlreadyInDB(d, name)){
+				mysql.insertAthleteFull(name, "", "", 0, 0, -1);
+			}
 			break;
 		case MOVIE:
-			mysql.insert(name, "Movie", "Title");
-			mysql.update("Movie", "totalLikes", "" + 0, "title", name);
+			if(!mysql.isAlreadyInDB(d, name)){
+				mysql.insert(name, "Movie", "Title");
+				mysql.update("Movie", "totalLikes", "" + 0, "title", name);
+			}
 			break;
 		case TEAM:
-			mysql.insert(name, "Team", "teamName");
+			if(!mysql.isAlreadyInDB(d, name)){
+				mysql.insert(name, "Team", "teamName");
+			}
 			break;
+		}
+		try {
+			w.updateDB(d, name);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		count --;
 	}

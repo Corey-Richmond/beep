@@ -33,7 +33,7 @@ public class LoadBalancer implements Balancer{
 		list = new ArrayList<QPSInterface>();
 
 		try {
-			registry = LocateRegistry.createRegistry(2001);
+			registry = LocateRegistry.getRegistry(2001);
 			Balancer b = this;
 			Balancer bStub = (Balancer) UnicastRemoteObject.exportObject(b, 0);
 			registry.rebind("LoadBalancer", bStub);

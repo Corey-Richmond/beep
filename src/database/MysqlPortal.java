@@ -650,10 +650,11 @@ public class MysqlPortal implements MysqlFacet{
 	 * @param table Mysql table to insert into
 	 * @return True when complete
 	 */
-	public boolean insert(String content, String table){
+	public int insert(String content, String table){
 
 		Connection conn = null;
 		Statement stmt = null;
+		int id = -1;
 
 		try{
 			//STEP 2: Register JDBC driver
@@ -668,7 +669,7 @@ public class MysqlPortal implements MysqlFacet{
 
 			sql = "INSERT into "+ table +" values("+ content +")";
 			System.out.println(sql);
-			stmt.execute(sql);
+			id = stmt.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);
 
 			//STEP 6: Clean-up environment
 			stmt.close();
@@ -681,10 +682,10 @@ public class MysqlPortal implements MysqlFacet{
 
 		finally{
 			if (!close(conn, stmt))
-				return false;
+				return id;
 		}//end try
 
-		return true;
+		return id;
 	}
 
 	// -------------------------------------------------------------------------------|
@@ -943,11 +944,11 @@ public class MysqlPortal implements MysqlFacet{
 		}
 		catch(SQLException se){
 			//Handle errors for JDBC
-			se.printStackTrace();
+			//se.printStackTrace();
 		}
 		catch(Exception e){
 			//Handle errors for Class.forName
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 		return rs;
@@ -990,8 +991,15 @@ public class MysqlPortal implements MysqlFacet{
 	// -------------------------------------------------------------------------------|
 
 
-	public List<String[]> getCities(){
-		return query("select * from City;", "cityName");
+	public List<String> getCities(){
+		List<String[]> cities = query("select * from City;", "cityName");
+		List<String> result = new ArrayList<String>();
+		for(String[] array : cities){
+			if(array.length > 0){
+				result.add(array[0]);
+			}
+		}
+		return result;
 	}
 	
 	// -------------------------------------------------------------------------------|
@@ -1001,17 +1009,17 @@ public class MysqlPortal implements MysqlFacet{
 		try{
 			switch(d){
 			case ARTIST:
-				return query("select artistID from Artist JOIN Person on Artist.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';").getInt(1);
+				return Integer.parseInt(query("select artistID from Artist JOIN Person on Artist.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';", "artistID").get(0)[0]);
 			case ATHLETE:
-				return query("select AthleteID from Athlete JOIN Person on Athlete.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';").getInt(1);
+				return Integer.parseInt(query("select athleteID from Athlete JOIN Person on Athlete.personID = Person.personID where concat(Person.firstName, ' ', Person.middleName, ' ', Person.lastName) = '" + name + "';", "athleteID").get(0)[0]);
 			case MOVIE:
-				return query("select movieID from Movie where title = '" + name + "';").getInt(1);
+				return Integer.parseInt(query("select movieID from Movie where title = '" + name + "';", "movieID").get(0)[0]);
 			case TEAM:
-				return query("select teamID from Team where teamName = '" + name + "';").getInt(1);
+				return Integer.parseInt(query("select teamID from Team where teamName = '" + name + "';", "teamID").get(0)[0]);
 			}
-		}catch (SQLException e) {
+		}catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		return -1;
 	}
@@ -1020,16 +1028,84 @@ public class MysqlPortal implements MysqlFacet{
 	
 	public int getCityID(String cityName){
 		try {
-			return query("select cityID from City where cityName = '" + cityName + "';").getInt(1);
-		} catch (SQLException e) {
+			return Integer.parseInt(query("select cityID from City where cityName = '" + cityName + "';", "cityID").get(0)[0]);
+			
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return -1;
 	}
 	
+	public int getCitiesListID(Domain d, String target, String cityName){
+		int targetID = getDomainID(d, target);
+		int cityID = getCityID(cityName);
+		int citiesListID = -1;
+		switch(d){
+		case ARTIST:
+			try {
+				citiesListID = query("select artistsCitiesListID from ArtistCitiesList where artistID  = " + targetID + " and cityID = " + cityID + ";").getInt(1);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			break;
+		case ATHLETE:
+			try {
+				citiesListID = query("select athleteCitiesListID from AthleteCitiesList where athleteID  = " + targetID + " and cityID = " + cityID + ";").getInt(1);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			break;
+		case MOVIE:
+			try {
+				citiesListID = query("select citiesListID from MovieCitiesList where movieID  = " + targetID + " and cityID = " + cityID + ";").getInt(1);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			break;
+		case TEAM:
+			try {
+				citiesListID = query("select teamCitiesListID from TeamCitiesList where teamID  = " + targetID + " and cityID = " + cityID + ";").getInt(1);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			break;
+		}
+		return citiesListID;
+	}
+	
+	public int insertNewCitiesListRecord(Domain d, String target, String cityName){
+		int newID = -1;
+		int cityID = getCityID(cityName);
+		int targetID; 
+		switch(d){
+		case ARTIST:
+			targetID = getDomainID(d, target);
+			newID = insert( "" + cityID, "ArtistCitiesList", "cityID");
+			update("ArtistCitiesList", "artistID", "" + targetID , "artistsCitiesListID", "" + newID);
+			break;
+		case ATHLETE:
+			targetID = getDomainID(d, target);
+			newID = insert( "" + cityID, "AthleteCitiesList", "cityID");
+			update("AthleteCitiesList", "athleteID", "" + targetID , "athleteCitiesListID", "" + newID);
+			break;
+		case MOVIE:
+			targetID = getDomainID(d, target);
+			newID = insert( "" + cityID, "MovieCitiesList", "cityID");
+			update("MovieCitiesList", "movieID", "" + targetID , "citiesListID", "" + newID);
+			break;
+		case TEAM:
+			targetID = getDomainID(d, target);
+			newID = insert( "" + cityID, "TeamCitiesList", "cityID");
+			update("teamCitiesListID", "teamID", "" + targetID , "teamCitiesListID", "" + newID);
+			break;
+		}
+		
+		return newID;
+	}
+	
 	// -------------------------------------------------------------------------------|
-
+	
 	/**
 	 * 
 	 * @param d domain (MOVIE, ARTIST, TEAM, ATHLETE)
@@ -1040,28 +1116,74 @@ public class MysqlPortal implements MysqlFacet{
 	public void incrementLikes(Domain d, String name,String cityName, int likes){
 		String table = "";
 		String idColumn = "";
-		int id = getDomainID(d, name);		
+		String listIDColumn = "";
+		int targetID = getDomainID(d, name);		
 		int cityID = getCityID(cityName);
+		int citiesListID = -1;
 
 		switch(d){
 		case ARTIST:
 			table = "ArtistCitiesList";
 			idColumn = "artistID";
+			listIDColumn = "artistsCitiesListID";
+			try {
+				citiesListID = Integer.parseInt(query("select artistsCitiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "artistsCitiesListID").get(0)[0]);
+			} catch (Exception e) {
+				e.printStackTrace();
+				if(citiesListID < 0){
+					citiesListID = insertNewCitiesListRecord(d, name, cityName);
+				}
+			}
 			break;
 		case ATHLETE:
 			table = "AthleteCitiesList";
 			idColumn = "athleteID";
+			listIDColumn = "athleteCitiesListID";
+			try {
+				citiesListID = Integer.parseInt(query("select athleteCitiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "athleteCitiesListID").get(0)[0]);
+			} catch (Exception e) {
+				e.printStackTrace();
+				if(citiesListID < 0){
+					citiesListID = insertNewCitiesListRecord(d, name, cityName);
+				}
+			}
 			break;
 		case MOVIE:
 			table = "MovieCitiesList";
 			idColumn = "movieID";
+			listIDColumn = "citiesListID";
+			try {
+				citiesListID = Integer.parseInt(query("select citiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "citiesListID").get(0)[0]);
+			} catch (Exception e) {
+				//e.printStackTrace();
+				if(citiesListID < 0){
+					citiesListID = insertNewCitiesListRecord(d, name, cityName);
+				}
+			}
 			break;
 		case TEAM:
 			table = "TeamCitiesList";
 			idColumn = "teamID";
+			listIDColumn = "teamCitiesListID";
+			try {
+				citiesListID = Integer.parseInt(query("select teamCitiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "teamCitiesListID").get(0)[0]);
+			} catch (Exception e) {
+				e.printStackTrace();
+				if(citiesListID < 0){
+					citiesListID = insertNewCitiesListRecord(d, name, cityName);
+				}
+			}
 			break;
 		}
-		query("update " + table + " set likes = (likes + " + likes + ") where cityID = " + cityID + " and " + idColumn + " = '" + id + "';" );
+		int oldLikes = Integer.parseInt(query("select likes from " + table + " where " + listIDColumn + " = " + citiesListID + ";", "likes").get(0)[0]);
+		update(table, "likes", "" + (oldLikes + likes), listIDColumn, "" + citiesListID);
+		//query("update " + table + " set likes = (likes + " + likes + ") where cityID = " + cityID + " and " + idColumn + " = '" + targetID + "';" );
+	}
+	
+	public boolean isAlreadyInDB(Domain d, String name){
+		if(getDomainID(d, name) < 0)
+			return false;
+		return true;
 	}
 }
 // -------------------------------------------------------------------------------|
