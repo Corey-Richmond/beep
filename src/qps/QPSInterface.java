@@ -47,4 +47,10 @@ public interface QPSInterface extends Remote, LoadBalanced{
 	
 	public String getSportByTeam1(String team) throws RemoteException;
 	
+	public String getSportByAthlete1(String team) throws RemoteException;
+	
+	public String getTeamtByAthlete1(String team) throws RemoteException;
+	
+	public ArrayList<String> getCitiesByAthlete1(String team) throws RemoteException;
+	
 }

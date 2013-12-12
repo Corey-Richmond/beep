@@ -46,7 +46,11 @@ public class Form extends JFrame
 	ArrayList<String> resultnew;
 	ArrayList<String> resultActor;
 	ArrayList<String> resultArtist;
+	ArrayList<String> resultAthlete;
 	String resultSport="";
+	String resultSportAthlete="";
+	String resultTeamAthlete="";
+	
 	ArrayList<String> resultteam;
 	private JRadioButton Actor = new JRadioButton("Actor");
 	private JRadioButton Movies = new JRadioButton("Movies");
@@ -229,19 +233,30 @@ public class Form extends JFrame
         	            	if(Athlete.isSelected())
         	            	{   	
         	            		try{
+        	            			textArea.setText(null);
         	            		        	                    
         	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
         	                                
-        	                result=server.getCitiesByAthlete(txt.getText());
+        	               // result=server.getCitiesByAthlete(txt.getText());
+        	                // changes done by anusha
+        	                   	resultSportAthlete= server.getSportByAthlete1(txt.getText());
+        	                   	resultTeamAthlete=server.getTeamtByAthlete1(txt.getText());
+        	                   	resultAthlete= server.getCitiesByAthlete1(txt.getText());
         	                String text;
 							if(result.size()==0)
         	                	text="No result found";
         	                else
-        	                	text=result.toString();
-        	                textArea.setText(text);
-        	                
+        	                {
+        	                textArea.setText(resultSportAthlete);
+							textArea.append("\n");
+							textArea.setText(resultTeamAthlete);
+							textArea.append("\n");
+							for(String result: resultAthlete)
+							{   textArea.append(result + "\n");
+							}
+        	                }
         	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
@@ -280,7 +295,7 @@ public class Form extends JFrame
         	                else
         	                {
         	                textArea.setText(resultSport);
-							textArea.append(result + "\n");
+							textArea.append("\n");
 							for(String result: resultteam)
 							{   textArea.append(result + "\n");
 							}

@@ -417,6 +417,46 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 			return result;
 
 		}
+		
+		// changes done by anusha
+					@Override
+					public String getSportByAthlete1(String team) throws RemoteException {
+
+						String result = "";
+						
+				        String queryNew ="select name from sport where sportID in (Select sportID from team  where teamID in (select teamID from athlete where athleteId in (select athleteID from athlete where personID in (select personID from person where firstName='"+team+"'))))";
+						result = mysql.query6(queryNew);
+						
+						return result;
+
+					}
+					
+					
+					// changes done by anusha
+					@Override
+					public String getTeamtByAthlete1(String team) throws RemoteException {
+
+						String result = "";
+						
+				        String queryNew ="select teamName from team where teamID in (select teamID from athlete where athleteId in (select athleteID from athlete where personID in (select personID from person where firstName='"+team+"')))";
+						result = mysql.query7(queryNew);
+						
+						return result;
+
+					}
+					
+					// changes done by anusha
+					@Override
+					public ArrayList<String> getCitiesByAthlete1(String team) throws RemoteException {
+
+						ArrayList<String> result = new ArrayList<String>();
+						
+				        String queryNew ="select cityName, cityState from city where cityID in (select cityID from athletecitieslist where athleteID in (select athleteID from athlete where personID in (select personID from person where firstName='"+team+"')) order by cityRank )";
+						result = mysql.query8(queryNew);
+						
+						return result;
+
+					}
 
 	public static void main(String args[]){
 
