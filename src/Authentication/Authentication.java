@@ -31,7 +31,7 @@ public class Authentication implements AuthenticationInterface{
 	        System.out.println("Binding \"Authentication\"...");
 	        
 			// Get handle to registry
-	        Registry registry = LocateRegistry.createRegistry(2001);
+	        Registry registry = LocateRegistry.getRegistry(2001);
 	        
             //Register Department object in the naming registry
             String authRMIName = "Authentication";

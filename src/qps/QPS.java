@@ -64,7 +64,7 @@ public class QPS implements QPSInterface{
 	}
 
 	@Override
-	public ArrayList<String> getCitiesByActor(String city) throws RemoteException {
+	public ArrayList<String[]> getCitiesByActor(String city) throws RemoteException {
 		// Load balance count
 		count++;
 
@@ -72,7 +72,7 @@ public class QPS implements QPSInterface{
 
 		//Get List of cities by rank for a specific movie
 		ArrayList<String> result1 = null;
-		ArrayList<String> result2 = new ArrayList<String>();
+		ArrayList<String[]> result2 = new ArrayList<String[]>();
 
 		//		while(!(result1 = mysql.query(
 		//		"select cityName from City where cityID in " +
@@ -334,7 +334,89 @@ public class QPS implements QPSInterface{
 	@Override
 	public void incrementLoad() throws RemoteException {
 		count++;
+	}	
+	
+	// changes by anusha
+	@Override
+	public ArrayList<String> getCitiesByMovie1(String movie) throws RemoteException {
+
+		ArrayList<String> result = new ArrayList<String>();
+		
+
+
+String queryNew ="select cityName , cityState from city where cityID in (select cityID from moviecitieslist where movieID in (select movieId from movie where title = '"+movie+"'))";
+	
+//String queryNew="select title from movie where movieID in ( select movieID from moviecast where actorID in (select actorId from actor where personId in (select personID from person where firstName= "+movie+")))";
+	
+//		String queryNew="select name , address, S.cityName, S.cityState from movievenue ,(select cityName , cityState,cityID from city where cityID in (select cityID from moviecitieslist where movieID in (select movieId from movie where title = '"+movie+"'))) AS S where movievenue.cityId in (S.cityID)";	
+		result = mysql.query1(queryNew);
+		
+		return result;
+
 	}
+	
+	// changes done by anusha
+	@Override
+	public ArrayList<String> getCitiesByActor1(String actor) throws RemoteException {
+
+		ArrayList<String> result = new ArrayList<String>();
+		
+
+// select cityID, cityRank from moviecitieslist where movieID in (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ="jones"))) order by cityRank;
+   
+ //String queryNew = "select cityName from city where cityID in (select cityID from moviecitieslist where movieID in (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ='"+actor+"'))) order by cityRank)";
+	
+		/*tring queryNew = "select K.title,cityName" +
+				" from city , (select cityID,Y.title,Y.movieID from moviecitieslist, (select S.movieID, title from (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ='"+actor+"'))) AS S " 
+						+ ", movie where movie.movieID in  (S.movieID)) AS Y where moviecitieslist.movieID in (Y.movieID)) AS K where city.cityID in (K.cityID)";*/
+	String queryNew = "select K.title,cityName" +
+	" from city , (select cityID,Y.title,Y.movieID from moviecitieslist, (select S.movieID, title from (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ='"+actor+"'))) AS S " 
+			+ ", movie where movie.movieID in  (S.movieID)) AS Y where moviecitieslist.movieID in (Y.movieID)) AS K where city.cityID in (K.cityID)";
+	
+		result = mysql.query2(queryNew);
+		
+		return result;
+
+	}
+	
+	// changes done by anusha
+	@Override
+	public ArrayList<String> getCitiesByArtist1(String artist) throws RemoteException {
+
+		ArrayList<String> result = new ArrayList<String>();
+		
+        String queryNew ="select name , address,S.cityName from concertvenue , (select cityID, cityName from city where cityID in (select artistsCitiesListID from artistcitieslist where artistID in (select artistID from artist where personID in (select personID from person where firstname = '"+artist+"')))) AS S where concertvenue.cityID in (S.cityID)";
+		result = mysql.query3(queryNew);
+		
+		return result;
+
+	}
+	
+	// changes done by anusha
+			@Override
+			public String getSportByTeam1(String team) throws RemoteException {
+
+				String result = "";
+				
+		        String queryNew ="select name from sport where sportID in (select sportID from team where teamName='"+team+"')";
+				result = mysql.query4(queryNew);
+				
+				return result;
+
+			}
+	
+	// changes done by anusha
+		@Override
+		public ArrayList<String> getCitiesByTeam1(String team) throws RemoteException {
+
+			ArrayList<String> result = new ArrayList<String>();
+			
+	        String queryNew ="select name, address , S.cityName from sportsvenue , (select cityID, cityName from city where cityID in (select cityID from sportcitieslist where sportID in (select sportID from team where teamName='"+team+"'))) AS S where sportsvenue.cityID in (S.cityID)";
+			result = mysql.query5(queryNew);
+			
+			return result;
+
+		}
 
 	public static void main(String args[]){
 

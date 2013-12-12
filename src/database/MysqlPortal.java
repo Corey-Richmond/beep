@@ -23,15 +23,248 @@ public class MysqlPortal implements MysqlFacet{
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
-
+	String sportName;
 	//  Database credentials
-	static final String USER = "student";
-	static final String PASS = "441";
-
+	static final String USER = "root";
+	static final String PASS = "root";
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 
 	// -------------------------------------------------------------------------------|
 
+	
+	// changes done by Anusha
+	
+	public ArrayList<String> query1(String query){
+
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		ArrayList<String> result = new ArrayList<String>();
+
+		try{
+			//STEP 2: Register JDBC driver
+			Class.forName(jdbcDriver);
+
+			//STEP 3: Open a connection
+			conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			stmt = conn.createStatement();
+
+			rs = stmt.executeQuery(query);
+			while (rs.next()) {
+		//	1 cond	
+				//String name = rs.getString("name");
+				//String addr = rs.getString("address");
+				// changes for venue
+				/*String name = rs.getString("name");
+				String addr = rs.getString("address");*/
+	            String name1 = rs.getString("cityName");
+				String addr1 = rs.getString("cityState");
+			//	result.add(name+","+addr+","+name1+","+addr1);
+				result.add(name1+","+addr1);
+			//	String title = rs.getString("title");
+			//	result.add(title);
+				}
+				
+
+			//STEP 6: Clean-up environment
+			stmt.close();
+			conn.close();
+		}
+		catch(Exception e){
+			//Handle errors for Class.forName
+			e.printStackTrace();
+		}
+
+		finally{
+			if (!close(conn, stmt))
+				return result;
+		}//end try
+
+		return result;
+	}
+	
+	
+	// changes done by Anusha
+	
+		public ArrayList<String> query2(String query){
+
+			Connection conn = null;
+			Statement stmt = null;
+			ResultSet rs = null;
+			ArrayList<String> result = new ArrayList<String>();
+
+			try{
+				//STEP 2: Register JDBC driver
+				Class.forName(jdbcDriver);
+
+				//STEP 3: Open a connection
+				conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+				//STEP 4: Execute a query
+				stmt = conn.createStatement();
+
+				rs = stmt.executeQuery(query);
+				while (rs.next()) {
+					String title = rs.getString("K.title");
+		            String name = rs.getString("cityName");
+					result.add(title+"," +name);
+					}
+					
+
+				//STEP 6: Clean-up environment
+				stmt.close();
+				conn.close();
+			}
+			catch(Exception e){
+				//Handle errors for Class.forName
+				e.printStackTrace();
+			}
+
+			finally{
+				if (!close(conn, stmt))
+					return result;
+			}//end try
+
+			return result;
+		}
+	
+		
+		// changes done by Anusha
+		
+			public ArrayList<String> query3(String query){
+
+				Connection conn = null;
+				Statement stmt = null;
+				ResultSet rs = null;
+				ArrayList<String> result = new ArrayList<String>();
+
+				try{
+					//STEP 2: Register JDBC driver
+					Class.forName(jdbcDriver);
+
+					//STEP 3: Open a connection
+					conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+					//STEP 4: Execute a query
+					stmt = conn.createStatement();
+
+					rs = stmt.executeQuery(query);
+					while (rs.next()) {
+						String title = rs.getString("name");
+						String addr = rs.getString("address");
+			            String name = rs.getString("cityName");
+						result.add(title+"," +addr +" "+name);
+						}
+						
+
+					//STEP 6: Clean-up environment
+					stmt.close();
+					conn.close();
+				}
+				catch(Exception e){
+					//Handle errors for Class.forName
+					e.printStackTrace();
+				}
+
+				finally{
+					if (!close(conn, stmt))
+						return result;
+				}//end try
+
+				return result;
+			}
+		
+			
+			// changes done by Anusha
+			
+				public String query4(String query){
+
+					Connection conn = null;
+					Statement stmt = null;
+					ResultSet rs = null;
+					ArrayList<String> result = new ArrayList<String>();
+
+					try{
+						//STEP 2: Register JDBC driver
+						Class.forName(jdbcDriver);
+
+						//STEP 3: Open a connection
+						conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+						//STEP 4: Execute a query
+						stmt = conn.createStatement();
+
+						rs = stmt.executeQuery(query);
+						while (rs.next()) {
+							sportName = rs.getString("name");	
+							}
+					
+					     	
+
+						//STEP 6: Clean-up environment
+						stmt.close();
+						conn.close();
+					}
+					catch(Exception e){
+						//Handle errors for Class.forName
+						e.printStackTrace();
+					}
+
+					finally{
+						if (!close(conn, stmt))
+							return sportName;
+					}//end try
+
+					return sportName;
+				}
+				
+				// changes done by Anusha
+				
+				public ArrayList<String> query5(String query){
+
+					Connection conn = null;
+					Statement stmt = null;
+					ResultSet rs = null;
+					ArrayList<String> result = new ArrayList<String>();
+
+					try{
+						//STEP 2: Register JDBC driver
+						Class.forName(jdbcDriver);
+
+						//STEP 3: Open a connection
+						conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+						//STEP 4: Execute a query
+						stmt = conn.createStatement();
+
+						rs = stmt.executeQuery(query);
+						while (rs.next()) {
+							String title = rs.getString("name");
+							String addr = rs.getString("address");
+				            String name = rs.getString("cityName");
+							result.add(title+"," +addr +" "+name);
+							}
+							
+
+						//STEP 6: Clean-up environment
+						stmt.close();
+						conn.close();
+					}
+					catch(Exception e){
+						//Handle errors for Class.forName
+						e.printStackTrace();
+					}
+
+					finally{
+						if (!close(conn, stmt))
+							return result;
+					}//end try
+
+					return result;
+				}
 	/**
 	 * Execute any custom query and return an ArrayList<String> of results
 	 * @param query

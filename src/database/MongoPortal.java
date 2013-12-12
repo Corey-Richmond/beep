@@ -21,7 +21,8 @@ import com.mongodb.DBCursor;
 public class MongoPortal implements MongoFacet{
 	
 	// Database/collections information
-	static final String DOMAIN = "localhost";  
+	static final String DOMAIN = "localhost"; 
+	//static final String DOMAIN = "127.0.0.1"; 
 	static final int PORT = 27017;
 	static final String DATABASE = "test";
 	static final String USERS_COLLECTION = "users";

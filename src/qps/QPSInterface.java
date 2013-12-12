@@ -11,7 +11,7 @@ import LoadBalancer.LoadBalanced;
 public interface QPSInterface extends Remote, LoadBalanced{
 	
 	
-	public ArrayList<String> getCitiesByActor(String city) throws RemoteException;
+	public ArrayList<String[]> getCitiesByActor(String city) throws RemoteException;
 	
 	public ArrayList<String[]> getCitiesByMovie(String movie) throws RemoteException;
 	
@@ -34,4 +34,17 @@ public interface QPSInterface extends Remote, LoadBalanced{
 	public ArrayList<String[]> getVenueByMovieAndRank(String input, int input1) throws RemoteException;
 		
 	public void addNewEntry(Domain d, String name) throws RemoteException;	
+	
+	// changes done by anusha
+
+	public ArrayList<String> getCitiesByMovie1(String city) throws RemoteException;
+	
+	public ArrayList<String> getCitiesByActor1(String actor) throws RemoteException;
+	
+	public ArrayList<String> getCitiesByArtist1(String artist) throws RemoteException;
+	
+	public ArrayList<String> getCitiesByTeam1(String team) throws RemoteException;
+	
+	public String getSportByTeam1(String team) throws RemoteException;
+	
 }

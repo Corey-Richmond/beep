@@ -110,8 +110,7 @@ public class Login extends JFrame {
     
     public class SubmitButtonListener implements ActionListener{  
         public void actionPerformed(ActionEvent ev){  
-         
-        	 loginFrame.setVisible(true);  
+         	 loginFrame.setVisible(true);  
              RegisterFrame.setVisible(false);   
              String puname1 = username1Txt.getText();
              String pfname = fullnameTxt.getText();
@@ -119,7 +118,7 @@ public class Login extends JFrame {
          	 char[] paswd = password1Txt.getPassword();
          	 String paswd1= new String(paswd);
          	 try{
-         	Registry registry = LocateRegistry.getRegistry("localhost");
+         	Registry registry = LocateRegistry.getRegistry("localhost",2002);
             
          	AuthenticationInterface server = (AuthenticationInterface)registry.lookup("Authentication");
          	           
@@ -147,16 +146,13 @@ public class Login extends JFrame {
         	boolean check=false;
         	String ppaswd= new String(paswd);
        	 try{
-          	Registry registry = LocateRegistry.getRegistry("localhost",1234);
+          	Registry registry = LocateRegistry.getRegistry(2001);
              
           	AuthenticationInterface server = (AuthenticationInterface)registry.lookup("Authentication");
           	           
           	//server.setParameters(new ParaWrapper());
                    check= server.authenticate(puname, ppaswd);
-          	            
-       
-
-          	        } catch (Exception e) {
+          	} catch (Exception e) {
           	            System.err.println("Login Exception");
           	            e.printStackTrace();
           	        }

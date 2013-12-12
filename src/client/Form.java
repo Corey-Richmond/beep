@@ -10,6 +10,7 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ import javax.swing.JTextField;
 import qps.QPSInterface;
 
 import Authentication.AuthenticationInterface;
+import LoadBalancer.Balancer;
  
 public class Form extends JFrame
 {
@@ -41,7 +43,11 @@ public class Form extends JFrame
 	ButtonGroup bg1 = new ButtonGroup( );
 	
 	ArrayList<String[]> result;
-	ArrayList<String> result2;
+	ArrayList<String> resultnew;
+	ArrayList<String> resultActor;
+	ArrayList<String> resultArtist;
+	String resultSport="";
+	ArrayList<String> resultteam;
 	private JRadioButton Actor = new JRadioButton("Actor");
 	private JRadioButton Movies = new JRadioButton("Movies");
 	private JRadioButton Artist = new JRadioButton("Artist");;
@@ -51,8 +57,20 @@ public class Form extends JFrame
 	private JButton but=new JButton();
     
      private JTextArea textArea = new JTextArea(25, 25);
-     private JScrollPane scrollPane = new JScrollPane(textArea); 
-    
+     private JScrollPane scrollPane = new JScrollPane(textArea);
+     private Registry registry; 
+     private Balancer lb;
+     
+     public Form(){
+    	 try {
+			registry = LocateRegistry.getRegistry(2001);
+			lb = (Balancer) registry.lookup("LoadBalancer");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+     }
+     
     public void start()
     {
     	 
@@ -67,11 +85,6 @@ public class Form extends JFrame
       
         add(txt);
         
-         //    JRadioButton Actor = new JRadioButton("Actor");
-        //	JRadioButton Movies = new JRadioButton("Movies");
-        //	JRadioButton Artist = new JRadioButton("Artist");
-        //    JRadioButton Athlete = new JRadioButton("Athlete");
-       // 	JRadioButton Team = new JRadioButton("Team");
       
         	bg1.add(Actor);
         	bg1.add(Movies);
@@ -87,20 +100,30 @@ public class Form extends JFrame
         	            	if(Actor.isSelected())
         	            	{   	
         	            		try{
-        	                   	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-        	                    
-        	                   	QPSInterface server = (QPSInterface)registry.lookup("QPS0");
+        	            			textArea.setText(null);        	                    
+        	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
         	                                
-        	                result2=server.getCitiesByActor(txt.getText());
-        	                String text;
-							if(result2.size()==0)
-        	                	text="No result found";
-        	                else
-        	                	text=result2.toString();
-        	                textArea.setText(text);
+        	                // changes done by anusha
+        	                // result=server.getCitiesByActor(txt.getText());
         	                
+        	                   	resultActor=server.getCitiesByActor1(txt.getText());
+        	                String text;
+							if(resultActor.size()==0)
+							{
+        	                	text="No result found";
+        	                	textArea.setText(null);
+							}
+        	                else
+        	                {
+        	                	// changes done by anusha
+            	                //	text=result.toString();
+    							//	text=resultnew.toString();
+        	                	for(String result: resultActor)
+								{   textArea.append(result + "\n");
+								}
+        	                }
         	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
@@ -120,20 +143,30 @@ public class Form extends JFrame
         	            	if(Movies.isSelected())
         	            	{   	
         	            		try{
-        	                   	Registry registry = LocateRegistry.getRegistry("localhost",2001);
+        	            			textArea.setText(null);
         	                    
-        	                   	QPSInterface server = (QPSInterface)registry.lookup("QPS0");
+        	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
-        	                                
-        	                result=server.getCitiesByMovie(txt.getText());
+        	              // changes done by me                  
+        	              //  result=server.getCitiesByMovie(txt.getText());
+        	                   	resultnew=server.getCitiesByMovie1(txt.getText());
         	                String text;
-							if(result.size()==0)
-        	                	text="No result found";
+							//if(result.size()==0)
+								if(resultnew.size()==0)
+        	                	{
+									text="No result found";
+									textArea.setText(text);
+        	                	}
         	                else
-        	                	text=result.toString();
-        	                textArea.setText(text);
-        	                
+        	                {
+        	                 // changes done by anusha
+        	                //	text=result.toString();
+							//	text=resultnew.toString();
+								for(String result: resultnew)
+								{   textArea.append(result + "\n");
+								}
+        	                }
         	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
@@ -154,20 +187,29 @@ public class Form extends JFrame
         	            	if(Artist.isSelected())
         	            	{   	
         	            		try{
-        	                   	Registry registry = LocateRegistry.getRegistry("localhost",2001);
+        	            			textArea.setText(null);	
         	                    
-        	                   	QPSInterface server = (QPSInterface)registry.lookup("QPS");
+        	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
-        	                                
-        	                result=server.getCitiesByArtist(txt.getText());
+        	                 // changes done by anusha               
+        	               // result=server.getCitiesByArtist(txt.getText());
+        	                 resultArtist=server.getCitiesByArtist1(txt.getText());
         	                String text;
-							if(result.size()==0)
-        	                	text="No result found";
+							if(resultArtist.size()==0)
+							{
+								text="No result found";
+								textArea.setText(text);
+							}
         	                else
-        	                	text=result.toString();
-        	                textArea.setText(text);
-        	                
+        	                {
+        	                // changes done by anusha
+        	                //	text=result.toString();
+        	                //    textArea.setText(text);
+        	                	for(String result: resultArtist)
+								{   textArea.append(result + "\n");
+								}
+        	                }
         	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
@@ -187,9 +229,8 @@ public class Form extends JFrame
         	            	if(Athlete.isSelected())
         	            	{   	
         	            		try{
-        	                   	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-        	                    
-        	                   	QPSInterface server = (QPSInterface)registry.lookup("QPS");
+        	            		        	                    
+        	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
         	                                
@@ -220,20 +261,30 @@ public class Form extends JFrame
         	            	if(Team.isSelected())
         	            	{   	
         	            		try{
-        	                   	Registry registry = LocateRegistry.getRegistry("localhost",2001);
+        	            			textArea.setText(null);      	            			
         	                    
-        	                   	QPSInterface server = (QPSInterface)registry.lookup("QPS");
+        	                   	QPSInterface server = lb.getQPS();
         	                   	           
         	                   	//server.setParameters(new ParaWrapper());
-        	                                
-        	                result=server.getCitiesByTeam(txt.getText());
+        	                    // changes done by anusha
+        	                //result=server.getCitiesByTeam(txt.getText());
+        	                   	
+        	                resultSport=server.getSportByTeam1(txt.getText());
+        	                resultteam=server.getCitiesByTeam1(txt.getText());
         	                String text;
-							if(result.size()==0)
-        	                	text="No result found";
+							if(resultteam.size()==0)
+							{
+								text="No result found";
+								textArea.setText(text);
+							}
         	                else
-        	                	text=result.toString();
-        	                textArea.setText(text);
-        	                
+        	                {
+        	                textArea.setText(resultSport);
+							textArea.append(result + "\n");
+							for(String result: resultteam)
+							{   textArea.append(result + "\n");
+							}
+        	                }
         	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
@@ -267,114 +318,9 @@ public class Form extends JFrame
         	
         
         
-    public void action()
-    {
-     	String text="";
-    	l.setText("Clicked!!");
-    	if(bg1.getSelection()==Actor)
-    	{   	
-    		try{
-           	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-            
-           	QPSInterface server = (QPSInterface)registry.lookup("QPS");
-           	           
-           	//server.setParameters(new ParaWrapper());
-                        
-        result2=server.getCitiesByActor(txt.getText());
-        if(result.size()==0)
-        	text="No result found";
-        else
-        	text=result.toString();
-        textArea.setText(text);
-           	        } catch (Exception e) {
-           	            System.err.println("Exception");
-           	            e.printStackTrace();
-           	        }
-    	}
+   
     	
-    	else if(bg1.getSelection()==Movies)
-    	{  	 try{
-           	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-            
-           	QPSInterface server = (QPSInterface)registry.lookup("QPS");
-           	           
-           	//server.setParameters(new ParaWrapper());
-                        
-        result=server.getCitiesByMovie(txt.getText());
-        if(result.size()==0)
-        	text="No result found";
-        else
-        	text=result.toString();
-        textArea.setText(text);        
-           	        } catch (Exception e) {
-           	            System.err.println("Exception");
-           	            e.printStackTrace();
-           	        }
-        
-    	}
-    	else if(bg1.getSelection()==Artist)
-    	{   	 try{
-           	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-            
-           	QPSInterface server = (QPSInterface)registry.lookup("QPS");
-           	           
-           	//server.setParameters(new ParaWrapper());
-                        
-        result=server.getCitiesByArtist(txt.getText());
-        if(result.size()==0)
-        	text="No result found";
-        else
-        	text=result.toString();
-        textArea.setText(text);
-           	        } catch (Exception e) {
-           	            System.err.println("Exception");
-           	            e.printStackTrace();
-           	        }
-    	}
-    	
-    	else if(Athlete.isSelected())
-    	{   	 try{
-           	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-            
-           	QPSInterface server = (QPSInterface)registry.lookup("QPS");
-           	           
-           	//server.setParameters(new ParaWrapper());
-                        
-        result=server.getCitiesByAthlete(txt.getText());
-        if(result.size()==0)
-        	text="No result found";
-        else
-        	text=result.toString();
-        textArea.setText(text); 
-           	        } catch (Exception e) {
-           	            System.err.println("Exception");
-           	            e.printStackTrace();
-           	        }
-    	}
-    	
-    	else if(Team.isSelected())
-    	{   	 try{
-           	Registry registry = LocateRegistry.getRegistry("localhost",2001);
-            
-           	QPSInterface server = (QPSInterface)registry.lookup("QPS");
-           	           
-           	//server.setParameters(new ParaWrapper());
-                        
-        result=server.getCitiesByTeam(txt.getText());
-        if(result.size()==0)
-        	text="No result found";
-        else
-        	text=result.toString();
-        textArea.setText(text);
-           	        } catch (Exception e) {
-           	            System.err.println("Exception");
-           	            e.printStackTrace();
-           	        }
-    	}
-    	
-    	
-    }
-     
+   
     public static void main(String args[])
     {
         new Form().start();
