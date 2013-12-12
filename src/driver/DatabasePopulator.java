@@ -171,6 +171,7 @@ public class DatabasePopulator {
 	public static void main(String[]args){
 		//new DatabasePopulator().populateDatabase();
 		new DatabasePopulator().populateWithFile();
+		System.out.println("Done populating the database.");
 	}
 
 }

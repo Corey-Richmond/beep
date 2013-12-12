@@ -14,12 +14,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
-import javax.jws.WebService;
-
-import tweaper.Tweaper;
 import worker.Worker;
-
-import LoadBalancer.LoadBalanced;
 import database.MysqlPortal;
 import facebook.FacebookClient.Domain;
 
@@ -344,7 +339,7 @@ public class QPS implements QPSInterface{
 		
 
 
-String queryNew ="select cityName , cityState from city where cityID in (select cityID from moviecitieslist where movieID in (select movieId from movie where title = '"+movie+"'))";
+String queryNew ="select cityName , cityState from City where cityID in (select cityID from MovieCitiesList where movieID in (select movieId from Movie where title = '"+movie+"'))";
 	
 //String queryNew="select title from movie where movieID in ( select movieID from moviecast where actorID in (select actorId from actor where personId in (select personID from person where firstName= "+movie+")))";
 	
@@ -370,8 +365,8 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 				" from city , (select cityID,Y.title,Y.movieID from moviecitieslist, (select S.movieID, title from (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ='"+actor+"'))) AS S " 
 						+ ", movie where movie.movieID in  (S.movieID)) AS Y where moviecitieslist.movieID in (Y.movieID)) AS K where city.cityID in (K.cityID)";*/
 	String queryNew = "select K.title,cityName" +
-	" from city , (select cityID,Y.title,Y.movieID from moviecitieslist, (select S.movieID, title from (select movieID from moviecast where actorID in (select actorID from actor where personID in (select personID from person where firstName ='"+actor+"'))) AS S " 
-			+ ", movie where movie.movieID in  (S.movieID)) AS Y where moviecitieslist.movieID in (Y.movieID)) AS K where city.cityID in (K.cityID)";
+	" from City , (select cityID,Y.title,Y.movieID from MovieCitiesList, (select S.movieID, title from (select movieID from MovieCast where actorID in (select actorID from Actor where personID in (select personID from Person where firstName ='"+actor+"'))) AS S " 
+			+ ", Movie where Movie.movieID in  (S.movieID)) AS Y where MovieCitiesList.movieID in (Y.movieID)) AS K where City.cityID in (K.cityID)";
 	
 		result = mysql.query2(queryNew);
 		
@@ -385,7 +380,7 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 
 		ArrayList<String> result = new ArrayList<String>();
 		
-        String queryNew ="select name , address,S.cityName from concertvenue , (select cityID, cityName from city where cityID in (select artistsCitiesListID from artistcitieslist where artistID in (select artistID from artist where personID in (select personID from person where firstname = '"+artist+"')))) AS S where concertvenue.cityID in (S.cityID)";
+        String queryNew ="select name , address,S.cityName from ConcertVenue , (select cityID, cityName from City where cityID in (select artistsCitiesListID from ArtistCitiesList where artistID in (select artistID from Artist where personID in (select personID from Person where firstname = '"+artist+"')))) AS S where ConcertVenue.cityID in (S.cityID)";
 		result = mysql.query3(queryNew);
 		
 		return result;
@@ -398,7 +393,7 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 
 				String result = "";
 				
-		        String queryNew ="select name from sport where sportID in (select sportID from team where teamName='"+team+"')";
+		        String queryNew ="select name from Sport where sportID in (select sportID from Team where teamName='"+team+"')";
 				result = mysql.query4(queryNew);
 				
 				return result;
@@ -411,7 +406,7 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 
 			ArrayList<String> result = new ArrayList<String>();
 			
-	        String queryNew ="select name, address , S.cityName from sportsvenue , (select cityID, cityName from city where cityID in (select cityID from sportcitieslist where sportID in (select sportID from team where teamName='"+team+"'))) AS S where sportsvenue.cityID in (S.cityID)";
+	        String queryNew ="select name, address , S.cityName from SportsVenue , (select cityID, cityName from City where cityID in (select cityID from SportCitiesList where sportID in (select sportID from Team where teamName='"+team+"'))) AS S where SportsVenue.cityID in (S.cityID)";
 			result = mysql.query5(queryNew);
 			
 			return result;
@@ -424,7 +419,7 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 
 						String result = "";
 						
-				        String queryNew ="select name from sport where sportID in (Select sportID from team  where teamID in (select teamID from athlete where athleteId in (select athleteID from athlete where personID in (select personID from person where firstName='"+team+"'))))";
+				        String queryNew ="select name from Sport where sportID in (Select sportID from Team  where teamID in (select teamID from Athlete where athleteId in (select athleteID from Athlete where personID in (select personID from Person where firstName='"+team+"'))))";
 						result = mysql.query6(queryNew);
 						
 						return result;
@@ -451,7 +446,7 @@ String queryNew ="select cityName , cityState from city where cityID in (select 
 
 						ArrayList<String> result = new ArrayList<String>();
 						
-				        String queryNew ="select cityName, cityState from city where cityID in (select cityID from athletecitieslist where athleteID in (select athleteID from athlete where personID in (select personID from person where firstName='"+team+"')) order by cityRank )";
+				        String queryNew ="select cityName, cityState from City where cityID in (select cityID from AthleteCitiesList where athleteID in (select athleteID from Athlete where personID in (select personID from Person where firstName='"+team+"')) order by cityRank )";
 						result = mysql.query8(queryNew);
 						
 						return result;

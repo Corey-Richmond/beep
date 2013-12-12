@@ -27,6 +27,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import facebook.FacebookClient.Domain;
+
 import qps.QPSInterface;
 
 import Authentication.AuthenticationInterface;
@@ -116,7 +118,7 @@ public class Form extends JFrame
         	                String text;
 							if(resultActor.size()==0)
 							{
-        	                	text="No result found";
+        	                	text="No result found\nWe are listening in\non social networks for more data\nplease try again later.";
         	                	textArea.setText(null);
 							}
         	                else
@@ -128,7 +130,6 @@ public class Form extends JFrame
 								{   textArea.append(result + "\n");
 								}
         	                }
-        	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
         	                   	            e1.printStackTrace();
@@ -159,8 +160,9 @@ public class Form extends JFrame
 							//if(result.size()==0)
 								if(resultnew.size()==0)
         	                	{
-									text="No result found";
+	        	                	text="No result found\nWe are listening in\non social networks for more data\nplease try again later.";
 									textArea.setText(text);
+									server.addNewEntry(Domain.MOVIE, txt.getText());
         	                	}
         	                else
         	                {
@@ -171,7 +173,6 @@ public class Form extends JFrame
 								{   textArea.append(result + "\n");
 								}
         	                }
-        	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
         	                   	            e1.printStackTrace();
@@ -202,8 +203,9 @@ public class Form extends JFrame
         	                String text;
 							if(resultArtist.size()==0)
 							{
-								text="No result found";
+        	                	text="No result found\nWe are listening in\non social networks for more data\nplease try again later.";
 								textArea.setText(text);
+								server.addNewEntry(Domain.ARTIST, txt.getText());
 							}
         	                else
         	                {
@@ -245,8 +247,10 @@ public class Form extends JFrame
         	                   	resultTeamAthlete=server.getTeamtByAthlete1(txt.getText());
         	                   	resultAthlete= server.getCitiesByAthlete1(txt.getText());
         	                String text;
-							if(result.size()==0)
-        	                	text="No result found";
+							if(result.size()==0){
+        	                	text="No result found\nWe are listening in\non social networks for more data\nplease try again later.";
+								server.addNewEntry(Domain.ATHLETE, txt.getText());
+							}
         	                else
         	                {
         	                textArea.setText(resultSportAthlete);
@@ -257,7 +261,6 @@ public class Form extends JFrame
 							{   textArea.append(result + "\n");
 							}
         	                }
-        	                System.out.println("asdasf");
         	                   	        } catch (Exception e1) {
         	                   	            System.err.println("Exception");
         	                   	            e1.printStackTrace();
@@ -289,8 +292,9 @@ public class Form extends JFrame
         	                String text;
 							if(resultteam.size()==0)
 							{
-								text="No result found";
+        	                	text="No result found\nWe are listening in\non social networks for more data\nplease try again later.";
 								textArea.setText(text);
+								server.addNewEntry(Domain.TEAM, txt.getText());
 							}
         	                else
         	                {
@@ -313,12 +317,12 @@ public class Form extends JFrame
         		Actor.addActionListener(ActorActionListener);
                 Movies.addActionListener(MoviesActionListener);
                 Artist.addActionListener(ArtistActionListener);
-                Athlete.addActionListener(AthleteActionListener);
+                //Athlete.addActionListener(AthleteActionListener);
                 Team.addActionListener(TeamActionListener);
         	this.add(Actor);
         	this.add(Movies);
         	this.add(Artist);
-        	this.add(Athlete);
+        	//this.add(Athlete);
         	this.add(Team);
         	
         	 this.setLayout(new GridLayout(1,1));

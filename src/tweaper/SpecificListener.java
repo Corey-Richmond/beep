@@ -38,7 +38,6 @@ public class SpecificListener implements StatusListener{
 	public void onStatus(Status status) {
 		String cityName = status.getPlace().getName();
 		if(cities.contains(cityName)){
-			System.out.println(status);
 			try {
 				w.storeTweet(status);
 			} catch (RemoteException e) {

@@ -25,8 +25,8 @@ public class MysqlPortal implements MysqlFacet{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/beep";
 	String sportName;
 	//  Database credentials
-	static final String USER = "root";
-	static final String PASS = "root";
+	static final String USER = "student";
+	static final String PASS = "441";
 	static final String jdbcDriver = "com.mysql.jdbc.Driver";
 
 	// -------------------------------------------------------------------------------|
@@ -1493,7 +1493,6 @@ public class MysqlPortal implements MysqlFacet{
 			try {
 				citiesListID = Integer.parseInt(query("select artistsCitiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "artistsCitiesListID").get(0)[0]);
 			} catch (Exception e) {
-				e.printStackTrace();
 				if(citiesListID < 0){
 					citiesListID = insertNewCitiesListRecord(d, name, cityName);
 				}
@@ -1530,7 +1529,7 @@ public class MysqlPortal implements MysqlFacet{
 			idColumn = "teamID";
 			listIDColumn = "teamCitiesListID";
 			try {
-				citiesListID = Integer.parseInt(query("select teamCitiesListID from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "teamCitiesListID").get(0)[0]);
+				citiesListID = Integer.parseInt(query("select TeamCitiesList from " + table + " where " + idColumn + " = " + targetID + " and cityID = " + cityID + ";", "teamCitiesListID").get(0)[0]);
 			} catch (Exception e) {
 				e.printStackTrace();
 				if(citiesListID < 0){

@@ -56,7 +56,6 @@ public class TwitterCache implements Worker, Serializable{
 	public void storeTweet(Status s) throws RemoteException{
 		newCount++;
 		statuses.add(s);
-		System.out.println("Storing: " + s.toString());
 		if(newCount > BACKUP_THRESHOLD){
 			try {
 				saveData();

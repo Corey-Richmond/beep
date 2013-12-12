@@ -118,7 +118,7 @@ public class Login extends JFrame {
          	 char[] paswd = password1Txt.getPassword();
          	 String paswd1= new String(paswd);
          	 try{
-         	Registry registry = LocateRegistry.getRegistry("localhost",2002);
+         	Registry registry = LocateRegistry.getRegistry(2001);
             
          	AuthenticationInterface server = (AuthenticationInterface)registry.lookup("Authentication");
          	           
