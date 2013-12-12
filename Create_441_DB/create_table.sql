@@ -183,4 +183,11 @@ create table ConcertVenue(
 	FOREIGN KEY (cityID) REFERENCES City(cityID)
 );
 
+create table test (
+	FirstName varchar(128), 
+	Age int, 
+	ID int NOT NULL AUTO_INCREMENT, 
+	PRIMARY KEY(ID)
+);
+
 
