@@ -181,7 +181,7 @@ boolean result = false;
 		
 		// Verify update completed correctly
 		extractedContents = portal.query("SELECT * FROM test", "FirstName");
-		assertEquals(extractedContents.get(0), "PersonX");
+		assertEquals(extractedContents.get(0)[0], "PersonX");
 		
 		// Delete the rows that were just inserted
 		int rows = portal.deleteRowsInTable(table);
@@ -189,55 +189,6 @@ boolean result = false;
 		
 		// Attempt to grab all users in the table
 		extractedContents = portal.query("SELECT * FROM test", "FirstName");
-		assertEquals(extractedContents.size(), 0);
-	}
-
-	/**
-	 * Test method for {@link database.MysqlPortal#update(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String)}.
-	 */
-	@Test
-	public void testUpdateStringStringIntStringString() {
-
-		int result = -1;
-		
-		MysqlPortal portal = new MysqlPortal();
-		
-		// Initialize 1 person
-		String content = "Person1";
-		String table = "test";
-		String column = "FirstName";
-		int value = 777;
-		String where = "Age";
-		String whereValue = null;
-		
-		// Insert into database
-		result = portal.insert(content, table, column);
-		assertTrue(result >= 0);
-		
-		// Verify people were inserted correctly
-		ArrayList<String[]> extractedContents = portal.query("SELECT * FROM test", "Firstname");
-		assertEquals(extractedContents.get(0)[0], "Person1");
-		
-		extractedContents = portal.query("SELECT * FROM test", "Age");
-		assertEquals(extractedContents.get(0), null);
-		
-		column = "Age";
-		where = "FirstName";
-		whereValue = "content";
-		
-		// UPDATE <table> SET <column> = '<value>' WHERE <where> ='<whereValue>'
-		portal.update(table, column, value, where, whereValue);
-		
-		// Verify update completed correctly
-		extractedContents = portal.query("SELECT * FROM test", "Age");
-		assertEquals(extractedContents.get(0), 777);
-		
-		// Delete the rows that were just inserted
-		int rows = portal.deleteRowsInTable(table);
-		assertEquals(rows, 1);
-		
-		// Attempt to grab all users in the table
-		extractedContents = portal.query("SELECT * FROM test", "Age");
 		assertEquals(extractedContents.size(), 0);
 	}
 
